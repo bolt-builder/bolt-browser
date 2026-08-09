@@ -7,12 +7,12 @@
     "tooltiptext": "Reabra a última aba fechada {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "Configurações específicas do Floorp, como a barra lateral, espaços de trabalho e gestos do mouse, são gerenciadas no Floorp Hub.",
-    "openButton": "Abrir o Floorp Hub"
+    "message": "Configurações específicas do Bolt, como a barra lateral, espaços de trabalho e gestos do mouse, são gerenciadas no Bolt Hub.",
+    "openButton": "Abrir o Bolt Hub"
   },
   "floorpStartWarning": {
-    "message": "Para alterar as configurações de \"Início\", desative o Floorp Start no Floorp Hub (about:hub#/features/design).",
-    "openButton": "Abrir Floorp Hub - Design"
+    "message": "Para alterar as configurações de \"Início\", desative o Bolt Start no Bolt Hub (about:hub#/features/design).",
+    "openButton": "Abrir Bolt Hub - Design"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Ativar/Desativar Modo Zen",
       "floorp-toggle-command-palette": "Alternar a paleta de comandos",
       "floorp-open-settings": "Abrir configurações",
-      "floorp-open-hub": "Abrir o Floorp Hub",
+      "floorp-open-hub": "Abrir o Bolt Hub",
       "floorp-toggle-share-mode": "Ativar/desativar modo compartilhamento",
       "floorp-copy-page-url-as-markdown": "Copiar URL da página como markdown",
       "floorp-split-view-open-left": "Visualização dividida à esquerda",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "Reabra a última aba fechada",
       "floorp-toggle-zen-mode": "Ativar/desativar o Modo Zen para ocultar todos os elementos de interface do usuário para uma navegação livre de distrações",
       "floorp-toggle-command-palette": "Abrir ou fechar a paleta de comandos para pesquisar e executar comandos",
-      "floorp-open-settings": "Abre a página de configurações do Floorp",
-      "floorp-open-hub": "Abre a página do Floorp Hub",
+      "floorp-open-settings": "Abre a página de configurações do Bolt",
+      "floorp-open-hub": "Abre a página do Bolt Hub",
       "floorp-toggle-share-mode": "Alterne o modo de compartilhamento para minimizar a interface do usuário para compartilhamento de tela e apresentações",
       "floorp-copy-page-url-as-markdown": "Copie o título da página atual e URL como formato de link markdown: [Title](URL)",
       "floorp-split-view-open-left": "Abra a aba atual em uma visualização dividida no lado esquerdo",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Adicionar ao Floorp",
+      "addToBolt": "Adicionar ao Bolt",
       "installing": "Instalando...",
       "success": "Adicionado!",
       "error": "Ocorreu um erro",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "Erro na instalação",
-      "compatibilityNote": "Esta extensão pode não ser compatível com o Firefox/Floorp.",
+      "compatibilityNote": "Esta extensão pode não ser compatível com o Firefox/Bolt.",
       "alreadyInstalled": "Essa extensão já está instalada ({{name}})",
       "downloadFailed": "Falha ao fazer o download do arquivo CRX",
       "conversionFailed": "Falha ao converter a extensão: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "Falha no download",
       "signatureVerifyFailed": "Falha ao verificar a assinatura da extensão",
       "corruptOrIncompatible": "A extensão está corrompida ou é incompatível",
-      "incompatible": "Essa extensão não é compatível com o Floorp",
+      "incompatible": "Essa extensão não é compatível com o Bolt",
       "blocked": "Esta extensão está bloqueada",
       "timeout": "Tempo limite da instalação da extensão atingido",
       "installFailed": "Falha na instalação da extensão",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp Hub"
+      "title": "Bolt Hub"
     }
   },
   "splitView": {
@@ -459,7 +459,7 @@
   "ipProtection": {
     "title": "VPN do navegador",
     "toolbar": {
-      "activeTooltip": "A VPN do navegador está ativada para tráfego de navegação na web no Floorp",
+      "activeTooltip": "A VPN do navegador está ativada para tráfego de navegação na web no Bolt",
       "inactiveTooltip": "A VPN do navegador está desativada — o tráfego de navegação na web não está protegido",
       "excludedTooltip": "A VPN do navegador está desativada para este site — este site não está protegido",
       "pausedTooltip": "A VPN do navegador está em pausa — o tráfego de navegação na web não está protegido",
@@ -467,15 +467,15 @@
       "helpTooltip": "Abrir a página de suporte à VPN do navegador"
     },
     "scope": {
-      "summary": "Quando ativo, a VPN do navegador pode proteger o tráfego de navegação elegível no Floorp. Seu escopo não inclui seu sistema operacional ou outros apps.",
-      "fullDisclosure": "Este recurso utiliza uma conta Mozilla e a infraestrutura de serviços da Mozilla. O Floorp é um projeto independente e não é afiliado, endossado nem patrocinado pela Mozilla. A disponibilidade depende da sua região, do status da sua conta e dos requisitos de elegibilidade dos serviços da Mozilla."
+      "summary": "Quando ativo, a VPN do navegador pode proteger o tráfego de navegação elegível no Bolt. Seu escopo não inclui seu sistema operacional ou outros apps.",
+      "fullDisclosure": "Este recurso utiliza uma conta Mozilla e a infraestrutura de serviços da Mozilla. O Bolt é um projeto independente e não é afiliado, endossado nem patrocinado pela Mozilla. A disponibilidade depende da sua região, do status da sua conta e dos requisitos de elegibilidade dos serviços da Mozilla."
     },
     "unauthenticated": {
       "title": "Experimente a VPN do navegador"
     },
     "settings": {
       "promoHeading": "Experimente a VPN do navegador",
-      "promoMessage": "Proteger o tráfego de navegação web elegível no Floorp após entrar e confirmar a disponibilidade do serviço."
+      "promoMessage": "Proteger o tráfego de navegação web elegível no Bolt após entrar e confirmar a disponibilidade do serviço."
     },
     "terms": {
       "prefix": "Ao continuar, você concorda com",
@@ -504,7 +504,7 @@
       "tools": "Ferramentas",
       "downloads": "Downloads",
       "workspace": "Espaços de trabalho",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "Mídia",
       "open-tabs": "Abrir abas",
       "switcher": "Console web",
