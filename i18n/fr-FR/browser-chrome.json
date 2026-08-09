@@ -7,12 +7,12 @@
     "tooltiptext": "Rouvrir le dernier onglet fermé {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "Les réglages spécifiques à Floorp comme la barre latérale, les espaces de travail, et les gestes de souris sont gérés dans la Plateforme de Floorp.",
-    "openButton": "Ouvrir la Plateforme de Floorp"
+    "message": "Les réglages spécifiques à Bolt comme la barre latérale, les espaces de travail, et les gestes de souris sont gérés dans la Plateforme de Bolt.",
+    "openButton": "Ouvrir la Plateforme de Bolt"
   },
   "floorpStartWarning": {
-    "message": "Pour changer les réglages d'\"Accueil\", désactivez le démarrage de Floorp depuis la Plateforme de Floorp (about:hub#/features/design).",
-    "openButton": "Ouvrir la Plateforme de Floorp - Design"
+    "message": "Pour changer les réglages d'\"Accueil\", désactivez le démarrage de Bolt depuis la Plateforme de Bolt (about:hub#/features/design).",
+    "openButton": "Ouvrir la Plateforme de Bolt - Design"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Permuter le mode Zen",
       "floorp-toggle-command-palette": "Activer/désactiver la palette de commandes",
       "floorp-open-settings": "Ouvrir les paramètres",
-      "floorp-open-hub": "Ouvrir la Plateforme de Floorp",
+      "floorp-open-hub": "Ouvrir la Plateforme de Bolt",
       "floorp-toggle-share-mode": "Permuter le mode partage",
       "floorp-copy-page-url-as-markdown": "Copier l'URL de la page en tant que Markdown",
       "floorp-split-view-open-left": "Vue fractionnée à gauche",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "Rouvrir le dernier onglet fermé",
       "floorp-toggle-zen-mode": "Permuter le mode Zen masque tous les éléments de l'interface pour une navigation sans distraction",
       "floorp-toggle-command-palette": "Ouvrir ou fermer la palette de commandes pour rechercher et exécuter des commandes",
-      "floorp-open-settings": "Ouvre la page des paramètres de Floorp",
-      "floorp-open-hub": "Ouvre la page du Hub Floorp",
+      "floorp-open-settings": "Ouvre la page des paramètres de Bolt",
+      "floorp-open-hub": "Ouvre la page du Hub Bolt",
       "floorp-toggle-share-mode": "Basculer en mode partage en minimisant l'interface utilisateur pour le partage d'écran et les présentations",
       "floorp-copy-page-url-as-markdown": "Copier le titre de la page actuelle et URL au format de lien Markdown : [Titre](URL)",
       "floorp-split-view-open-left": "Ouvrez l'onglet actuel dans un affichage divisé sur le côté gauche",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Ajouter à Floorp",
+      "addToBolt": "Ajouter à Bolt",
       "installing": "Installation...",
       "success": "Ajouté !",
       "error": "Une erreur s'est produite",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "Erreur d'installation",
-      "compatibilityNote": "Cette extension peut ne pas être compatible avec Firefox/Floorp.",
+      "compatibilityNote": "Cette extension peut ne pas être compatible avec Firefox/Bolt.",
       "alreadyInstalled": "Cette extension est déjà installée ({{name}})",
       "downloadFailed": "Échec du téléchargement du fichier CRX",
       "conversionFailed": "Échec de conversion de l'extension : {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "Échec du téléchargement",
       "signatureVerifyFailed": "Échec de vérification de la signature de l'extension",
       "corruptOrIncompatible": "L'extension est corrompue ou incompatible",
-      "incompatible": "Cette extension n'est pas compatible avec Floorp",
+      "incompatible": "Cette extension n'est pas compatible avec Bolt",
       "blocked": "Cette extension est bloquée",
       "timeout": "Délai d'installation de l'extension dépassé",
       "installFailed": "Échec d'installation de l'extension",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp Hub"
+      "title": "Bolt Hub"
     }
   },
   "splitView": {
@@ -457,25 +457,25 @@
     "menu-label": "Permuter le mode Zen"
   },
   "ipProtection": {
-    "title": "Floorp VPN",
+    "title": "Bolt VPN",
     "toolbar": {
-      "activeTooltip": "Floorp VPN est activé pour le trafic web dans Floorp",
-      "inactiveTooltip": "Floorp VPN est désactivé - le trafic web dans Floorp n'est pas protégé",
-      "excludedTooltip": "Floorp VPN est désactivé pour ce site - le trafic web vers ce site n'est pas protégé",
-      "pausedTooltip": "Floorp VPN est suspendu - le trafic web dans Floorp n'est pas protégé",
-      "errorTooltip": "Floorp VPN - erreur de connexion ; le trafic web dans Floorp n'est pas protégé",
-      "helpTooltip": "Ouvrir la page de support de Floorp VPN"
+      "activeTooltip": "Bolt VPN est activé pour le trafic web dans Bolt",
+      "inactiveTooltip": "Bolt VPN est désactivé - le trafic web dans Bolt n'est pas protégé",
+      "excludedTooltip": "Bolt VPN est désactivé pour ce site - le trafic web vers ce site n'est pas protégé",
+      "pausedTooltip": "Bolt VPN est suspendu - le trafic web dans Bolt n'est pas protégé",
+      "errorTooltip": "Bolt VPN - erreur de connexion ; le trafic web dans Bolt n'est pas protégé",
+      "helpTooltip": "Ouvrir la page de support de Bolt VPN"
     },
     "scope": {
-      "summary": "Lorsqu'il est activé,  Floorp VPN peut protéger le trafic web de Floorp. Son champ d'application n'inclut pas votre système d'exploitation ni les autres applications.",
-      "fullDisclosure": "Cette fonctionnalité utilise un compte Mozilla et l'infrastructure des services Mozilla. Floorp est un projet indépendant qui n'est ni affilié à Mozilla, ni approuvé ni parrainé par cette dernière. Sa disponibilité dépend de votre région, de l'état de votre compte et des conditions d'éligibilité aux services de Mozilla."
+      "summary": "Lorsqu'il est activé,  Bolt VPN peut protéger le trafic web de Bolt. Son champ d'application n'inclut pas votre système d'exploitation ni les autres applications.",
+      "fullDisclosure": "Cette fonctionnalité utilise un compte Mozilla et l'infrastructure des services Mozilla. Bolt est un projet indépendant qui n'est ni affilié à Mozilla, ni approuvé ni parrainé par cette dernière. Sa disponibilité dépend de votre région, de l'état de votre compte et des conditions d'éligibilité aux services de Mozilla."
     },
     "unauthenticated": {
-      "title": "Essayez le VPN intégré à Floorp"
+      "title": "Essayez le VPN intégré à Bolt"
     },
     "settings": {
-      "promoHeading": "Essayez le VPN intégré à Floorp",
-      "promoMessage": "Protégez le trafic web dans Floorp après vous être connecté et avoir vérifié la disponibilité du service."
+      "promoHeading": "Essayez le VPN intégré à Bolt",
+      "promoMessage": "Protégez le trafic web dans Bolt après vous être connecté et avoir vérifié la disponibilité du service."
     },
     "terms": {
       "prefix": "En poursuivant, vous acceptez de ",
@@ -504,7 +504,7 @@
       "tools": "Outils",
       "downloads": "Téléchargements",
       "workspace": "Espaces de travail",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "Média",
       "open-tabs": "Onglets ouverts",
       "switcher": "Commuter",
