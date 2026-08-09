@@ -1,5 +1,5 @@
 {
-    "title": "Floorp Başlangıç",
+    "title": "Bolt Başlangıç",
     "topSites": {
         "addSite": "Site ekle",
         "addNewSite": "Yeni site ekle",
@@ -27,7 +27,7 @@
         "randomImage": "Rastgele Görsel",
         "customImage": "Özel Görsel",
         "folderImages": "Klasörden Görüntüler",
-        "floorpImages": "Floorp Resimler",
+        "floorpImages": "Bolt Resimler",
         "currentImage": "Geçerli resim:",
         "imageRecommendation": "Önerilen: 1920x1080 veya daha büyük görsel",
         "currentFolder": "Geçerli klasör:",
@@ -35,9 +35,9 @@
         "selected": "Seçilen",
         "enableSlideshow": "Slayt Gösterisini Etkinleştir",
         "slideshowInterval": "Slideshow Interval",
-        "floorpStart": "Floorp Başlangıç",
-        "disableFloorpStart": "Floorp Başlangıç'ı devre dışı bırakın (klasik about:newtab kullanın)",
-        "disableFloorpStartDescription": "Etkinleştirildiğinde, Floorp Başlangıç'ın yerini klasik Firefox yeni sekmesi / ana sayfası alacaktır.",
+        "floorpStart": "Bolt Başlangıç",
+        "disableBoltStart": "Bolt Başlangıç'ı devre dışı bırakın (klasik about:newtab kullanın)",
+        "disableBoltStartDescription": "Etkinleştirildiğinde, Bolt Başlangıç'ın yerini klasik Firefox yeni sekmesi / ana sayfası alacaktır.",
         "restartRequired": "Değişikliklerin tam olarak uygulanması için tarayıcının yeniden başlatılması gerekir.",
         "firefoxLayout": "Eski Düzeni kullan (Firefox Anasayfa gibi)"
     },
