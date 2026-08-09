@@ -73,7 +73,7 @@
         "browserSupport": {
             "title": "Guia do {{productName}}",
             "description": "Acesse o guia de suporte escrito por colaboradores do {{productName}}.",
-            "footerLinkText": "Guia do Floorp"
+            "footerLinkText": "Guia do Bolt"
         }
     },
     "design": {
@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Nova aba",
-                "disableFloorpStart": "Desativar {{productName}} Start"
+                "disableBoltStart": "Desativar {{productName}} Start"
             },
             "multirowTab": {
                 "title": "Aba multilinha",
@@ -303,9 +303,9 @@
         "license": "Licença",
         "noraneko": {
             "logoAlt": "Logotipo do navegador",
-            "description": "O Noraneko é um navegador utilizado como ambiente de teste do Floorp 12. O Floorp é baseado no Firefox e no Noraneko.",
+            "description": "O Noraneko é um navegador utilizado como ambiente de teste do Bolt 12. O Bolt é baseado no Firefox e no Noraneko.",
             "communityCredit": "Feito pela Comunidade Noraneko com ❤️",
-            "repositoryLabel": "Repositório GitHub: Floorp-Projects/Floorp"
+            "repositoryLabel": "Repositório GitHub: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -382,7 +382,7 @@
         "howToUseAndCustomize": "Como usar e personalizar a barra lateral",
         "enableOrDisable": "Ativar/Desativar",
         "enablePanelSidebar": "Ativar a barra lateral",
-        "enableDescription": "A barra lateral do Floorp é diferente da barra lateral do Firefox e não interfere nela. Ela pode exibir páginas da Web, ao contrário da barra lateral do Firefox. Você também pode gerenciar espaços de trabalho na barra lateral.",
+        "enableDescription": "A barra lateral do Bolt é diferente da barra lateral do Firefox e não interfere nela. Ela pode exibir páginas da Web, ao contrário da barra lateral do Firefox. Você também pode gerenciar espaços de trabalho na barra lateral.",
         "otherSettings": "Outras configurações da barra lateral",
         "autoUnloadOnClose": "Descarregar ao fechar o painel",
         "position": "Posição da barra lateral",
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Rolar para baixo",
             "floorp-toggle-command-palette": "Alternar a paleta de comandos",
             "floorp-open-settings": "Abrir configurações",
-            "floorp-open-hub": "Abrir o Floorp Hub",
+            "floorp-open-hub": "Abrir o Bolt Hub",
             "floorp-toggle-share-mode": "Ativar/desativar modo compartilhamento",
             "floorp-copy-page-url-as-markdown": "Copiar URL da página como markdown",
             "floorp-split-view-open-left": "Visualização dividida à esquerda",
