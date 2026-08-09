@@ -83,12 +83,12 @@ export class HubPanelMenu {
 
   public static Render(): JSX.Element {
     const [translations, setTranslations] = createSignal({
-      title: i18next.t("hub.menu.title", { defaultValue: "Floorp Hub" }),
+      title: i18next.t("hub.menu.title", { defaultValue: "Bolt Hub" }),
     });
 
     addI18nObserver(() => {
       setTranslations({
-        title: i18next.t("hub.menu.title", { defaultValue: "Floorp Hub" }),
+        title: i18next.t("hub.menu.title", { defaultValue: "Bolt Hub" }),
       });
     });
 
