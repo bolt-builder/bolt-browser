@@ -287,3 +287,66 @@ notification-message[message-bar-type="infobar"] {
 #taskbar-tabs-button {
   display: none !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* Bolt theme                                                          */
+/*                                                                     */
+/* Electric blue accent plus a soft, frosted-feeling chrome tint.      */
+/* Follows the system light/dark scheme via light-dark(). Loaded for   */
+/* every design (Proton, Lepton, Photon, Fluerial); rules that could   */
+/* fight a user-installed lightweight theme are scoped with            */
+/* :root:not([lwtheme]).                                               */
+/* ------------------------------------------------------------------ */
+
+:root {
+  --bolt-accent: light-dark(#2f7cf6, #3884ff);
+  --bolt-accent-hover: light-dark(#1f6ce8, #5c9dff);
+  --bolt-accent-active: light-dark(#1a5fd0, #7ab0ff);
+  --bolt-accent-soft: light-dark(rgba(47, 124, 246, 0.14), rgba(56, 132, 255, 0.18));
+
+  /* Recolor Firefox's built-in accent tokens so primary buttons,
+     checkboxes, toggles, focus rings, and attention dots all use
+     Bolt blue instead of the stock accent. */
+  --color-accent-primary: var(--bolt-accent) !important;
+  --color-accent-primary-hover: var(--bolt-accent-hover) !important;
+  --color-accent-primary-active: var(--bolt-accent-active) !important;
+  --focus-outline-color: var(--bolt-accent) !important;
+  --toolbarbutton-icon-fill-attention: var(--bolt-accent) !important;
+  --attention-dot-color: var(--bolt-accent) !important;
+  --tab-line-color: var(--bolt-accent) !important;
+  --lwt-tab-line-color: var(--bolt-accent) !important;
+}
+
+/* Selected tab: soft electric-blue wash with an accent line so the
+   active tab reads instantly in both light and dark chrome. */
+:root:not([lwtheme]) .tabbrowser-tab[selected] .tab-background {
+  background-color: color-mix(
+    in srgb,
+    var(--bolt-accent) 12%,
+    var(--toolbar-bgcolor, transparent)
+  ) !important;
+  box-shadow: inset 0 2px 0 0 var(--bolt-accent) !important;
+}
+
+/* Panels and menus: frosted blue-tinted surfaces instead of the stock
+   flat gray. True window vibrancy is a runtime-level feature; this
+   tint gives the frosted look at the feature layer. */
+:root:not([lwtheme]) {
+  --arrowpanel-background: light-dark(#f5f8ff, #1e222b) !important;
+  --arrowpanel-border-color: light-dark(
+    rgba(47, 124, 246, 0.22),
+    rgba(56, 132, 255, 0.25)
+  ) !important;
+  --panel-background: var(--arrowpanel-background) !important;
+  --panel-border-color: var(--arrowpanel-border-color) !important;
+}
+
+/* Toolbar button hover/active: subtle blue instead of neutral gray. */
+:root:not([lwtheme]) {
+  --toolbarbutton-hover-background: var(--bolt-accent-soft) !important;
+  --toolbarbutton-active-background: color-mix(
+    in srgb,
+    var(--bolt-accent) 26%,
+    transparent
+  ) !important;
+}
