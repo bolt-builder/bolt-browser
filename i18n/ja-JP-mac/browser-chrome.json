@@ -7,12 +7,12 @@
     "tooltiptext": "最後に閉じたタブを開きなおす {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "パネルサイドバー、ワークスペース、マウスジェスチャーなどの Floorp 固有の設定は、Floorp Hub で管理できます。",
-    "openButton": "Floorp Hub を開く"
+    "message": "パネルサイドバー、ワークスペース、マウスジェスチャーなどの Bolt 固有の設定は、Bolt Hub で管理できます。",
+    "openButton": "Bolt Hub を開く"
   },
   "floorpStartWarning": {
-    "message": "「ホーム」の設定を変更する場合は、Floorp Hub で Floorp Start を無効にしてください (about:hub#/features/design)。",
-    "openButton": "Floorp Hub を開く — デザイン"
+    "message": "「ホーム」の設定を変更する場合は、Bolt Hub で Bolt Start を無効にしてください (about:hub#/features/design)。",
+    "openButton": "Bolt Hub を開く — デザイン"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "禅モードの表示を切り替える",
       "floorp-toggle-command-palette": "コマンドパレットの表示を切り替える",
       "floorp-open-settings": "設定",
-      "floorp-open-hub": "Floorp Hub を開く",
+      "floorp-open-hub": "Bolt Hub を開く",
       "floorp-toggle-share-mode": "共有モードの表示を切り替える",
       "floorp-copy-page-url-as-markdown": "ページの URL を Markdown としてコピー",
       "floorp-split-view-open-left": "分割ビューで左側に開く",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "最後に閉じたタブを開き直します",
       "floorp-toggle-zen-mode": "禅モードではすべての UI 要素が非表示になるので、現在のページに集中できます",
       "floorp-toggle-command-palette": "コマンドを検索および実行できるコマンドパレットを開閉します",
-      "floorp-open-settings": "Floorp の設定ページを開きます",
-      "floorp-open-hub": "Floorp Hub ページを開きます",
+      "floorp-open-settings": "Bolt の設定ページを開きます",
+      "floorp-open-hub": "Bolt Hub ページを開きます",
       "floorp-toggle-share-mode": "画面共有やプレゼンテーションのために UI を簡略化する、共有モードの表示を切り替えます",
       "floorp-copy-page-url-as-markdown": "現在のページタイトルと URL を Markdown リンク形式としてコピーします: [タイトル](URL)",
       "floorp-split-view-open-left": "現在のタブを分割ビューとして左側に開きます",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Floorp に追加",
+      "addToBolt": "Bolt に追加",
       "installing": "インストール中...",
       "success": "追加完了！",
       "error": "エラーが発生しました",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "インストールエラー",
-      "compatibilityNote": "この拡張機能は Firefox/Floorp と互換性がない可能性があります。",
+      "compatibilityNote": "この拡張機能は Firefox/Bolt と互換性がない可能性があります。",
       "alreadyInstalled": "この拡張機能はすでにインストールされています ({{name}})",
       "downloadFailed": "CRX ファイルをダウンロードできませんでした",
       "conversionFailed": "拡張機能を変換できませんでした: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "ダウンロード失敗",
       "signatureVerifyFailed": "拡張機能の署名を検証できませんでした",
       "corruptOrIncompatible": "拡張機能が壊れているか、互換性がありません",
-      "incompatible": "この拡張機能は Floorp と互換性がありません",
+      "incompatible": "この拡張機能は Bolt と互換性がありません",
       "blocked": "この拡張機能はブロックされています",
       "timeout": "拡張機能のインストールがタイムアウトしました",
       "installFailed": "拡張機能のインストールに失敗しました",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp Hub"
+      "title": "Bolt Hub"
     }
   },
   "splitView": {
@@ -467,15 +467,15 @@
       "helpTooltip": "ブラウザー VPN のサポートページを開く"
     },
     "scope": {
-      "summary": "有効の場合、ブラウザー VPN は Floorp 内の対象となるウェブブラウジングトラフィックを保護します。お使いの OS やその他のアプリは保護対象に含まれません。",
-      "fullDisclosure": "この機能は、Mozilla アカウントおよび Mozilla のサービス基盤を利用しています。Floorp は独立したプロジェクトであり、Mozilla との提携、承認または後援を受けておりません。ご利用の可否は、お住まいの地域、アカウントの状態、および Mozilla のサービス利用要件によります。"
+      "summary": "有効の場合、ブラウザー VPN は Bolt 内の対象となるウェブブラウジングトラフィックを保護します。お使いの OS やその他のアプリは保護対象に含まれません。",
+      "fullDisclosure": "この機能は、Mozilla アカウントおよび Mozilla のサービス基盤を利用しています。Bolt は独立したプロジェクトであり、Mozilla との提携、承認または後援を受けておりません。ご利用の可否は、お住まいの地域、アカウントの状態、および Mozilla のサービス利用要件によります。"
     },
     "unauthenticated": {
       "title": "ブラウザー VPN を試す"
     },
     "settings": {
       "promoHeading": "ブラウザー VPN を試す",
-      "promoMessage": "Floorp 内の対象となるウェブブラウジングトラフィックを保護しましょう。ログインすると利用可否を確認できます。"
+      "promoMessage": "Bolt 内の対象となるウェブブラウジングトラフィックを保護しましょう。ログインすると利用可否を確認できます。"
     },
     "terms": {
       "prefix": "続行することで、",
@@ -504,7 +504,7 @@
       "tools": "ツール",
       "downloads": "ダウンロード",
       "workspace": "ワークスペース",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "メディア",
       "open-tabs": "タブを開く",
       "switcher": "スイッチャー",
