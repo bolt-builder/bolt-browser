@@ -3,6 +3,7 @@
 import * as Initializer from "./src/initializer.ts";
 import * as Patcher from "./src/patcher.ts";
 import * as Rebrander from "./src/rebrander.ts";
+import * as BundledExtensions from "./src/bundled_extensions.ts";
 import * as Pref from "../static/gecko/pref/pref.ts";
 import * as Symlinker from "./src/symlinker.ts";
 import * as Update from "./src/update.ts";
@@ -57,6 +58,7 @@ async function runDev(): Promise<void> {
   await Initializer.run();
   Patcher.run("apply");
   Rebrander.run();
+  await BundledExtensions.run();
   Pref.run();
   Symlinker.run();
 
@@ -121,6 +123,7 @@ async function runStage(options: { marionette?: boolean } = {}): Promise<void> {
   await Initializer.run();
   Patcher.run("apply");
   Rebrander.run();
+  await BundledExtensions.run();
   Pref.run();
   Symlinker.run();
 
@@ -181,6 +184,7 @@ async function runTest(): Promise<void> {
   await Initializer.run();
   Patcher.run("apply");
   Rebrander.run();
+  await BundledExtensions.run();
   Pref.run();
   Symlinker.run();
 
