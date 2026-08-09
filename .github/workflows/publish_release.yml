@@ -68,7 +68,7 @@ concurrency:
 jobs:
   prepare_release:
     name: Validate immutable bundle and create draft release
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 30
     permissions:
       actions: read
@@ -373,7 +373,7 @@ jobs:
   release_check:
     name: Manual approval and public release gate
     needs: prepare_release
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 30
     environment: Deploy-to-installer-release
     permissions:
@@ -512,7 +512,7 @@ jobs:
   publish_updates:
     name: Publish and verify stable updater metadata v2
     needs: [prepare_release, release_check]
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 45
     environment: Deploy-to-updater-release
     permissions:
@@ -864,7 +864,7 @@ jobs:
   trigger_portable:
     name: Build the exact public Floorp Portable release
     needs: [prepare_release, publish_updates]
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 45
     permissions:
       actions: read

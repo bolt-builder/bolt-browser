@@ -30,7 +30,7 @@ run-name: >-
 jobs:
   check-version:
     name: Check release version
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
       - uses: actions/checkout@v4
         with:
@@ -548,7 +548,7 @@ jobs:
     name: Validation-only release bundle complete
     needs: assemble-release-bundle
     if: ${{ inputs.validation_only == true }}
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
       - name: Summarize validation result
         env:

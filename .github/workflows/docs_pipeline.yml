@@ -69,7 +69,7 @@ permissions:
 jobs:
   verify:
     if: github.event_name != 'workflow_dispatch' && github.event_name != 'schedule'
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
@@ -104,7 +104,7 @@ jobs:
 
   generate-docs-artifact:
     if: (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule') && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 45
     permissions:
       contents: read
