@@ -47,7 +47,7 @@ export async function initI18nextInstance() {
     interpolation: {
       escapeValue: false,
       defaultVariables: {
-        productName: "Floorp",
+        productName: "Bolt",
       },
     },
     react: {
