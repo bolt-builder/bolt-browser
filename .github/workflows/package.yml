@@ -408,8 +408,10 @@ jobs:
                 }
               }
 
-              const runtimeRepository = `${floorpRepository}-runtime`;
-              let runtimeRef = "";
+              // Bolt has no -runtime fork; legacy mode consumes the upstream
+              // Floorp Runtime release pinned by floorp-runtime.lock.json.
+              const runtimeRepository = "Floorp-Projects/Floorp-Runtime";
+              let runtimeRef = "ca3d0003976321fd67061d463ab56958b0f38cd9";
               const legacyRunId = process.env.LEGACY_RUNTIME_RUN_ID;
               if (legacyRunId) {
                 const runId = parsePositiveId(
@@ -628,7 +630,7 @@ jobs:
             core.setOutput("runtime_artifact_digest", targetDigest);
             core.setOutput("expected_build_id", expectedBuildId);
 
-      - name: Checkout ${{ github.repository }}-runtime
+      - name: Checkout runtime repository
         uses: actions/checkout@v4
         with:
           repository: ${{ steps.provenance.outputs.runtime_repository }}
@@ -1141,7 +1143,7 @@ jobs:
           name: ${{ env.ARTIFACT_NAME }}
           run-id: ${{ env.RUNTIME_ARTIFACT_WORKFLOW_RUN_ID }}
           github-token: ${{ github.token }}
-          repository: ${{ github.repository }}-runtime
+          repository: Floorp-Projects/Floorp-Runtime
           path: ~/downloads
 
       - name: Download Mozilla Artifact from GitHub Releases
@@ -1154,11 +1156,11 @@ jobs:
           fi
           case "$CANON_PLATFORM" in
             "macOS-x86_64")
-              curl -L "https://github.com/${{ github.repository }}-runtime/releases/latest/download/${ARTIFACT_FROM_RELEASE_NAME}" -o "$HOME/downloads/${ARTIFACT_FROM_RELEASE_NAME}"
-              curl -L "https://github.com/${{ github.repository }}-runtime/releases/latest/download/${ARTIFACT_FROM_RELEASE_NAME_FRAMEWORK}" -o "$HOME/downloads/${ARTIFACT_FROM_RELEASE_NAME_FRAMEWORK}"
+              curl -L "https://github.com/Floorp-Projects/Floorp-Runtime/releases/download/daily-998/${ARTIFACT_FROM_RELEASE_NAME}" -o "$HOME/downloads/${ARTIFACT_FROM_RELEASE_NAME}"
+              curl -L "https://github.com/Floorp-Projects/Floorp-Runtime/releases/download/daily-998/${ARTIFACT_FROM_RELEASE_NAME_FRAMEWORK}" -o "$HOME/downloads/${ARTIFACT_FROM_RELEASE_NAME_FRAMEWORK}"
               ;;
             *)
-              curl -L "https://github.com/${{ github.repository }}-runtime/releases/latest/download/${ARTIFACT_FROM_RELEASE_NAME}" -o "$HOME/downloads/${ARTIFACT_FROM_RELEASE_NAME}"
+              curl -L "https://github.com/Floorp-Projects/Floorp-Runtime/releases/download/daily-998/${ARTIFACT_FROM_RELEASE_NAME}" -o "$HOME/downloads/${ARTIFACT_FROM_RELEASE_NAME}"
               ;;
           esac
 
@@ -1400,6 +1402,17 @@ jobs:
             done
           fi
 
+          # Apply Bolt branding and bundled extensions to the packaged runtime.
+          if [[ "$CANON_PLATFORM" == "macOS-x86_64" ]]; then
+            shopt -s nullglob
+            for resource_dir in "$DIST_ROOT"/*.app/Contents/Resources; do
+              BOLT_BIN_DIR="$resource_dir" BOLT_MAC_TARGET=1 deno task feles-build build --phase rebrand
+            done
+            shopt -u nullglob || true
+          else
+            BOLT_BIN_DIR="$PATCH_TARGET" deno task feles-build build --phase rebrand
+          fi
+
           cd ..
 
       - name: Upload dist on failure (pre-packaging)
@@ -1455,25 +1468,30 @@ jobs:
           fi
           cd ..
 
-      - name: Replace Icon (Beta)
+      - name: Replace Icon (Windows)
         run: |
           CANON_PLATFORM="${CANON_PLATFORM:-${{ inputs.platform }}}"
           if [[ "$CANON_PLATFORM" == *-x64 ]]; then
             CANON_PLATFORM="${CANON_PLATFORM%-x64}-x86_64"
           fi
-          if [[ "$CANON_PLATFORM" == "Windows-x86_64" ]] && [ "${{inputs.beta}}" == "true" ]; then
+          if [[ "$CANON_PLATFORM" == "Windows-x86_64" ]]; then
             sudo apt update
             sudo apt install -y wine winetricks
             curl -Lo ./rcedit-x64.exe https://github.com/electron/rcedit/releases/latest/download/rcedit-x64.exe
-            ICON_PATH=""
-            for candidate in ./browser/branding/noraneko-daylight/firefox.ico ./browser/branding/floorp-daylight/firefox.ico; do
-              if [ -f "$candidate" ]; then
-                ICON_PATH="$candidate"
-                break
-              fi
-            done
-            if [ -z "$ICON_PATH" ]; then
-              echo "Beta icon file not found" >&2
+            if [ "${{inputs.beta}}" == "true" ]; then
+              ICON_PATH=""
+              for candidate in ./browser/branding/noraneko-daylight/firefox.ico ./browser/branding/floorp-daylight/firefox.ico; do
+                if [ -f "$candidate" ]; then
+                  ICON_PATH="$candidate"
+                  break
+                fi
+              done
+            else
+              # Stable builds get the Bolt desktop icon.
+              ICON_PATH="./noraneko/assets/brand/icon.ico"
+            fi
+            if [ -z "$ICON_PATH" ] || [ ! -f "$ICON_PATH" ]; then
+              echo "Icon file not found: $ICON_PATH" >&2
               exit 1
             fi
             TARGET_EXE=""
@@ -2037,7 +2055,7 @@ jobs:
           pattern: "*dist-host"
           run-id: ${{ env.RUNTIME_ARTIFACT_WORKFLOW_RUN_ID }}
           github-token: ${{ github.token }}
-          repository: ${{ github.repository }}-runtime
+          repository: Floorp-Projects/Floorp-Runtime
           path: obj-artifact-build-output/dist/host
           merge-multiple: true
 
@@ -2061,7 +2079,7 @@ jobs:
           success=0
           for file in "${files[@]}"; do
             DOWNLOAD_PATH="$HOME/downloads/$file"
-            if curl -fL "https://github.com/${{ github.repository }}-runtime/releases/latest/download/${file}" -o "$DOWNLOAD_PATH"; then
+            if curl -fL "https://github.com/Floorp-Projects/Floorp-Runtime/releases/download/daily-998/${file}" -o "$DOWNLOAD_PATH"; then
               unzip "$DOWNLOAD_PATH" -d ./obj-artifact-build-output/dist/host
               success=1
               break
@@ -2079,7 +2097,7 @@ jobs:
           pattern: "*application-ini"
           run-id: ${{ env.RUNTIME_ARTIFACT_WORKFLOW_RUN_ID }}
           github-token: ${{ github.token }}
-          repository: ${{ github.repository }}-runtime
+          repository: Floorp-Projects/Floorp-Runtime
           path: ~/noraneko-dev
           merge-multiple: true
 
@@ -2103,7 +2121,7 @@ jobs:
           success=0
           for file in "${files[@]}"; do
             DOWNLOAD_PATH="$HOME/downloads/$file"
-            if curl -fL "https://github.com/${{ github.repository }}-runtime/releases/latest/download/${file}" -o "$DOWNLOAD_PATH"; then
+            if curl -fL "https://github.com/Floorp-Projects/Floorp-Runtime/releases/download/daily-998/${file}" -o "$DOWNLOAD_PATH"; then
               unzip "$DOWNLOAD_PATH" -d ~/noraneko-dev
               success=1
               break
