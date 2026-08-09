@@ -350,3 +350,70 @@ notification-message[message-bar-type="infobar"] {
     transparent
   ) !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* Bolt vertical tabs: Zen-style "essentials" pinned tiles             */
+/*                                                                     */
+/* In native vertical tabs, Firefox renders pinned tabs as a plain     */
+/* grid of tiny favicons. Restyle them as large rounded icon tiles     */
+/* with a filled background, like Zen's essentials section. Selectors  */
+/* only match inside #vertical-pinned-tabs-container, so horizontal    */
+/* tab mode is untouched.                                              */
+/* ------------------------------------------------------------------ */
+
+#vertical-pinned-tabs-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)) !important;
+  gap: 6px !important;
+  padding: 8px 6px !important;
+}
+
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-background {
+  border-radius: 12px !important;
+  margin: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: color-mix(in srgb, currentColor 8%, transparent) !important;
+}
+
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned]:hover .tab-background {
+  background-color: var(--bolt-accent-soft, color-mix(in srgb, currentColor 14%, transparent)) !important;
+}
+
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned][selected] .tab-background,
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned][multiselected] .tab-background {
+  background-color: color-mix(in srgb, var(--bolt-accent, AccentColor) 22%, transparent) !important;
+  box-shadow: inset 0 0 0 1.5px var(--bolt-accent, AccentColor) !important;
+}
+
+/* Center the favicon in the tile and scale it up. */
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-content {
+  padding: 0 !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-icon-stack {
+  margin: 0 !important;
+}
+
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-icon-image {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+/* Tiles are icon-only: no labels, no close button. */
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-label-container,
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-close-button {
+  display: none !important;
+}
