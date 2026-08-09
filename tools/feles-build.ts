@@ -243,6 +243,11 @@ async function runBuild(phase?: string): Promise<void> {
       isCI: true,
       allowBrowserHttpLoader: false,
     });
+  } else if (optionsPhase === "rebrand") {
+    // Apply Bolt branding and bundled extensions to a packaged runtime.
+    // CI points BOLT_BIN_DIR at the mach-packaged output.
+    Rebrander.run();
+    await BundledExtensions.run();
   } else {
     console.error(`Unknown phase: ${optionsPhase}`);
     Deno.exit(1);
@@ -305,7 +310,7 @@ async function main(): Promise<void> {
     case "build": {
       if (argv.includes("--help") || argv.includes("-h")) {
         console.log(
-          "Usage: feles-build build --phase <before-mach|after-mach>",
+          "Usage: feles-build build --phase <before-mach|after-mach|rebrand>",
         );
         return;
       }

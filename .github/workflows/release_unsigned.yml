@@ -1,0 +1,84 @@
+# SPDX-License-Identifier: MPL-2.0
+
+name: "(R) 🚀 Release (Unsigned)"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  package-windows:
+    uses: ./.github/workflows/package.yml
+    with:
+      platform: Windows-x64
+      skip_signing: true
+    secrets: inherit
+
+  package-linux:
+    uses: ./.github/workflows/package.yml
+    with:
+      platform: Linux-x64
+      skip_signing: true
+    secrets: inherit
+
+  package-macos:
+    uses: ./.github/workflows/package.yml
+    with:
+      platform: macOS-x64
+      skip_signing: true
+    secrets: inherit
+
+  publish:
+    needs: [package-windows, package-linux, package-macos]
+    runs-on: blacksmith-4vcpu-ubuntu-2204
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read version
+        id: version
+        run: echo "version=$(jq -r .version package.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Download installer artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: noraneko-*-installer-unsigned
+          path: ./release-assets
+          merge-multiple: true
+
+      - name: Rename artifacts to Bolt
+        run: |
+          set -euo pipefail
+          cd release-assets
+          ls -la
+          for f in floorp-*; do
+            [ -e "$f" ] || continue
+            mv "$f" "bolt-${f#floorp-}"
+          done
+          for f in noraneko-*; do
+            [ -e "$f" ] || continue
+            mv "$f" "bolt-${f#noraneko-}"
+          done
+          ls -la
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Bolt v${{ steps.version.outputs.version }}
+          draft: false
+          prerelease: false
+          fail_on_unmatched_files: true
+          files: release-assets/*
+          body: |
+            Bolt ${{ steps.version.outputs.version }} (unsigned builds).
+
+            These builds are not code signed. Windows SmartScreen and macOS
+            Gatekeeper will warn on first launch; on macOS, right-click the
+            app and choose Open, or run
+            `xattr -dr com.apple.quarantine /Applications/Bolt.app`.
