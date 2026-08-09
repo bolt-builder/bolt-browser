@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Нова вкладка",
-                "disableFloorpStart": "Disable {{productName}} Start"
+                "disableBoltStart": "Disable {{productName}} Start"
             },
             "multirowTab": {
                 "title": "Multirow Tab",
@@ -303,9 +303,9 @@
         "license": "Ліцензія",
         "noraneko": {
             "logoAlt": "Browser Logo",
-            "description": "Noraneko is a browser as testhead of Floorp 12. Floorp is based on Firefox & Noraneko.",
+            "description": "Noraneko is a browser as testhead of Bolt 12. Bolt is based on Firefox & Noraneko.",
             "communityCredit": "Made by Noraneko Community with ❤",
-            "repositoryLabel": "GitHub Repository: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub Repository: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Прокрутити вниз",
             "floorp-toggle-command-palette": "Toggle Command Palette",
             "floorp-open-settings": "Open Settings",
-            "floorp-open-hub": "Перейти до Floorp Hub",
+            "floorp-open-hub": "Перейти до Bolt Hub",
             "floorp-toggle-share-mode": "Toggle Share Mode",
             "floorp-copy-page-url-as-markdown": "Copy Page URL as Markdown",
             "floorp-split-view-open-left": "Split View Left",
