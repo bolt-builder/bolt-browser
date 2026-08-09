@@ -1,5 +1,5 @@
 {
-    "title": "Начальная страница Floorp",
+    "title": "Начальная страница Bolt",
     "topSites": {
         "addSite": "Добавить сайт",
         "addNewSite": "Добавить новый сайт",
@@ -27,7 +27,7 @@
         "randomImage": "Случайное изображение",
         "customImage": "Своё изображение",
         "folderImages": "Изображения из папки",
-        "floorpImages": "Изображения Floorp",
+        "floorpImages": "Изображения Bolt",
         "currentImage": "Текущее изображение:",
         "imageRecommendation": "Рекомендация: используйте изображения с разрешением 1920x1080 или выше.",
         "currentFolder": "Текущая папка:",
@@ -35,9 +35,9 @@
         "selected": "Выбрано",
         "enableSlideshow": "Включить слайд-шоу",
         "slideshowInterval": "Интервал (секунды)",
-        "floorpStart": "Начальная страница Floorp",
-        "disableFloorpStart": "Отключить начальную страницу Floorp (использовать классический about:newtab)",
-        "disableFloorpStartDescription": "Когда включено, то запуск начальной страницы Floorp будет заменён классической новой вкладкой / домашней страницей Firefox.",
+        "floorpStart": "Начальная страница Bolt",
+        "disableBoltStart": "Отключить начальную страницу Bolt (использовать классический about:newtab)",
+        "disableBoltStartDescription": "Когда включено, то запуск начальной страницы Bolt будет заменён классической новой вкладкой / домашней страницей Firefox.",
         "restartRequired": "Требуется перезапуск браузера для вступления в полную силу.",
         "firefoxLayout": "Использовать устаревший внешний вид (как домашняя страница Firefox)"
     },
