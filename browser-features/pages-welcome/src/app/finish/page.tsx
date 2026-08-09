@@ -73,7 +73,7 @@ export default function FinishPage() {
                             <div className="divider text-xs opacity-70 my-1">{t('finishPage.resourcesLabel') || 'リソース'}</div>
 
                             <div className="flex flex-wrap gap-2 justify-center">
-                                <a href="https://github.com/Floorp-Projects/Floorp" target="_blank" className="btn btn-outline btn-sm">
+                                <a href="https://github.com/bolt-builder/bolt-browser" target="_blank" className="btn btn-outline btn-sm">
                                     <Github className="mr-1" size={14} />
                                     GitHub
                                 </a>
