@@ -7,6 +7,10 @@ import { exists, Logger } from "./utils.ts";
 
 const logger = new Logger("bundled-extensions");
 
+// CI packaging seeds extensions into the mach-packaged output instead of
+// _dist/bin; BOLT_BIN_DIR points at the runtime dir to seed.
+const TARGET_DIR = Deno.env.get("BOLT_BIN_DIR") ?? BIN_DIR;
+
 /**
  * Seeds default extensions into the runtime's `distribution/extensions`
  * directory. Gecko installs them into profiles on startup as regular,
@@ -63,12 +67,12 @@ async function seed(extension: BundledExtension, dir: string): Promise<void> {
 }
 
 export async function run(): Promise<void> {
-  if (!exists(BIN_DIR)) {
+  if (!exists(TARGET_DIR)) {
     logger.warn("Runtime not installed yet; skipping bundled extensions.");
     return;
   }
 
-  const dir = path.join(BIN_DIR, "distribution", "extensions");
+  const dir = path.join(TARGET_DIR, "distribution", "extensions");
   Deno.mkdirSync(dir, { recursive: true });
 
   for (const extension of EXTENSIONS) {
