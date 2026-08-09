@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "關於 Floorp",
+    "ariaLabel": "關於 Bolt",
     "version": "版本",
     "channel": {
       "nightly": "Nightly",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "Release Notes",
-      "help": "Floorp Help",
+      "help": "Bolt Help",
       "feedback": "Submit Feedback",
       "licensing": "授權",
       "terms": "Terms of Service",
       "privacy": "Privacy Policy"
     },
-    "trademark": "The name Floorp is a trademark in Japan."
+    "trademark": "The name Bolt is a trademark in Japan."
   }
 }
