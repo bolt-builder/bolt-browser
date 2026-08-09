@@ -22,7 +22,7 @@ export default function HubIntroPage() {
                 <div className="relative mb-6">
                   <img
                     src={gearImage}
-                    alt="Floorp Hub"
+                    alt="Bolt Hub"
                     className="w-32 h-32 lg:w-40 lg:h-40 mx-auto"
                   />
                 </div>
