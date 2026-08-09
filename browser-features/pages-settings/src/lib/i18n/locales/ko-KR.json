@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "새 탭 열기",
-                "disableFloorpStart": "{{productName}} 비활성화 시작"
+                "disableBoltStart": "{{productName}} 비활성화 시작"
             },
             "multirowTab": {
                 "title": "다중 행 탭",
@@ -296,16 +296,16 @@
         "isOfficialBuild": "(공식 빌드)",
         "browserDescription": "{{productName}} 는 일본에서 개발된 브라우저입니다. 웹을 개선하기 위해 Ablaze의 Firefox를 기반으로 제작되었습니다.",
         "browser": "{{productName}}",
-        "copyright": "© 2024 {{productName}} Floorp Projects. All Rights Reserved.",
+        "copyright": "© 2024 {{productName}} Bolt Projects. All Rights Reserved.",
         "openSourceLicense": "{{productName}} 는 Mozilla Public License 2.0에 따라 제공되는 오픈 소스 소프트웨어로, Firefox 오픈 소스 프로젝트 및 기타 오픈 소스 소프트웨어에 의해 만들어졌습니다.",
         "openSourceLicenseNotice": "오픈 소스 라이센스",
         "versionInfo": "버전",
         "license": "라이센스",
         "noraneko": {
             "logoAlt": "브라우저 로고",
-            "description": "Noraneko는 Floorp 12의 테스트 브라우저입니다. Floorp는 Firefox와 Noraneko를 기반으로 합니다.",
+            "description": "Noraneko는 Bolt 12의 테스트 브라우저입니다. Bolt는 Firefox와 Noraneko를 기반으로 합니다.",
             "communityCredit": "Noraneko 커뮤니티에서 ❤을 담아 개발",
-            "repositoryLabel": "GitHub 저장소: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub 저장소: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "아래로 스크롤",
             "floorp-toggle-command-palette": "명령 팔레트 전환",
             "floorp-open-settings": "설정 열기",
-            "floorp-open-hub": "Floorp Hub 열기",
+            "floorp-open-hub": "Bolt Hub 열기",
             "floorp-toggle-share-mode": "공유 모드 전환",
             "floorp-copy-page-url-as-markdown": "페이지 URL을 마크다운으로 복사",
             "floorp-split-view-open-left": "왼쪽에서 분할 화면 열기",
