@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "关于 Floorp",
+    "ariaLabel": "关于 Bolt",
     "version": "版本",
     "channel": {
       "nightly": "Nightly",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "新版变化",
-      "help": "Floorp 帮助",
+      "help": "Bolt 帮助",
       "feedback": "提交反馈",
       "licensing": "许可协议",
       "terms": "使用条款",
       "privacy": "隐私声明"
     },
-    "trademark": "“Floorp”是日本的注册商标。"
+    "trademark": "“Bolt”是日本的注册商标。"
   }
 }
