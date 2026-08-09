@@ -7,12 +7,12 @@
     "tooltiptext": "Reopen the last closed tab {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "Floorp-specific settings such as the panel sidebar, Workspaces, and mouse gestures are managed in Floorp Hub.",
-    "openButton": "Open Floorp Hub"
+    "message": "Bolt-specific settings such as the panel sidebar, Workspaces, and mouse gestures are managed in Bolt Hub.",
+    "openButton": "Open Bolt Hub"
   },
   "floorpStartWarning": {
-    "message": "To change the \"Home\" setting, disable Floorp Start from Floorp Hub (about:hub#/features/design).",
-    "openButton": "Open Floorp Hub — Design"
+    "message": "To change the \"Home\" setting, disable Bolt Start from Bolt Hub (about:hub#/features/design).",
+    "openButton": "Open Bolt Hub — Design"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Toggle Zen Mode",
       "floorp-toggle-command-palette": "Toggle Command Palette",
       "floorp-open-settings": "Open Settings",
-      "floorp-open-hub": "Open Floorp Hub",
+      "floorp-open-hub": "Open Bolt Hub",
       "floorp-toggle-share-mode": "Toggle Share Mode",
       "floorp-copy-page-url-as-markdown": "Copy Page URL as Markdown",
       "floorp-split-view-open-left": "Split View Left",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "Reopen the last closed tab",
       "floorp-toggle-zen-mode": "Toggle Zen Mode to hide all UI elements for distraction-free browsing",
       "floorp-toggle-command-palette": "Open or close the command palette to search and execute commands",
-      "floorp-open-settings": "Opens the Floorp settings page",
-      "floorp-open-hub": "Opens the Floorp Hub page",
+      "floorp-open-settings": "Opens the Bolt settings page",
+      "floorp-open-hub": "Opens the Bolt Hub page",
       "floorp-toggle-share-mode": "Toggle Share Mode to minimize UI for screen sharing and presentations",
       "floorp-copy-page-url-as-markdown": "Copy the current page title and URL as Markdown link format: [Title](URL)",
       "floorp-split-view-open-left": "Open the current tab in a split view on the left side",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Add to Floorp",
+      "addToBolt": "Add to Bolt",
       "installing": "Installing...",
       "success": "Added!",
       "error": "Error occurred",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "Installation Error",
-      "compatibilityNote": "This extension may not be compatible with Firefox/Floorp.",
+      "compatibilityNote": "This extension may not be compatible with Firefox/Bolt.",
       "alreadyInstalled": "This extension is already installed ({{name}})",
       "downloadFailed": "Failed to download CRX file",
       "conversionFailed": "Failed to convert extension: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "Download failed",
       "signatureVerifyFailed": "Failed to verify extension signature",
       "corruptOrIncompatible": "Extension is corrupted or incompatible",
-      "incompatible": "This extension is not compatible with Floorp",
+      "incompatible": "This extension is not compatible with Bolt",
       "blocked": "This extension is blocked",
       "timeout": "Extension installation timed out",
       "installFailed": "Extension installation failed",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp Hub Title"
+      "title": "Bolt Hub Title"
     }
   },
   "splitView": {
@@ -459,7 +459,7 @@
   "ipProtection": {
     "title": "Browser VPN",
     "toolbar": {
-      "activeTooltip": "Browser VPN is on for eligible web browsing traffic in Floorp",
+      "activeTooltip": "Browser VPN is on for eligible web browsing traffic in Bolt",
       "inactiveTooltip": "Browser VPN is off — web browsing traffic is not protected",
       "excludedTooltip": "Browser VPN is off for this site — this site is not protected",
       "pausedTooltip": "Browser VPN is paused — web browsing traffic is not protected",
@@ -467,15 +467,15 @@
       "helpTooltip": "Open Browser VPN support page"
     },
     "scope": {
-      "summary": "When active, Browser VPN can protect eligible web browsing traffic in Floorp. Its scope does not include your operating system or other apps.",
-      "fullDisclosure": "This feature uses a Mozilla account and Mozilla service infrastructure. Floorp is an independent project and is not affiliated with, endorsed by, or sponsored by Mozilla. Availability depends on your region, account status, and Mozilla’s service eligibility requirements."
+      "summary": "When active, Browser VPN can protect eligible web browsing traffic in Bolt. Its scope does not include your operating system or other apps.",
+      "fullDisclosure": "This feature uses a Mozilla account and Mozilla service infrastructure. Bolt is an independent project and is not affiliated with, endorsed by, or sponsored by Mozilla. Availability depends on your region, account status, and Mozilla’s service eligibility requirements."
     },
     "unauthenticated": {
       "title": "Try Browser VPN"
     },
     "settings": {
       "promoHeading": "Try Browser VPN",
-      "promoMessage": "Protect eligible web browsing traffic in Floorp after signing in and confirming service availability."
+      "promoMessage": "Protect eligible web browsing traffic in Bolt after signing in and confirming service availability."
     },
     "terms": {
       "prefix": "By continuing, you agree to ",
@@ -504,7 +504,7 @@
       "tools": "Tools",
       "downloads": "Downloads",
       "workspace": "Workspaces",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "Media",
       "open-tabs": "Open Tabs",
       "switcher": "Switcher",
