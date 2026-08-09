@@ -53,11 +53,12 @@ export interface RandomImageResult {
 }
 
 export const DEFAULT_SUGGESTED_SITES: PinnedSite[] = [
-  { url: "https://youtube.com", title: "YouTube" },
-  { url: "https://x.com", title: "X" },
-  { url: "https://www.reddit.com/", title: "Reddit" },
-  { url: "https://wikipedia.org/", title: "Wikipedia" },
-  { url: "https://instagram.com", title: "Instagram" },
+  { url: "https://github.com/", title: "GitHub" },
+  { url: "https://discord.com/", title: "Discord" },
+  { url: "https://www.figma.com/", title: "Figma" },
+  { url: "https://www.youtube.com/", title: "YouTube" },
+{ url: "https://www.notion.so/", title: "Notion" },
+  { url: "https://gitlab.com/", title: "GitLab" },
 ];
 
 const DEFAULT_SETTINGS: NewTabSettings = {
@@ -81,6 +82,12 @@ const DEFAULT_SETTINGS: NewTabSettings = {
   },
   topSites: {
     pinned: [
+      { url: "https://github.com/", title: "GitHub" },
+      { url: "https://discord.com/", title: "Discord" },
+      { url: "https://www.figma.com/", title: "Figma" },
+      { url: "https://www.youtube.com/", title: "YouTube" },
+      { url: "https://www.notion.so/", title: "Notion" },
+      { url: "https://gitlab.com/", title: "GitLab" },
       {
         url: "https://docs.floorp.app/docs/features/",
         title: "Bolt Support",
