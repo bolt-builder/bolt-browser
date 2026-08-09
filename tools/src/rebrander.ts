@@ -130,11 +130,22 @@ function rebrandMacBundle(): void {
       .replace(
         /(<key>CFBundleDisplayName<\/key>\s*<string>)[^<]*(<\/string>)/,
         "$1Bolt$2",
-      );
+      )
+      // macOS prefers the CFBundleIconName entry in the compiled Assets.car
+      // (which still holds the Floorp icon) over CFBundleIconFile. Strip it
+      // so the replaced firefox.icns is what the Dock actually shows.
+      .replace(/\s*<key>CFBundleIconName<\/key>\s*<string>[^<]*<\/string>/, "");
     if (updated !== original) {
       Deno.writeTextFileSync(plist, updated);
-      logger.info("Info.plist bundle name set to Bolt.");
+      logger.info("Info.plist bundle name set to Bolt (icon catalog unpinned).");
     }
+  }
+
+  // Remove the Floorp asset catalog so nothing can resolve its icon.
+  const assets = path.join(TARGET_DIR, "Assets.car");
+  if (exists(assets)) {
+    Deno.removeSync(assets);
+    logger.info("Removed Floorp Assets.car icon catalog.");
   }
 
   const icns = path.join(TARGET_DIR, "firefox.icns");
