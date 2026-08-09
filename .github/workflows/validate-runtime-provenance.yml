@@ -75,7 +75,7 @@ permissions:
 jobs:
   validate:
     name: Validate immutable Floorp-Runtime provenance
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     outputs:
       provenance_artifact_name: floorp-runtime-provenance-v2
       provenance_artifact_id: ${{ steps.upload-provenance.outputs.artifact-id }}

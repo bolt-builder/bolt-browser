@@ -39,7 +39,7 @@ on:
 
 jobs:
   publish_deb:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
       - name: Download Linux DEB artifact (PPA) from provided run
         if: ${{ inputs.artifact_run_id != '' }}
