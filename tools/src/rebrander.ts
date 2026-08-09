@@ -133,7 +133,19 @@ function rebrandMacBundle(): void {
   const icnsSource = path.join(PATHS.root, "assets", "brand", "icon.icns");
   if (exists(icns) && exists(icnsSource)) {
     Deno.copyFileSync(icnsSource, icns);
+    // Bump the bundle mtime so LaunchServices and the Dock notice the new
+    // icon; replacing bytes inside an existing .app alone often keeps the
+    // stale cached icon.
+    const now = new Date();
+    Deno.utimeSync(app, now, now);
+    Deno.utimeSync(contents, now, now);
     logger.info("Bundle icon replaced with the Bolt desktop icon.");
+  } else {
+    logger.warn(
+      `Bundle icon not replaced (icns exists: ${exists(icns)}, source exists: ${
+        exists(icnsSource)
+      }).`,
+    );
   }
 
   // The bundle content changed, so re-sign ad hoc; otherwise macOS may
