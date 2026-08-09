@@ -74,10 +74,18 @@ const ASSET_MAP: [string, string][] = [
 
 const ASSET_SOURCE = path.join(PATHS.root, "static", "branding", "bolt");
 
+// CI packaging rebrands the mach-packaged output instead of _dist/bin, and
+// rebrands the macOS bundle from a Linux runner (cross-packaging). BOLT_BIN_DIR
+// points at the runtime dir to rebrand; BOLT_MAC_TARGET=1 forces the macOS
+// bundle rebrand even when the build host is not darwin.
+const TARGET_DIR = Deno.env.get("BOLT_BIN_DIR") ?? BIN_DIR;
+const MAC_TARGET = PLATFORM === "darwin" ||
+  Deno.env.get("BOLT_MAC_TARGET") === "1";
+
 function rebrandStrings(): number {
   let count = 0;
   for (const [relative, content] of STRING_FILES) {
-    const target = path.join(BIN_DIR, relative);
+    const target = path.join(TARGET_DIR, relative);
     if (!exists(target)) {
       logger.warn(`Brand string file not found, skipping: ${relative}`);
       continue;
@@ -92,7 +100,7 @@ function rebrandImages(): number {
   let count = 0;
   for (const [asset, relative] of ASSET_MAP) {
     const source = path.join(ASSET_SOURCE, asset);
-    const target = path.join(BIN_DIR, relative);
+    const target = path.join(TARGET_DIR, relative);
     if (!exists(source)) {
       logger.warn(`Bolt asset missing, skipping: ${asset}`);
       continue;
@@ -107,8 +115,8 @@ function rebrandImages(): number {
 }
 
 function rebrandMacBundle(): void {
-  // BIN_DIR on darwin is <app>/Contents/Resources
-  const contents = path.resolve(BIN_DIR, "..");
+  // The target on macOS is <app>/Contents/Resources
+  const contents = path.resolve(TARGET_DIR, "..");
   const app = path.resolve(contents, "..");
 
   const plist = path.join(contents, "Info.plist");
@@ -129,7 +137,7 @@ function rebrandMacBundle(): void {
     }
   }
 
-  const icns = path.join(BIN_DIR, "firefox.icns");
+  const icns = path.join(TARGET_DIR, "firefox.icns");
   const icnsSource = path.join(PATHS.root, "assets", "brand", "icon.icns");
   if (exists(icns) && exists(icnsSource)) {
     Deno.copyFileSync(icnsSource, icns);
@@ -149,7 +157,12 @@ function rebrandMacBundle(): void {
   }
 
   // The bundle content changed, so re-sign ad hoc; otherwise macOS may
-  // refuse to launch the modified app.
+  // refuse to launch the modified app. codesign only exists on macOS; when
+  // cross-packaging on Linux the DMG is assembled unsigned anyway.
+  if (PLATFORM !== "darwin") {
+    logger.info("Skipping ad-hoc codesign (build host is not macOS).");
+    return;
+  }
   const result = runCommandChecked(
     "codesign",
     ["--force", "--deep", "--sign", "-", app],
@@ -163,14 +176,14 @@ function rebrandMacBundle(): void {
 }
 
 export function run(): void {
-  if (!exists(BIN_DIR)) {
+  if (!exists(TARGET_DIR)) {
     logger.warn("Runtime not installed yet; skipping Bolt rebranding.");
     return;
   }
 
   const strings = rebrandStrings();
   const images = rebrandImages();
-  if (PLATFORM === "darwin") {
+  if (MAC_TARGET) {
     rebrandMacBundle();
   }
 
