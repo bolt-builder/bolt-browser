@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "新分頁",
-                "disableFloorpStart": "停用 {{productName}} Start"
+                "disableBoltStart": "停用 {{productName}} Start"
             },
             "multirowTab": {
                 "title": "多層分頁列",
@@ -303,9 +303,9 @@
         "license": "授權",
         "noraneko": {
             "logoAlt": "Browser Logo",
-            "description": "Noraneko is a browser as testhead of Floorp 12. Floorp is based on Firefox & Noraneko.",
+            "description": "Noraneko is a browser as testhead of Bolt 12. Bolt is based on Firefox & Noraneko.",
             "communityCredit": "Made by Noraneko Community with ❤",
-            "repositoryLabel": "GitHub Repository: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub Repository: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "向下捲動",
             "floorp-toggle-command-palette": "Toggle Command Palette",
             "floorp-open-settings": "Open Settings",
-            "floorp-open-hub": "開啟 Floorp Hub",
+            "floorp-open-hub": "開啟 Bolt Hub",
             "floorp-toggle-share-mode": "Toggle Share Mode",
             "floorp-copy-page-url-as-markdown": "Copy Page URL as Markdown",
             "floorp-split-view-open-left": "Split View Left",

@@ -1,5 +1,5 @@
 {
-  "description": "Translation targets consumed by the f18n-central automation. Each target maps Floorp source content to its counterpart in the f18n repository.",
+  "description": "Translation targets consumed by the f18n-central automation. Each target maps Bolt source content to its counterpart in the f18n repository.",
   "targets": [
     {
       "name": "main",

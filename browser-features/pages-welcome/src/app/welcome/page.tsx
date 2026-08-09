@@ -18,7 +18,7 @@ export default function WelcomePage() {
                     <div className="max-w-xl">
                         <div className="avatar mb-6">
                             <div className="w-32 ring-primary ring-offset-base-100 ring-offset-2 mx-auto">
-                                <img src="chrome://branding/content/icon128.png" alt="Floorp Logo" />
+                                <img src="chrome://branding/content/icon128.png" alt="Bolt Logo" />
                             </div>
                         </div>
                         <h1 className="text-5xl font-bold mb-6">{t('welcomePage.welcome')}</h1>

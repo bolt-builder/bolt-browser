@@ -7,12 +7,12 @@
     "tooltiptext": "Öppna den senaste stängda fliken {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "Floorp-specifika inställningar som panelens sidofält, arbetsytor och musgester hanteras i Floorp Hub.",
-    "openButton": "Öppna Floorp Hub"
+    "message": "Bolt-specifika inställningar som panelens sidofält, arbetsytor och musgester hanteras i Bolt Hub.",
+    "openButton": "Öppna Bolt Hub"
   },
   "floorpStartWarning": {
-    "message": "För att ändra \"Hem\"-inställningen, inaktivera Floorp Start från Floorp Hub (about:hub#/features/design).",
-    "openButton": "Öppna Floorp Hub — Design"
+    "message": "För att ändra \"Hem\"-inställningen, inaktivera Bolt Start från Bolt Hub (about:hub#/features/design).",
+    "openButton": "Öppna Bolt Hub — Design"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Växla Zenläge",
       "floorp-toggle-command-palette": "Växla kommandopalett",
       "floorp-open-settings": "Öppna inställningar",
-      "floorp-open-hub": "Öppna Floorp Hub",
+      "floorp-open-hub": "Öppna Bolt Hub",
       "floorp-toggle-share-mode": "Växla dela läge",
       "floorp-copy-page-url-as-markdown": "Kopiera sidans URL som Markdown",
       "floorp-split-view-open-left": "Delad vy vänster",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "Öppna den senaste stängda fliken",
       "floorp-toggle-zen-mode": "Växla till Zenläge för att dölja alla UI-element för distraktionslös surfning",
       "floorp-toggle-command-palette": "Öppna eller stäng kommandopaletten för att söka och exekvera kommandon",
-      "floorp-open-settings": "Öppnar Floorp inställningssida",
-      "floorp-open-hub": "Öppnar Floorp Hub sidan",
+      "floorp-open-settings": "Öppnar Bolt inställningssida",
+      "floorp-open-hub": "Öppnar Bolt Hub sidan",
       "floorp-toggle-share-mode": "Växla till Dela läge för att minimera användargränssnittet vid skärmdelning och presentationer",
       "floorp-copy-page-url-as-markdown": "Kopiera den aktuella sidans titel och URL som Markdown-länkformat: [Title](URL)",
       "floorp-split-view-open-left": "Öppna aktuell flik i delad vy på vänster sida",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Lägg till i Floorp",
+      "addToBolt": "Lägg till i Bolt",
       "installing": "Installerar...",
       "success": "Tillagd!",
       "error": "Fel uppstod",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "Installationsfel",
-      "compatibilityNote": "Det här tillägget kanske inte är kompatibelt med Firefox/Floorp.",
+      "compatibilityNote": "Det här tillägget kanske inte är kompatibelt med Firefox/Bolt.",
       "alreadyInstalled": "Detta tillägg är redan installerat ({{name}})",
       "downloadFailed": "Misslyckades med att ladda ner CRX fil",
       "conversionFailed": "Misslyckades med att konvertera tillägg: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "Nedladdning misslyckad",
       "signatureVerifyFailed": "Misslyckades med att verifiera tilläggssignatur",
       "corruptOrIncompatible": "Tillägget är korrupt eller inkompatibelt",
-      "incompatible": "Detta tillägg är inte kompatibelt med Floorp",
+      "incompatible": "Detta tillägg är inte kompatibelt med Bolt",
       "blocked": "Detta tillägg är blockerat",
       "timeout": "Tilläggsinstallationen har gått ut",
       "installFailed": "Installation av tillägg misslyckades",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp Hub"
+      "title": "Bolt Hub"
     }
   },
   "splitView": {
@@ -459,7 +459,7 @@
   "ipProtection": {
     "title": "VPN i webbläsaren",
     "toolbar": {
-      "activeTooltip": "VPN i webbläsaren är på för berättigad webbsurfnings trafik i Floorp",
+      "activeTooltip": "VPN i webbläsaren är på för berättigad webbsurfnings trafik i Bolt",
       "inactiveTooltip": "VPN i webbläsaren är avstängt — webbtrafiken är inte skyddad",
       "excludedTooltip": "VPN i webbläsaren är inaktiverat för den här webbplatsen – webbplatsen är inte skyddad",
       "pausedTooltip": "VPN i webbläsaren är pausad — webbtrafiken är inte skyddad",
@@ -467,15 +467,15 @@
       "helpTooltip": "Öppna supportsida för VPN i webbläsaren"
     },
     "scope": {
-      "summary": "När den är aktiv, kan VPN i webbläsaren skydda berättigad surfnings trafik i Floorp. Dess omfattning inkluderar inte ditt operativsystem eller andra program.",
-      "fullDisclosure": "Denna funktion använder ett Mozilla-konto och Mozillas tjänsteinfrastruktur. Floorp är ett självständigt projekt och har varken någon anknytning till, stöd från eller sponsring av Mozilla. Tillgängligheten beror på din region, ditt kontostatus och Mozillas behörighetskrav för tjänsten."
+      "summary": "När den är aktiv, kan VPN i webbläsaren skydda berättigad surfnings trafik i Bolt. Dess omfattning inkluderar inte ditt operativsystem eller andra program.",
+      "fullDisclosure": "Denna funktion använder ett Mozilla-konto och Mozillas tjänsteinfrastruktur. Bolt är ett självständigt projekt och har varken någon anknytning till, stöd från eller sponsring av Mozilla. Tillgängligheten beror på din region, ditt kontostatus och Mozillas behörighetskrav för tjänsten."
     },
     "unauthenticated": {
       "title": "Prova VPN i webbläsaren"
     },
     "settings": {
       "promoHeading": "Prova VPN i webbläsaren",
-      "promoMessage": "Skydda berättigad webbtrafik i Floorp efter att du har loggat in och bekräftat att tjänsten är tillgänglig."
+      "promoMessage": "Skydda berättigad webbtrafik i Bolt efter att du har loggat in och bekräftat att tjänsten är tillgänglig."
     },
     "terms": {
       "prefix": "Genom att fortsätta godkänner du ",
@@ -504,7 +504,7 @@
       "tools": "Verktyg",
       "downloads": "Hämtningar",
       "workspace": "Arbetsytor",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "Media",
       "open-tabs": "Öppna flikar",
       "switcher": "Växlare",

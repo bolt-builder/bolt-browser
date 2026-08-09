@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Nieuw tabblad",
-                "disableFloorpStart": "Disable Floorp Start"
+                "disableBoltStart": "Disable Bolt Start"
             },
             "multirowTab": {
                 "title": "Multirow Tab",
@@ -255,7 +255,7 @@
         "closePopupWhenSelectingWorkspace": "Close workspace popup when selecting a workspace",
         "closePopupWhenSelectingWorkspaceDescription": "Choose whether to close the workspace popup when selecting a workspace.",
         "showWorkspaceNameOnToolbar": "Show workspace name next to the icon",
-        "exitOnLastTabClose": "Exit Floorp when last workspace tab is closed",
+        "exitOnLastTabClose": "Exit Bolt when last workspace tab is closed",
         "manageOnBms": "Manage workspaces on {{productName}} sidebar",
         "manageOnBmsDescription": "When this feature is enabled, you can only manage workspaces on the {{productName}} sidebar. You won't be able to manage workspaces using the toolbar button.",
         "backup": "Workspace Backup",
@@ -274,7 +274,7 @@
     },
     "accounts": {
         "profileAndAccount": "Profile and Account",
-        "profileDescription": "Profiles contain browsing-related information such as history, bookmarks, settings, and add-ons. Floorp uses this profile to save data.",
+        "profileDescription": "Profiles contain browsing-related information such as history, bookmarks, settings, and add-ons. Bolt uses this profile to save data.",
         "profileManagement": "Profile Management",
         "profileManagementDescription": "Profiles can be created and separated from each other, and their data is stored in the profile folder.",
         "currentProfileName": "Current Profile Name: {{name}}",
@@ -303,9 +303,9 @@
         "license": "License",
         "noraneko": {
             "logoAlt": "Browser Logo",
-            "description": "Noraneko is a browser as testhead of Floorp 12. Floorp is based on Firefox & Noraneko.",
+            "description": "Noraneko is a browser as testhead of Bolt 12. Bolt is based on Firefox & Noraneko.",
             "communityCredit": "Made by Noraneko Community with ❤",
-            "repositoryLabel": "GitHub Repository: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub Repository: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -468,12 +468,12 @@
         "errorSettingContainer": "Failed to set container"
     },
     "floorpOS": {
-        "title": "Floorp OS",
-        "description": "Manage Floorp OS backend modules and services",
+        "title": "Bolt OS",
+        "description": "Manage Bolt OS backend modules and services",
         "loading": "Loading...",
         "statusCard": {
             "title": "Status",
-            "description": "Current status of Floorp OS",
+            "description": "Current status of Bolt OS",
             "platformSupport": "Platform Support",
             "platformSupported": "Your platform is supported",
             "platformUnsupported": "Your platform is not supported",
@@ -489,24 +489,24 @@
         },
         "controlsCard": {
             "title": "Controls",
-            "description": "Enable or disable Floorp OS",
-            "enable": "Enable Floorp OS",
-            "disable": "Disable Floorp OS",
+            "description": "Enable or disable Bolt OS",
+            "enable": "Enable Bolt OS",
+            "disable": "Disable Bolt OS",
             "refresh": "Refresh Status"
         },
         "messages": {
-            "enabling": "Enabling Floorp OS...",
-            "disabling": "Disabling Floorp OS...",
-            "enableSuccess": "Floorp OS enabled successfully!",
-            "disableSuccess": "Floorp OS disabled successfully!"
+            "enabling": "Enabling Bolt OS...",
+            "disabling": "Disabling Bolt OS...",
+            "enableSuccess": "Bolt OS enabled successfully!",
+            "disableSuccess": "Bolt OS disabled successfully!"
         },
         "errors": {
             "apiUnavailable": "OSAutomotor API is not available.",
             "loadStatus": "Failed to load status: {{reason}}",
-            "enable": "Failed to enable Floorp OS.",
-            "disable": "Failed to disable Floorp OS.",
-            "enableAction": "Error enabling Floorp OS: {{reason}}",
-            "disableAction": "Error disabling Floorp OS: {{reason}}"
+            "enable": "Failed to enable Bolt OS.",
+            "disable": "Failed to disable Bolt OS.",
+            "enableAction": "Error enabling Bolt OS: {{reason}}",
+            "disableAction": "Error disabling Bolt OS: {{reason}}"
         }
     },
     "mouseGesture": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Scroll Down",
             "floorp-toggle-command-palette": "Toggle Command Palette",
             "floorp-open-settings": "Open Settings",
-            "floorp-open-hub": "Open Floorp Hub",
+            "floorp-open-hub": "Open Bolt Hub",
             "floorp-toggle-share-mode": "Toggle Share Mode",
             "floorp-copy-page-url-as-markdown": "Copy Page URL as Markdown",
             "floorp-split-view-open-left": "Split View Left",

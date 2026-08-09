@@ -89,7 +89,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     ...(isFloorpOSVisible
       ? [
         {
-          title: "Floorp OS",
+          title: "Bolt OS",
           url: "/features/floorp-os",
           icon: Cpu,
         },

@@ -1,5 +1,5 @@
 {
-    "title": "Floorp Start",
+    "title": "Bolt Start",
     "topSites": {
         "addSite": "Adicionar site",
         "addNewSite": "Adicionar novo site",
@@ -27,7 +27,7 @@
         "randomImage": "Imagem aleatória",
         "customImage": "Imagem personalizada",
         "folderImages": "Imagens de pasta",
-        "floorpImages": "Imagens do Floorp",
+        "floorpImages": "Imagens do Bolt",
         "currentImage": "Imagem atual:",
         "imageRecommendation": "Recomendação: Use imagens com resolução de 1920x1080 ou superior.",
         "currentFolder": "Pasta atual:",
@@ -35,9 +35,9 @@
         "selected": "Selecionado",
         "enableSlideshow": "Ativar slideshow",
         "slideshowInterval": "Intervalo (segundos)",
-        "floorpStart": "Floorp Start",
-        "disableFloorpStart": "Desativar Floorp Start (use o clássico \"about:newtab\")",
-        "disableFloorpStartDescription": "Quando ativado, o Floorp Start será substituído pela página de nova aba/inicial clássica do Firefox.",
+        "floorpStart": "Bolt Start",
+        "disableBoltStart": "Desativar Bolt Start (use o clássico \"about:newtab\")",
+        "disableBoltStartDescription": "Quando ativado, o Bolt Start será substituído pela página de nova aba/inicial clássica do Firefox.",
         "restartRequired": "Requer a reinicialização do navegador para ter efeito total.",
         "firefoxLayout": "Usar o layout clássico (como o Firefox Home)"
     },

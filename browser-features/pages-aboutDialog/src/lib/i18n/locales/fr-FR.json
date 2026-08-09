@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "À propos de Floorp",
+    "ariaLabel": "À propos de Bolt",
     "version": "Version",
     "channel": {
       "nightly": "Alpha",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "Notes de version",
-      "help": "Aide de Floorp",
+      "help": "Aide de Bolt",
       "feedback": "Envoyer un commentaire",
       "licensing": "Licence",
       "terms": "Conditions d'utilisation",
       "privacy": "Politique de confidentialité"
     },
-    "trademark": "Le nom Floorp est une marque déposée au Japon."
+    "trademark": "Le nom Bolt est une marque déposée au Japon."
   }
 }

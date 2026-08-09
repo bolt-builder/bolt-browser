@@ -1,5 +1,5 @@
 {
-    "title": "Floorp Start",
+    "title": "Bolt Start",
     "topSites": {
         "addSite": "Lägg till webbplats",
         "addNewSite": "Lägg till ny webbplats",
@@ -27,7 +27,7 @@
         "randomImage": "Slumpmässig bild",
         "customImage": "Anpassad bild",
         "folderImages": "Bilder från mapp",
-        "floorpImages": "Floorp bilder",
+        "floorpImages": "Bolt bilder",
         "currentImage": "Nuvarande bild:",
         "imageRecommendation": "Rekommenderas: 1920x1080 eller högre",
         "currentFolder": "Nuvarande mapp:",
@@ -35,9 +35,9 @@
         "selected": "Vald",
         "enableSlideshow": "Aktivera bildspel",
         "slideshowInterval": "Slideshow Interval",
-        "floorpStart": "Floorp Start",
-        "disableFloorpStart": "Inaktivera Floorp Start (använd klassisk about:newtab)",
-        "disableFloorpStartDescription": "När aktiverad, Floorp Start kommer att ersättas av den klassiska Firefox ny fliken / startsidan.",
+        "floorpStart": "Bolt Start",
+        "disableBoltStart": "Inaktivera Bolt Start (använd klassisk about:newtab)",
+        "disableBoltStartDescription": "När aktiverad, Bolt Start kommer att ersättas av den klassiska Firefox ny fliken / startsidan.",
         "restartRequired": "Kräver omstart av webbläsaren för att få full effekt.",
         "firefoxLayout": "Använd äldre layout (som Firefox Home)"
     },

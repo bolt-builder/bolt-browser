@@ -5,8 +5,8 @@
         "languageSupport": "Språkstöd",
         "features": "Funktioner",
         "featureIntroduction": "Funktion introduktion",
-        "hub": "Floorp Hub",
-        "hubIntro": "Om Floorp Hub",
+        "hub": "Bolt Hub",
+        "hubIntro": "Om Bolt Hub",
         "customize": "Anpassa",
         "initialSettings": "Initiala inställningar",
         "complete": "Slutförd",
@@ -14,25 +14,25 @@
         "next": "Nästa"
     },
     "hubPage": {
-        "title": "Om Floorp Hub",
-        "subtitle": "En central plats för Floorp-specifika inställningar.",
-        "sectionTitle": "Floorp Hub",
-        "description": "Floorp Hub är ett dedikerat inställningscenter för Floorp-specifika alternativ. Du kan öppna det genom att navigera till 'about:hub'. Det kan också nås från vänstra sidofältet i Firefox inställningssida på 'about:preferences'.",
+        "title": "Om Bolt Hub",
+        "subtitle": "En central plats för Bolt-specifika inställningar.",
+        "sectionTitle": "Bolt Hub",
+        "description": "Bolt Hub är ett dedikerat inställningscenter för Bolt-specifika alternativ. Du kan öppna det genom att navigera till 'about:hub'. Det kan också nås från vänstra sidofältet i Firefox inställningssida på 'about:preferences'.",
         "openHub": "Öppna about:hub",
         "openPreferences": "Öppna inställningar (about:preferences)",
-        "tip": "Tips: du kan också komma åt Floorp Hub från sidofältet för inställningar i Firefox.",
+        "tip": "Tips: du kan också komma åt Bolt Hub från sidofältet för inställningar i Firefox.",
         "features": {
-            "dedicated": "Dedikerat Floorp-inställningscenter",
+            "dedicated": "Dedikerat Bolt-inställningscenter",
             "accessible": "Tillgängligt från about:hub eller Firefox inställningar",
-            "centralized": "Alla Floorp-specifika alternativ på ett ställe"
+            "centralized": "Alla Bolt-specifika alternativ på ett ställe"
         }
     },
     "customize": {
-        "title": "Anpassa Floorp",
-        "description": "Anpassa till dina önskade inställningar. Du kan alltid ändra dem senare från Floorp Hub eller inställningssidan.",
+        "title": "Anpassa Bolt",
+        "description": "Anpassa till dina önskade inställningar. Du kan alltid ändra dem senare från Bolt Hub eller inställningssidan.",
         "appearance": {
             "title": "Utseende inställningar",
-            "description": "Du kan anpassa Floorps utseende efter dina önskemål. Välj ett ljust eller mörkt tema, eller låt det växla automatiskt baserat på dina systeminställningar."
+            "description": "Du kan anpassa Bolts utseende efter dina önskemål. Välj ett ljust eller mörkt tema, eller låt det växla automatiskt baserat på dina systeminställningar."
         },
         "themes": {
             "light": "Ljust",
@@ -51,28 +51,28 @@
             "noEnginesFound": "Inga sökmotorer hittades."
         },
         "floorpHub": {
-            "title": "Floorp Hub",
-            "description": "Floorp Hub är ett dedikerat inställningscenter för Floorp-specifika alternativ. Du kan öppna det genom att navigera till 'about:hub'. Det kan också nås från vänstra sidofältet i Firefox inställningssida på 'about:preferences'.",
+            "title": "Bolt Hub",
+            "description": "Bolt Hub är ett dedikerat inställningscenter för Bolt-specifika alternativ. Du kan öppna det genom att navigera till 'about:hub'. Det kan också nås från vänstra sidofältet i Firefox inställningssida på 'about:preferences'.",
             "openHub": "Öppna about:hub",
             "openPreferences": "Öppna inställningar (about:preferences)"
         }
     },
     "finish": {
         "title": "Inställning färdig!",
-        "subtitle": "Grattis! Du har slutfört installationen av Floorp. Njut av en bekväm och säker webbupplevelse.",
+        "subtitle": "Grattis! Du har slutfört installationen av Bolt. Njut av en bekväm och säker webbupplevelse.",
         "nextSteps": {
             "title": "Nästa steg (valfritt)",
             "setDefault": "Ange som standardwebbläsare",
             "documentation": "Dokumentation"
         },
-        "getStarted": "Kom igång med Floorp",
+        "getStarted": "Kom igång med Bolt",
         "hint": "För mer detaljerade inställningar kan du anpassa via alternativet Inställningar i menyknappen längst upp till höger."
     },
     "welcomePage": {
-        "welcome": "Välkommen till Floorp!",
-        "description": "Floorp är en snabb och användarvänlig webbläsare som lägger stor vikt vid integritet och säkerhet. I den här guiden får du en introduktion till de viktigaste funktionerna och inställningarna i Floorp.",
+        "welcome": "Välkommen till Bolt!",
+        "description": "Bolt är en snabb och användarvänlig webbläsare som lägger stor vikt vid integritet och säkerhet. I den här guiden får du en introduktion till de viktigaste funktionerna och inställningarna i Bolt.",
         "readyToStart": "När du är klar klickar du på knappen nedan för att fortsätta.",
-        "features": "Floorp funktioner",
+        "features": "Bolt funktioner",
         "privacy": "Integritet",
         "privacyDesc": "Skyddar din data",
         "speed": "Hastighet",
@@ -82,28 +82,28 @@
         "start": "Kom igång"
     },
     "localizationPage": {
-        "title": "Floorp talar ditt språk",
+        "title": "Bolt talar ditt språk",
         "subtitle": "Kontrollera språkinställningar och ändra om det behövs",
         "languageSettings": "Språkinställningar",
         "languageChanged": "Språket har ändrats!",
         "currentLanguageInfo": "Nuvarande språkinformation",
         "systemLanguage": "Systemspråk",
-        "floorpLanguage": "Floorp Språk",
+        "floorpLanguage": "Bolt Språk",
         "selectLanguage": "Välj språk",
         "useSystemLanguage": "Använd systemets språk",
         "multilingual": "Flerspråksstöd",
         "chooseLanguage": "Välj bland ett brett utbud av språk",
-        "languageChangeNotice": "Om du byter språk kommer det nya språket att tillämpas utan att Floorp behöver startas om. Vissa tillägg kanske inte stöder språkändringar."
+        "languageChangeNotice": "Om du byter språk kommer det nya språket att tillämpas utan att Bolt behöver startas om. Vissa tillägg kanske inte stöder språkändringar."
     },
     "featuresPage": {
-        "title": "Huvudfunktioner för Floorp",
-        "subtitle": "Floorp kommer med många användbara funktioner. Kolla in översikt för funktioner!",
+        "title": "Huvudfunktioner för Bolt",
+        "subtitle": "Bolt kommer med många användbara funktioner. Kolla in översikt för funktioner!",
         "panelSidebar": {
             "title": "Panel sidofält",
             "description": "Få tillgång till praktiska funktioner från sidofältet till höger när du surfar. Du kan placera webbpaneler, anteckningsfunktioner, tillägg, bokmärken etc. i sidofältet.",
             "features": [
                 "Fäst webbplatser till sidofältet",
-                "Gör snabba anteckningar med Floorp anteckningar medan du surfar",
+                "Gör snabba anteckningar med Bolt anteckningar medan du surfar",
                 "Stöder behållare"
             ]
         },
@@ -139,19 +139,19 @@
     },
     "finishPage": {
         "title": "Inställning färdig!",
-        "subtitle": "Grattis! Du har slutfört installationen av Floorp. Du kan nu njuta av bekväm och säker internetsurfning.",
+        "subtitle": "Grattis! Du har slutfört installationen av Bolt. Du kan nu njuta av bekväm och säker internetsurfning.",
         "nextSteps": "Nästa steg (valfritt)",
         "defaultBrowser": "Ange som standardwebbläsare",
         "support": "Support",
         "documentation": "Dokumentation",
-        "getStarted": "Kom igång med Floorp",
+        "getStarted": "Kom igång med Bolt",
         "hint": "För mer detaljerade inställningar kan du anpassa via alternativet Inställningar i menyknappen längst upp till höger.",
         "resourcesLabel": "Resurser",
-        "defaultBrowserSuccess": "Floorp har ställts in som din standardwebbläsare!"
+        "defaultBrowserSuccess": "Bolt har ställts in som din standardwebbläsare!"
     },
     "whatsNew": {
-        "title": "Välkommen till Floorp {{version}}!",
-        "subtitle": "Kolla in vad som är nytt i Floorp!",
+        "title": "Välkommen till Bolt {{version}}!",
+        "subtitle": "Kolla in vad som är nytt i Bolt!",
         "tags": {
             "settings": "Inställningar",
             "productivity": "Produktivitet",
@@ -162,7 +162,7 @@
         "footer": {
             "follow": "Följ",
             "privacy": "Sekretess och villkor",
-            "about": "Om Floorp",
+            "about": "Om Bolt",
             "copyright": "© {{year}} Projekt. Alla rättigheter reserverade."
         }
     }

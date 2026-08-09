@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "Tentang Floorp",
+    "ariaLabel": "Tentang Bolt",
     "version": "Versi",
     "channel": {
       "nightly": "Nightly",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "Catatan Rilis",
-      "help": "Bantuan Floorp",
+      "help": "Bantuan Bolt",
       "feedback": "Kirim Umpan Balik",
       "licensing": "Lisensi",
       "terms": "Ketentuan Layanan",
       "privacy": "Kebijakan Privasi"
     },
-    "trademark": "Nama Floorp merupakan merek dagang di Jepang."
+    "trademark": "Nama Bolt merupakan merek dagang di Jepang."
   }
 }

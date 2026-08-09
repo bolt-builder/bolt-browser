@@ -7,12 +7,12 @@
     "tooltiptext": "Buka kembali tab yang baru saja ditutup {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "Pengaturan spesifik Floorp seperti bilah sisi, Ruang Kerja, dan gestur tetikus dikelola di Floorp Hub.",
-    "openButton": "Buka Floorp Hub"
+    "message": "Pengaturan spesifik Bolt seperti bilah sisi, Ruang Kerja, dan gestur tetikus dikelola di Bolt Hub.",
+    "openButton": "Buka Bolt Hub"
   },
   "floorpStartWarning": {
-    "message": "Untuk mengubah pengaturan \"Home\", nonaktifkan Floorp Start dari Floorp Hub (about:hub#/features/design).",
-    "openButton": "Buka Floorp Hub — Desain"
+    "message": "Untuk mengubah pengaturan \"Home\", nonaktifkan Bolt Start dari Bolt Hub (about:hub#/features/design).",
+    "openButton": "Buka Bolt Hub — Desain"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Toggle Zen Mode",
       "floorp-toggle-command-palette": "Toggle Command Palette",
       "floorp-open-settings": "Buka Pengaturan",
-      "floorp-open-hub": "Buka Floorp Hub",
+      "floorp-open-hub": "Buka Bolt Hub",
       "floorp-toggle-share-mode": "Toggle Share Mode",
       "floorp-copy-page-url-as-markdown": "Salin URL Halaman sebagai Markdown",
       "floorp-split-view-open-left": "Split View Left",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "Buka kembali tab yang baru ditutup",
       "floorp-toggle-zen-mode": "Toggle Zen Mode to hide all UI elements for distraction-free browsing",
       "floorp-toggle-command-palette": "Open or close the command palette to search and execute commands",
-      "floorp-open-settings": "Membuka halaman pengaturan Floorp",
-      "floorp-open-hub": "Membuka halaman Floorp Hub",
+      "floorp-open-settings": "Membuka halaman pengaturan Bolt",
+      "floorp-open-hub": "Membuka halaman Bolt Hub",
       "floorp-toggle-share-mode": "Toggle Share Mode to minimize UI for screen sharing and presentations",
       "floorp-copy-page-url-as-markdown": "Menyalin judul dan URL halaman saat ini dengan format tautan Markdown: [Judul](URL)",
       "floorp-split-view-open-left": "Open the current tab in a split view on the left side",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Tambahkan ke Floorp",
+      "addToBolt": "Tambahkan ke Bolt",
       "installing": "Memasang …",
       "success": "Ditambahkan!",
       "error": "Terjadi galat",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "Galat pemasangan",
-      "compatibilityNote": "Ekstensi ini mungkin tidak kompatibel dengan Firefox/Floorp.",
+      "compatibilityNote": "Ekstensi ini mungkin tidak kompatibel dengan Firefox/Bolt.",
       "alreadyInstalled": "Ekstensi ini sudah terpasang ({{name}})",
       "downloadFailed": "Gagal mengunduh berkas CRX",
       "conversionFailed": "Gagal mengonversi ekstensi: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "Unduhan gagal",
       "signatureVerifyFailed": "Gagal memverifikasi tanda tangan ekstensi",
       "corruptOrIncompatible": "Ekstensi rusak atau tak kompatibel",
-      "incompatible": "Ekstensi ini tidak kompatibel dengan Floorp",
+      "incompatible": "Ekstensi ini tidak kompatibel dengan Bolt",
       "blocked": "Ekstensi ini diblokir",
       "timeout": "Extension installation timed out",
       "installFailed": "Pemasangan ekstensi gagal",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp Hub"
+      "title": "Bolt Hub"
     }
   },
   "splitView": {
@@ -459,7 +459,7 @@
   "ipProtection": {
     "title": "VPN Peramban",
     "toolbar": {
-      "activeTooltip": "VPN Peramban aktif untuk lalin penjelajahan web tertentu di Floorp",
+      "activeTooltip": "VPN Peramban aktif untuk lalin penjelajahan web tertentu di Bolt",
       "inactiveTooltip": "VPN Peramban nonaktif — lalin penjelajahan web tak terlindungi",
       "excludedTooltip": "VPN Peramban nonaktif untuk situs ini — situs ini tak terlindungi",
       "pausedTooltip": "VPN Peramban dijeda — lalin penjelajahan web tak terlindungi",
@@ -467,15 +467,15 @@
       "helpTooltip": "Buka halaman dukungan VPN Peramban"
     },
     "scope": {
-      "summary": "Ketika aktif, VPN Peramban dapat melindungi lalu lintas penjelajahan web di Floorp. VPN ini tidak mencakup operasi sistem Anda atau aplikasi lain.",
-      "fullDisclosure": "Fitur ini menggunakan akun Mozilla dan infrastruktur layanan Mozilla. Floorp adalah proyek independen yang tidak berafiliasi dengan, didukung oleh, atau disponsori oleh Mozilla. Ketersediaan layanan bergantung pada wilayah, status akun, dan persyaratan kelayakan layanan Mozilla."
+      "summary": "Ketika aktif, VPN Peramban dapat melindungi lalu lintas penjelajahan web di Bolt. VPN ini tidak mencakup operasi sistem Anda atau aplikasi lain.",
+      "fullDisclosure": "Fitur ini menggunakan akun Mozilla dan infrastruktur layanan Mozilla. Bolt adalah proyek independen yang tidak berafiliasi dengan, didukung oleh, atau disponsori oleh Mozilla. Ketersediaan layanan bergantung pada wilayah, status akun, dan persyaratan kelayakan layanan Mozilla."
     },
     "unauthenticated": {
       "title": "Coba VPN Peramban"
     },
     "settings": {
       "promoHeading": "Coba VPN Peramban",
-      "promoMessage": "Lindungi lalu lintas penjelajahan web di Floorp setelah masuk dan memastikan ketersediaan layanan."
+      "promoMessage": "Lindungi lalu lintas penjelajahan web di Bolt setelah masuk dan memastikan ketersediaan layanan."
     },
     "terms": {
       "prefix": "Dengan melanjutkan, Anda menyetujui ",
@@ -504,7 +504,7 @@
       "tools": "Alat",
       "downloads": "Unduhan",
       "workspace": "Ruang Kerja",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "Media",
       "open-tabs": "Tab Terbuka",
       "switcher": "Switcher",

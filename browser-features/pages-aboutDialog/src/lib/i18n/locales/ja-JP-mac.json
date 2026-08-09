@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "Floorp について",
+    "ariaLabel": "Bolt について",
     "version": "バージョン",
     "channel": {
       "nightly": "Nightly",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "リリースノート",
-      "help": "Floorp ヘルプ",
+      "help": "Bolt ヘルプ",
       "feedback": "フィードバックを送る",
       "licensing": "ライセンス",
       "terms": "利用規約",
       "privacy": "プライバシーポリシー"
     },
-    "trademark": "Floorp の名称は日本国における商標です。"
+    "trademark": "Bolt の名称は日本国における商標です。"
   }
 }

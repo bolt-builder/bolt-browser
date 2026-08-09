@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Tab Baru",
-                "disableFloorpStart": "Disable {{productName}} Start"
+                "disableBoltStart": "Disable {{productName}} Start"
             },
             "multirowTab": {
                 "title": "Tab Multibaris",
@@ -303,9 +303,9 @@
         "license": "Lisensi",
         "noraneko": {
             "logoAlt": "Logo Peramban",
-            "description": "Noraneko adalah peramban sebagai tempat pengujian Floorp 12. Floorp dikembangkan berdasarkan Firefox dan Noraneko.",
+            "description": "Noraneko adalah peramban sebagai tempat pengujian Bolt 12. Bolt dikembangkan berdasarkan Firefox dan Noraneko.",
             "communityCredit": "Dibuat oleh komunitas Noraneko dengan ❤",
-            "repositoryLabel": "Repositori GitHub: Floorp-Projects/Floorp"
+            "repositoryLabel": "Repositori GitHub: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Gulir ke Bawah",
             "floorp-toggle-command-palette": "Toggle Command Palette",
             "floorp-open-settings": "Buka Pengaturan",
-            "floorp-open-hub": "Buka Floorp Hub",
+            "floorp-open-hub": "Buka Bolt Hub",
             "floorp-toggle-share-mode": "Toggle Share Mode",
             "floorp-copy-page-url-as-markdown": "Salin URL Halaman sebagai Markdown",
             "floorp-split-view-open-left": "Split View Left",

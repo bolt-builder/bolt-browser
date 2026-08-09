@@ -7,12 +7,12 @@
     "tooltiptext": "마지막으로 닫은 탭을 다시 열기 {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "패널 사이드바, 워크스페이스, 마우스 제스처와 같은 Floorp만의 설정은 Floorp Hub에서 관리됩니다.",
-    "openButton": "Floorp Hub 열기"
+    "message": "패널 사이드바, 워크스페이스, 마우스 제스처와 같은 Bolt만의 설정은 Bolt Hub에서 관리됩니다.",
+    "openButton": "Bolt Hub 열기"
   },
   "floorpStartWarning": {
-    "message": "'홈' 설정을 변경하려면 Floorp 허브에서 Floorp 시작을 비활성화하세요(about:hub#/features/design).",
-    "openButton": "Floorp Hub 열기 - 디자인"
+    "message": "'홈' 설정을 변경하려면 Bolt 허브에서 Bolt 시작을 비활성화하세요(about:hub#/features/design).",
+    "openButton": "Bolt Hub 열기 - 디자인"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Zen 모드 전환",
       "floorp-toggle-command-palette": "명령 팔레트 전환",
       "floorp-open-settings": "설정 열기",
-      "floorp-open-hub": "Floorp Hub 열기",
+      "floorp-open-hub": "Bolt Hub 열기",
       "floorp-toggle-share-mode": "공유 모드 전환",
       "floorp-copy-page-url-as-markdown": "페이지 URL을 마크다운으로 복사",
       "floorp-split-view-open-left": "왼쪽에서 분할 화면 열기",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "최근 닫은 탭 다시 열기",
       "floorp-toggle-zen-mode": "Zen 모드를 전환하여 모든 UI 요소를 숨겨 방해받지 않고 브라우징하기",
       "floorp-toggle-command-palette": "명령을 검색하고 실행하는 명령 팔레트 여닫기",
-      "floorp-open-settings": "Floorp 설정 페이지 열기",
-      "floorp-open-hub": "Floorp Hub 페이지 열기",
+      "floorp-open-settings": "Bolt 설정 페이지 열기",
+      "floorp-open-hub": "Bolt Hub 페이지 열기",
       "floorp-toggle-share-mode": "공유 모드를 전환하여 화면 공유 및 발표를 위해 UI 최소화하기",
       "floorp-copy-page-url-as-markdown": "현재 페이지의 제목과 URL을 마크다운 링크 형식으로 복사: [제목](URL)",
       "floorp-split-view-open-left": "현재 탭을 왼쪽에 분할 화면으로 열기",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Floorp에 추가",
+      "addToBolt": "Bolt에 추가",
       "installing": "설치 중입니다...",
       "success": "추가됨",
       "error": "오류 발생",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "설치 오류",
-      "compatibilityNote": "이 확장 프로그램은 Firefox/Floorp와 호환되지 않을 수 있습니다.",
+      "compatibilityNote": "이 확장 프로그램은 Firefox/Bolt와 호환되지 않을 수 있습니다.",
       "alreadyInstalled": "이 확장 프로그램은 이미 설치되어 있습니다 ({{name}})",
       "downloadFailed": "CRX 파일을 다운로드하지 못했습니다",
       "conversionFailed": "확장자 변환 실패: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "다운로드 실패",
       "signatureVerifyFailed": "확장 서명 인증 실패",
       "corruptOrIncompatible": "확장자가 손상되었거나 호환되지 않습니다",
-      "incompatible": "이 확장 프로그램은 Floorp와 호환되지 않습니다",
+      "incompatible": "이 확장 프로그램은 Bolt와 호환되지 않습니다",
       "blocked": "이 확장 프로그램이 차단되었습니다",
       "timeout": "확장 프로그램 설치 시간이 초과되었습니다",
       "installFailed": "확장 프로그램 설치 실패",
@@ -459,7 +459,7 @@
   "ipProtection": {
     "title": "브라우저 VPN",
     "toolbar": {
-      "activeTooltip": "Floorp에서 해당하는 웹 브라우징 트래픽에 브라우저 VPN이 켜져 있습니다",
+      "activeTooltip": "Bolt에서 해당하는 웹 브라우징 트래픽에 브라우저 VPN이 켜져 있습니다",
       "inactiveTooltip": "브라우저 VPN 꺼짐 — 웹 브라우징 트래픽이 보호되지 않습니다",
       "excludedTooltip": "이 사이트에서 브라우저 VPN 꺼짐 — 이 사이트는 보호되지 않습니다",
       "pausedTooltip": "브라우저 VPN 중지됨 — 웹 브라우징 트래픽이 보호되지 않습니다",
@@ -467,15 +467,15 @@
       "helpTooltip": "브라우저 VPN 지원 페이지 열기"
     },
     "scope": {
-      "summary": "브라우저 VPN을 켜면, Floorp에서 해당하는 웹 트래픽을 보호할 수 있습니다. 운영 체제나 다른 앱에는 적용되지 않습니다.",
-      "fullDisclosure": "이 기능은 Mozilla 계정과 Mozilla 서비스 인프라를 이용합니다. Floorp는 독립적인 프로젝트이며, Mozilla의 제휴, 승인, 후원을 받지 않습니다. 이용 가능 여부는 사용자의 지역, 계정 상태, Mozilla의 서비스 이용 자격 요건에 따라 달라집니다."
+      "summary": "브라우저 VPN을 켜면, Bolt에서 해당하는 웹 트래픽을 보호할 수 있습니다. 운영 체제나 다른 앱에는 적용되지 않습니다.",
+      "fullDisclosure": "이 기능은 Mozilla 계정과 Mozilla 서비스 인프라를 이용합니다. Bolt는 독립적인 프로젝트이며, Mozilla의 제휴, 승인, 후원을 받지 않습니다. 이용 가능 여부는 사용자의 지역, 계정 상태, Mozilla의 서비스 이용 자격 요건에 따라 달라집니다."
     },
     "unauthenticated": {
       "title": "브라우저 VPN 사용"
     },
     "settings": {
       "promoHeading": "브라우저 VPN 사용",
-      "promoMessage": "로그인하고 서비스 이용 가능 여부를 확인한 뒤, Floorp에서 해당하는 웹 브라우징 트래픽을 보호하세요."
+      "promoMessage": "로그인하고 서비스 이용 가능 여부를 확인한 뒤, Bolt에서 해당하는 웹 브라우징 트래픽을 보호하세요."
     },
     "terms": {
       "prefix": "계속하면, ",
@@ -504,7 +504,7 @@
       "tools": "도구",
       "downloads": "다운로드",
       "workspace": "워크스페이스",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "미디어",
       "open-tabs": "탭 열기",
       "switcher": "전환기",

@@ -375,7 +375,7 @@ export function AboutDialog() {
             alt=""
             aria-hidden="true"
           />
-          <h1 class="ad-name">Floorp</h1>
+          <h1 class="ad-name">Bolt</h1>
           <div class="ad-version">
             {t("aboutDialog.version")} {version || "…"}
             {channelBadge && (

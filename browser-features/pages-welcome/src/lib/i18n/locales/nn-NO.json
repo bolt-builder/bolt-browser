@@ -5,8 +5,8 @@
         "languageSupport": "Language Support",
         "features": "Features",
         "featureIntroduction": "Feature Introduction",
-        "hub": "Floorp Hub",
-        "hubIntro": "About Floorp Hub",
+        "hub": "Bolt Hub",
+        "hubIntro": "About Bolt Hub",
         "customize": "Customize",
         "initialSettings": "Initial Settings",
         "complete": "Complete",
@@ -14,25 +14,25 @@
         "next": "Next"
     },
     "hubPage": {
-        "title": "About Floorp Hub",
-        "subtitle": "A central place for Floorp-specific settings.",
-        "sectionTitle": "Floorp Hub",
-        "description": "Floorp Hub is a dedicated settings center for Floorp-specific options. You can open it by navigating to 'about:hub'. It can also be accessed from the left sidebar of Firefox's settings page at 'about:preferences'.",
+        "title": "About Bolt Hub",
+        "subtitle": "A central place for Bolt-specific settings.",
+        "sectionTitle": "Bolt Hub",
+        "description": "Bolt Hub is a dedicated settings center for Bolt-specific options. You can open it by navigating to 'about:hub'. It can also be accessed from the left sidebar of Firefox's settings page at 'about:preferences'.",
         "openHub": "Open about:hub",
         "openPreferences": "Open Settings (about:preferences)",
-        "tip": "Tip: You can also access Floorp Hub from the Firefox settings sidebar.",
+        "tip": "Tip: You can also access Bolt Hub from the Firefox settings sidebar.",
         "features": {
-            "dedicated": "Dedicated Floorp settings center",
+            "dedicated": "Dedicated Bolt settings center",
             "accessible": "Accessible from about:hub or Firefox settings",
-            "centralized": "All Floorp-specific options in one place"
+            "centralized": "All Bolt-specific options in one place"
         }
     },
     "customize": {
-        "title": "Customize Floorp",
-        "description": "Customize to your preferred settings. You can always change them later from the Floorp Hub or settings page.",
+        "title": "Customize Bolt",
+        "description": "Customize to your preferred settings. You can always change them later from the Bolt Hub or settings page.",
         "appearance": {
             "title": "Appearance Settings",
-            "description": "You can customize Floorp's appearance to your preference. Choose a light or dark theme, or have it automatically switch based on your system settings."
+            "description": "You can customize Bolt's appearance to your preference. Choose a light or dark theme, or have it automatically switch based on your system settings."
         },
         "themes": {
             "light": "Light",
@@ -51,28 +51,28 @@
             "noEnginesFound": "No search engines found."
         },
         "floorpHub": {
-            "title": "Floorp Hub",
-            "description": "Floorp Hub is a dedicated settings center for Floorp-specific options. You can open it by navigating to 'about:hub'. It can also be accessed from the left sidebar of Firefox's settings page at 'about:preferences'.",
+            "title": "Bolt Hub",
+            "description": "Bolt Hub is a dedicated settings center for Bolt-specific options. You can open it by navigating to 'about:hub'. It can also be accessed from the left sidebar of Firefox's settings page at 'about:preferences'.",
             "openHub": "Open about:hub",
             "openPreferences": "Open Settings (about:preferences)"
         }
     },
     "finish": {
         "title": "Setup Complete!",
-        "subtitle": "Congratulations! You've completed the Floorp setup. Enjoy a comfortable and secure internet browsing experience.",
+        "subtitle": "Congratulations! You've completed the Bolt setup. Enjoy a comfortable and secure internet browsing experience.",
         "nextSteps": {
             "title": "Next Steps (Optional)",
             "setDefault": "Set as Default Browser",
             "documentation": "Documentation"
         },
-        "getStarted": "Get Started with Floorp",
+        "getStarted": "Get Started with Bolt",
         "hint": "For more detailed settings, you can customize via the Settings option in the menu button at the top right."
     },
     "welcomePage": {
-        "welcome": "Welcome to Floorp!",
-        "description": "Floorp is a fast and user-friendly web browser that emphasizes privacy and security. This guide will introduce you to the main features and settings of Floorp.",
+        "welcome": "Welcome to Bolt!",
+        "description": "Bolt is a fast and user-friendly web browser that emphasizes privacy and security. This guide will introduce you to the main features and settings of Bolt.",
         "readyToStart": "When you're ready, click the below button to proceed.",
-        "features": "Floorp Features",
+        "features": "Bolt Features",
         "privacy": "Privacy",
         "privacyDesc": "Protects your data",
         "speed": "Speed",
@@ -82,28 +82,28 @@
         "start": "Get Started"
     },
     "localizationPage": {
-        "title": "Floorp speaks your language",
+        "title": "Bolt speaks your language",
         "subtitle": "Check language settings and change if needed",
         "languageSettings": "Language Settings",
         "languageChanged": "Language Changed!",
         "currentLanguageInfo": "Current Language Information",
         "systemLanguage": "System Language",
-        "floorpLanguage": "Floorp Language",
+        "floorpLanguage": "Bolt Language",
         "selectLanguage": "Select Language",
         "useSystemLanguage": "Use System Language",
         "multilingual": "Multilingual Support",
         "chooseLanguage": "Choose from a wide range of languages",
-        "languageChangeNotice": "Changing language will apply the new language without restarting Floorp. Some add-ons may not support language changes."
+        "languageChangeNotice": "Changing language will apply the new language without restarting Bolt. Some add-ons may not support language changes."
     },
     "featuresPage": {
-        "title": "Main Floorp Features",
-        "subtitle": "Floorp comes with many useful features. Check out the feature overview!",
+        "title": "Main Bolt Features",
+        "subtitle": "Bolt comes with many useful features. Check out the feature overview!",
         "panelSidebar": {
             "title": "Panel Sidebar",
             "description": "Access convenient features from the sidebar on the right while browsing. You can place web panels, note-taking functions, add-ons, bookmarks, etc. in the sidebar.",
             "features": [
                 "Pin websites to the sidebar",
-                "Quickly take notes with Floorp Notes while browsing",
+                "Quickly take notes with Bolt Notes while browsing",
                 "Supports containers"
             ]
         },
@@ -139,19 +139,19 @@
     },
     "finishPage": {
         "title": "Setup Complete!",
-        "subtitle": "Congratulations! You've completed the Floorp setup. You can now enjoy comfortable and secure internet browsing.",
+        "subtitle": "Congratulations! You've completed the Bolt setup. You can now enjoy comfortable and secure internet browsing.",
         "nextSteps": "Next Steps (Optional)",
         "defaultBrowser": "Set as Default Browser",
         "support": "Support",
         "documentation": "Documentation",
-        "getStarted": "Get Started with Floorp",
+        "getStarted": "Get Started with Bolt",
         "hint": "For more detailed settings, you can customize via the Settings option in the menu button at the top right.",
         "resourcesLabel": "Resources",
-        "defaultBrowserSuccess": "Floorp has been set as your default browser!"
+        "defaultBrowserSuccess": "Bolt has been set as your default browser!"
     },
     "whatsNew": {
-        "title": "Welcome to Floorp {{version}}!",
-        "subtitle": "Check out what's new in Floorp!",
+        "title": "Welcome to Bolt {{version}}!",
+        "subtitle": "Check out what's new in Bolt!",
         "tags": {
             "settings": "Innstillinger",
             "productivity": "Productivity",
@@ -162,8 +162,8 @@
         "footer": {
             "follow": "Follow",
             "privacy": "Privacy & Terms",
-            "about": "About Floorp",
-            "copyright": "© {{year}} Floorp Projects. All rights reserved."
+            "about": "About Bolt",
+            "copyright": "© {{year}} Bolt Projects. All rights reserved."
         }
     }
 }

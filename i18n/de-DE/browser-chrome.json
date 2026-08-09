@@ -7,12 +7,12 @@
     "tooltiptext": "Letzten geschlossenen Tab wieder öffnen {{shortcut}}"
   },
   "floorpHubWarning": {
-    "message": "Floorp-spezifische Einstellungen wie die Seitenleiste, Arbeitsbereiche und Mausgesten werden im Floorp-Hub verwaltet.",
-    "openButton": "Floorp-Hub öffnen"
+    "message": "Bolt-spezifische Einstellungen wie die Seitenleiste, Arbeitsbereiche und Mausgesten werden im Bolt-Hub verwaltet.",
+    "openButton": "Bolt-Hub öffnen"
   },
   "floorpStartWarning": {
-    "message": "Um die Startseite zu ändern, deaktiviere Floorp Start im Floorp-Hub (about:hub#/features/design).",
-    "openButton": "Floorp-Hub öffnen – Design"
+    "message": "Um die Startseite zu ändern, deaktiviere Bolt Start im Bolt-Hub (about:hub#/features/design).",
+    "openButton": "Bolt-Hub öffnen – Design"
   },
   "workspaces": {
     "modal": {
@@ -227,7 +227,7 @@
       "floorp-toggle-zen-mode": "Zen-Modus umschalten",
       "floorp-toggle-command-palette": "Befehlspalette ein-/ausblenden",
       "floorp-open-settings": "Einstellungen öffnen",
-      "floorp-open-hub": "Floorp-Hub öffnen",
+      "floorp-open-hub": "Bolt-Hub öffnen",
       "floorp-toggle-share-mode": "Freigabemodus umschalten",
       "floorp-copy-page-url-as-markdown": "Seiten-URL als Markdown kopieren",
       "floorp-split-view-open-left": "Geteilte Ansicht links",
@@ -256,8 +256,8 @@
       "gecko-restore-last-tab": "Zuletzt geschlossenen Tab wiederherstellen",
       "floorp-toggle-zen-mode": "Zen-Modus umschalten, um alle Oberflächenelemente für ablenkungsfreies Surfen auszublenden",
       "floorp-toggle-command-palette": "Befehlspalette zum Suchen und Ausführen von Befehlen öffnen oder schließen",
-      "floorp-open-settings": "Öffnet die Floorp-Einstellungsseite",
-      "floorp-open-hub": "Öffnet die Floorp-Hub-Seite",
+      "floorp-open-settings": "Öffnet die Bolt-Einstellungsseite",
+      "floorp-open-hub": "Öffnet die Bolt-Hub-Seite",
       "floorp-toggle-share-mode": "Schaltet den Freigabemodus um, um die Benutzeroberfläche für Bildschirmfreigaben und Präsentationen zu minimieren",
       "floorp-copy-page-url-as-markdown": "Kopiert den aktuellen Seitentitel und die URL als Markdown-Linkformat: [Titel](URL)",
       "floorp-split-view-open-left": "Öffnet den aktuellen Tab in einer geteilten Ansicht auf der linken Seite",
@@ -376,7 +376,7 @@
   },
   "chromeWebStore": {
     "button": {
-      "addToFloorp": "Zu Floorp hinzufügen",
+      "addToBolt": "Zu Bolt hinzufügen",
       "installing": "Wird installiert …",
       "success": "Hinzugefügt!",
       "error": "Fehler aufgetreten",
@@ -384,7 +384,7 @@
     },
     "error": {
       "title": "Installationsfehler",
-      "compatibilityNote": "Diese Erweiterung ist möglicherweise nicht mit Firefox/Floorp kompatibel.",
+      "compatibilityNote": "Diese Erweiterung ist möglicherweise nicht mit Firefox/Bolt kompatibel.",
       "alreadyInstalled": "Diese Erweiterung ist bereits installiert ({{name}})",
       "downloadFailed": "CRX-Datei konnte nicht heruntergeladen werden",
       "conversionFailed": "Erweiterung konnte nicht konvertiert werden: {{error}}",
@@ -406,7 +406,7 @@
       "downloadFailed": "Download fehlgeschlagen",
       "signatureVerifyFailed": "Signatur der Erweiterung konnte nicht überprüft werden",
       "corruptOrIncompatible": "Erweiterung ist beschädigt oder inkompatibel",
-      "incompatible": "Diese Erweiterung ist nicht mit Floorp kompatibel",
+      "incompatible": "Diese Erweiterung ist nicht mit Bolt kompatibel",
       "blocked": "Diese Erweiterung ist blockiert",
       "timeout": "Zeitüberschreitung bei der Installation der Erweiterung",
       "installFailed": "Installation der Erweiterung fehlgeschlagen",
@@ -426,7 +426,7 @@
   },
   "hub": {
     "menu": {
-      "title": "Floorp-Hub"
+      "title": "Bolt-Hub"
     }
   },
   "splitView": {
@@ -459,7 +459,7 @@
   "ipProtection": {
     "title": "Browser VPN",
     "toolbar": {
-      "activeTooltip": "Browser VPN is on for eligible web browsing traffic in Floorp",
+      "activeTooltip": "Browser VPN is on for eligible web browsing traffic in Bolt",
       "inactiveTooltip": "Browser VPN is off — web browsing traffic is not protected",
       "excludedTooltip": "Browser VPN is off for this site — this site is not protected",
       "pausedTooltip": "Browser VPN is paused — web browsing traffic is not protected",
@@ -467,15 +467,15 @@
       "helpTooltip": "Open Browser VPN support page"
     },
     "scope": {
-      "summary": "When active, Browser VPN can protect eligible web browsing traffic in Floorp. Its scope does not include your operating system or other apps.",
-      "fullDisclosure": "This feature uses a Mozilla account and Mozilla service infrastructure. Floorp is an independent project and is not affiliated with, endorsed by, or sponsored by Mozilla. Availability depends on your region, account status, and Mozilla’s service eligibility requirements."
+      "summary": "When active, Browser VPN can protect eligible web browsing traffic in Bolt. Its scope does not include your operating system or other apps.",
+      "fullDisclosure": "This feature uses a Mozilla account and Mozilla service infrastructure. Bolt is an independent project and is not affiliated with, endorsed by, or sponsored by Mozilla. Availability depends on your region, account status, and Mozilla’s service eligibility requirements."
     },
     "unauthenticated": {
       "title": "Try Browser VPN"
     },
     "settings": {
       "promoHeading": "Try Browser VPN",
-      "promoMessage": "Protect eligible web browsing traffic in Floorp after signing in and confirming service availability."
+      "promoMessage": "Protect eligible web browsing traffic in Bolt after signing in and confirming service availability."
     },
     "terms": {
       "prefix": "By continuing, you agree to ",
@@ -504,7 +504,7 @@
       "tools": "Extras",
       "downloads": "Downloads",
       "workspace": "Arbeitsbereiche",
-      "floorp": "Floorp",
+      "floorp": "Bolt",
       "media": "Medien",
       "open-tabs": "Geöffnete Tabs",
       "switcher": "Wechsler",

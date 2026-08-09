@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "Floorp Hub에 대해",
+    "ariaLabel": "Bolt Hub에 대해",
     "version": "버전",
     "channel": {
       "nightly": "Nightly",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "릴리스 노트",
-      "help": "Floorp 도움말",
+      "help": "Bolt 도움말",
       "feedback": "피드백 제출",
       "licensing": "라이센스",
       "terms": "이용 약관",
       "privacy": "개인 정보 보호 정책"
     },
-    "trademark": "Floorp는 일본 내의 상표입니다."
+    "trademark": "Bolt는 일본 내의 상표입니다."
   }
 }

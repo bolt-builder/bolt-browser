@@ -5,8 +5,8 @@
         "languageSupport": "Ngôn ngữ",
         "features": "Tính năng",
         "featureIntroduction": "",
-        "hub": "Trung tâm Floorp",
-        "hubIntro": "Về Floorp Hub",
+        "hub": "Trung tâm Bolt",
+        "hubIntro": "Về Bolt Hub",
         "customize": "Tùy chỉnh",
         "initialSettings": "",
         "complete": "Xong",
@@ -14,25 +14,25 @@
         "next": "Tiếp"
     },
     "hubPage": {
-        "title": "Về Floorp Hub",
-        "subtitle": "Trung tâm cho các cài đặt Floorp",
-        "sectionTitle": "Trung tâm Floorp",
-        "description": "Floorp Hub là trang cài đặt riêng của Floopp. Bạn có thể mở bằng cách đi tới \"about:hub\". Bạn cũng có thể truy cập bằng thanh bên trái của trang cài đặt Firefox \"about:preferences\".",
+        "title": "Về Bolt Hub",
+        "subtitle": "Trung tâm cho các cài đặt Bolt",
+        "sectionTitle": "Trung tâm Bolt",
+        "description": "Bolt Hub là trang cài đặt riêng của Floopp. Bạn có thể mở bằng cách đi tới \"about:hub\". Bạn cũng có thể truy cập bằng thanh bên trái của trang cài đặt Firefox \"about:preferences\".",
         "openHub": "Mở about:hub",
         "openPreferences": "Mở cài đặt (about:preferences)",
-        "tip": "Mẹo nè: Trung tâm Floorp cũng có thể được mở từ thanh bên của cài đặt Firefox",
+        "tip": "Mẹo nè: Trung tâm Bolt cũng có thể được mở từ thanh bên của cài đặt Firefox",
         "features": {
-            "dedicated": "Trung tâm cài đặt riêng cho Floorp",
+            "dedicated": "Trung tâm cài đặt riêng cho Bolt",
             "accessible": "Có thể truy cập từ about:hub hoặc cài đặt của Firefox",
-            "centralized": "Mọi cài đặt Floorp trong 1 chỗ"
+            "centralized": "Mọi cài đặt Bolt trong 1 chỗ"
         }
     },
     "customize": {
-        "title": "Tùy chỉnh Floorp",
-        "description": "Customize to your preferred settings. You can always change them later from the Floorp Hub or settings page.",
+        "title": "Tùy chỉnh Bolt",
+        "description": "Customize to your preferred settings. You can always change them later from the Bolt Hub or settings page.",
         "appearance": {
             "title": "Cài đặt giao diện ",
-            "description": "Bạn thích Floorp thế nào, Floorp sẽ như thế. Sáng, tối, hoặc tự động chuyển theo cài đặt hệ thống"
+            "description": "Bạn thích Bolt thế nào, Bolt sẽ như thế. Sáng, tối, hoặc tự động chuyển theo cài đặt hệ thống"
         },
         "themes": {
             "light": "Sáng",
@@ -51,28 +51,28 @@
             "noEnginesFound": "Không tìm thấy công cụ tìm kiếm."
         },
         "floorpHub": {
-            "title": "Trung tâm Floorp",
-            "description": "Floorp Hub là trang cài đặt riêng của Floopp. Bạn có thể mở bằng cách đi tới \"about:hub\". Bạn cũng có thể truy cập bằng thanh bên trái của trang cài đặt Firefox \"about:preferences\".",
+            "title": "Trung tâm Bolt",
+            "description": "Bolt Hub là trang cài đặt riêng của Floopp. Bạn có thể mở bằng cách đi tới \"about:hub\". Bạn cũng có thể truy cập bằng thanh bên trái của trang cài đặt Firefox \"about:preferences\".",
             "openHub": "Mở about:hub",
             "openPreferences": "Mở cài đặt (about:preferences)"
         }
     },
     "finish": {
         "title": "Thiết lập hoàn tất!",
-        "subtitle": "Congratulations! You've completed the Floorp setup. Enjoy a comfortable and secure internet browsing experience.",
+        "subtitle": "Congratulations! You've completed the Bolt setup. Enjoy a comfortable and secure internet browsing experience.",
         "nextSteps": {
             "title": "Next Steps (Optional)",
             "setDefault": "Đặt làm trình duyệt mặc định",
             "documentation": "Tài liệu"
         },
-        "getStarted": "Bắt đầu với Floorp",
+        "getStarted": "Bắt đầu với Bolt",
         "hint": "For more detailed settings, you can customize via the Settings option in the menu button at the top right."
     },
     "welcomePage": {
-        "welcome": "Chào mừng đến Floorp!",
-        "description": "Floorp là trình duyệt nhanh và thân thiện người dùng tập trung vào quyền riêng tư và bảo mật. Chúng tôi sẽ dẫn bạn qua những tính năng và cài đặt của Floorp",
+        "welcome": "Chào mừng đến Bolt!",
+        "description": "Bolt là trình duyệt nhanh và thân thiện người dùng tập trung vào quyền riêng tư và bảo mật. Chúng tôi sẽ dẫn bạn qua những tính năng và cài đặt của Bolt",
         "readyToStart": "Khi bạn đã sẵn sàng, nhấn nút bên dưới để tiếp tục.",
-        "features": "Các tính năng của Floorp",
+        "features": "Các tính năng của Bolt",
         "privacy": "Quyền riêng tư",
         "privacyDesc": "Bảo vệ dữ liệu của bạn",
         "speed": "Nhanh",
@@ -82,28 +82,28 @@
         "start": "Bắt đầu thôi"
     },
     "localizationPage": {
-        "title": "Floorp chung tiếng nói với bạn",
+        "title": "Bolt chung tiếng nói với bạn",
         "subtitle": "Check language settings and change if needed",
         "languageSettings": "Cài đặt ngôn ngữ",
         "languageChanged": "Nói ngôn ngữ của bạn rồi nè!",
         "currentLanguageInfo": "Thông tin về ngôn ngữ hiện tại",
         "systemLanguage": "Ngôn ngữ hệ thống",
-        "floorpLanguage": "Ngôn ngữ của Floorp",
+        "floorpLanguage": "Ngôn ngữ của Bolt",
         "selectLanguage": "Chọn ngôn ngữ",
         "useSystemLanguage": "Dùng ngôn ngữ hệ thống",
         "multilingual": "Multilingual Support",
         "chooseLanguage": "Choose from a wide range of languages",
-        "languageChangeNotice": "Changing language will apply the new language without restarting Floorp. Some add-ons may not support language changes."
+        "languageChangeNotice": "Changing language will apply the new language without restarting Bolt. Some add-ons may not support language changes."
     },
     "featuresPage": {
-        "title": "Cái tinh năng nổi bật của Floorp",
-        "subtitle": "Floorp được trang bị vô vàn tính năng hữu ích. Hãy xem tổng quát về chúng!",
+        "title": "Cái tinh năng nổi bật của Bolt",
+        "subtitle": "Bolt được trang bị vô vàn tính năng hữu ích. Hãy xem tổng quát về chúng!",
         "panelSidebar": {
             "title": "Thanh bên",
             "description": "Access convenient features from the sidebar on the right while browsing. You can place web panels, note-taking functions, add-ons, bookmarks, etc. in the sidebar.",
             "features": [
                 "Ghim các trang vào thanh bên",
-                "Nhanh chóng ghi chú với Ghi Chú Floorp khi duyệt",
+                "Nhanh chóng ghi chú với Ghi Chú Bolt khi duyệt",
                 "Supports containers"
             ]
         },
@@ -139,19 +139,19 @@
     },
     "finishPage": {
         "title": "Thiết lập hoàn tất!",
-        "subtitle": "Tuyệt vời! Bạn đã hoàn thành thiết lập Floorp. Tận hưởng cảm giác mượt mà và an toàn khi lướt mạng.",
+        "subtitle": "Tuyệt vời! Bạn đã hoàn thành thiết lập Bolt. Tận hưởng cảm giác mượt mà và an toàn khi lướt mạng.",
         "nextSteps": "Next Steps (Optional)",
         "defaultBrowser": "Đặt làm trình duyệt mặc định",
         "support": "Hỗ trợ",
         "documentation": "Tài liệu",
-        "getStarted": "Bắt đầu với Floorp",
+        "getStarted": "Bắt đầu với Bolt",
         "hint": "Nếu cần cài đặt chi tiết hơn, hãy mở Cài đặt từ nút menu ở góc trên bên phải.",
         "resourcesLabel": "Tài nguyên",
-        "defaultBrowserSuccess": "Floorp đã được đặt làm trình duyệt mặc định của bạn!"
+        "defaultBrowserSuccess": "Bolt đã được đặt làm trình duyệt mặc định của bạn!"
     },
     "whatsNew": {
-        "title": "Chào mừng tới Floorp {{version}}!",
-        "subtitle": "Xem có gì mới trên Floorp!",
+        "title": "Chào mừng tới Bolt {{version}}!",
+        "subtitle": "Xem có gì mới trên Bolt!",
         "tags": {
             "settings": "Cài đặt",
             "productivity": "Năng suất",
@@ -162,8 +162,8 @@
         "footer": {
             "follow": "Theo dõi",
             "privacy": "Điều khoản và chính sách",
-            "about": "Về Floorp",
-            "copyright": "{{year}} Floorp Projects. Bảo lưu mọi quyền."
+            "about": "Về Bolt",
+            "copyright": "{{year}} Bolt Projects. Bảo lưu mọi quyền."
         }
     }
 }

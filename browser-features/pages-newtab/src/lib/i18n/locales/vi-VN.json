@@ -1,5 +1,5 @@
 {
-    "title": "Trang bắt đầu Floorp",
+    "title": "Trang bắt đầu Bolt",
     "topSites": {
         "addSite": "Thêm trang",
         "addNewSite": "Thêm trang mới",
@@ -27,7 +27,7 @@
         "randomImage": "Ảnh ngẫu nhiên",
         "customImage": "Ảnh tùy chọn",
         "folderImages": "Ảnh từ thư mục",
-        "floorpImages": "Ảnh của Floorp",
+        "floorpImages": "Ảnh của Bolt",
         "currentImage": "Current image:",
         "imageRecommendation": "Recommended: 1920x1080 or higher",
         "currentFolder": "Thư mục hiện tại:",
@@ -35,9 +35,9 @@
         "selected": "Đã chọn",
         "enableSlideshow": "Bật trình chiếu",
         "slideshowInterval": "Thời gian chuyển ảnh (giây)",
-        "floorpStart": "Floorp Bắt Đầu",
-        "disableFloorpStart": "Tắt Floorp Bắt Đầu (dùng about:newtab chán phèo)",
-        "disableFloorpStartDescription": "Khi tắt, Floorp Bắt Đầu sẽ đá trang thẻ mới của Firefox ra chuồng gà.",
+        "floorpStart": "Bolt Bắt Đầu",
+        "disableBoltStart": "Tắt Bolt Bắt Đầu (dùng about:newtab chán phèo)",
+        "disableBoltStartDescription": "Khi tắt, Bolt Bắt Đầu sẽ đá trang thẻ mới của Firefox ra chuồng gà.",
         "restartRequired": "Trình duyệt cần khởi động lại để thay đổi được áp dụng hoàn toàn.",
         "firefoxLayout": "Dùng bố cục cũ (Như Firefox Home)"
     },

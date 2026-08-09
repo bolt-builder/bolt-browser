@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Nouvel onglet",
-                "disableFloorpStart": "Désactiver le démarrage de {{productName}}"
+                "disableBoltStart": "Désactiver le démarrage de {{productName}}"
             },
             "multirowTab": {
                 "title": "Onglet multi-lignes",
@@ -303,9 +303,9 @@
         "license": "Licence",
         "noraneko": {
             "logoAlt": "Logo du navigateur",
-            "description": "Noraneko est un navigateur servant de tête de test pour Floorp 12. Floorp repose sur Firefox et Noraneko.",
+            "description": "Noraneko est un navigateur servant de tête de test pour Bolt 12. Bolt repose sur Firefox et Noraneko.",
             "communityCredit": "Réalisé par la communauté Noraneko avec ❤",
-            "repositoryLabel": "Dépôt GitHub : Floorp-Projects/Floorp"
+            "repositoryLabel": "Dépôt GitHub : Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Défiler vers le bas",
             "floorp-toggle-command-palette": "Activer/désactiver la palette de commandes",
             "floorp-open-settings": "Ouvrir les paramètres",
-            "floorp-open-hub": "Ouvrir la Plateforme de Floorp",
+            "floorp-open-hub": "Ouvrir la Plateforme de Bolt",
             "floorp-toggle-share-mode": "Permuter le mode partage",
             "floorp-copy-page-url-as-markdown": "Copier l'URL de la page en tant que Markdown",
             "floorp-split-view-open-left": "Vue fractionnée à gauche",

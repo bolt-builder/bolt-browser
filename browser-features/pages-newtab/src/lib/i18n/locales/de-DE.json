@@ -1,5 +1,5 @@
 {
-    "title": "Floorp-Start",
+    "title": "Bolt-Start",
     "topSites": {
         "addSite": "Seite hinzufügen",
         "addNewSite": "Neue Seite hinzufügen",
@@ -27,7 +27,7 @@
         "randomImage": "Zufälliges Bild",
         "customImage": "Benutzerdefiniertes Bild",
         "folderImages": "Bilder aus einem Ordner",
-        "floorpImages": "Floorp-Bilder",
+        "floorpImages": "Bolt-Bilder",
         "currentImage": "Aktuelles Bild:",
         "imageRecommendation": "Empfohlen: 1920x1080 oder höher",
         "currentFolder": "Aktueller Ordner:",
@@ -35,9 +35,9 @@
         "selected": "Ausgewählt",
         "enableSlideshow": "Diashow aktivieren",
         "slideshowInterval": "Intervall (Sekunden)",
-        "floorpStart": "Floorp-Start",
-        "disableFloorpStart": "Floorp-Start deaktivieren (klassisches about:newtab verwenden)",
-        "disableFloorpStartDescription": "Wenn aktiviert, wird Floorp-Start durch den klassischen neuen Firefox-Tab ersetzt.",
+        "floorpStart": "Bolt-Start",
+        "disableBoltStart": "Bolt-Start deaktivieren (klassisches about:newtab verwenden)",
+        "disableBoltStartDescription": "Wenn aktiviert, wird Bolt-Start durch den klassischen neuen Firefox-Tab ersetzt.",
         "restartRequired": "Erfordert einen Neustart des Browsers, um vollständig wirksam zu werden.",
         "firefoxLayout": "Legacy-Layout verwenden (wie Firefox Home)"
     },
