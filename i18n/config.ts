@@ -50,7 +50,7 @@ export function initI18N(namespace: string[], defaultNamespace: string) {
     interpolation: {
       escapeValue: false,
       defaultVariables: {
-        productName: "Floorp",
+        productName: "Bolt",
       },
     },
   });
