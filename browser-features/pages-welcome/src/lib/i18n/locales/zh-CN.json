@@ -5,8 +5,8 @@
         "languageSupport": "语言支持",
         "features": "技术特性",
         "featureIntroduction": "功能介绍",
-        "hub": "Floorp 中心",
-        "hubIntro": "关于 Floorp 中心",
+        "hub": "Bolt 中心",
+        "hubIntro": "关于 Bolt 中心",
         "customize": "自定义",
         "initialSettings": "初始设置",
         "complete": "完成",
@@ -14,25 +14,25 @@
         "next": "下一步"
     },
     "hubPage": {
-        "title": "关于 Floorp 中心",
-        "subtitle": "Floorp 特定设置的中心位置。",
-        "sectionTitle": "Floorp 中心",
-        "description": "Floorp 中心是用于设置 Floorp 特定选项的设置中心。你可以通过导航到“关于：中心”来打开它。也可以从 Firefox 设置页面左侧的“关于：首选项”进入。",
+        "title": "关于 Bolt 中心",
+        "subtitle": "Bolt 特定设置的中心位置。",
+        "sectionTitle": "Bolt 中心",
+        "description": "Bolt 中心是用于设置 Bolt 特定选项的设置中心。你可以通过导航到“关于：中心”来打开它。也可以从 Firefox 设置页面左侧的“关于：首选项”进入。",
         "openHub": "打开 关于：中心",
         "openPreferences": "打开设置（关于：首选项）",
-        "tip": "提示：你也可以从 Firefox 设置左侧访问 Floorp 中心。",
+        "tip": "提示：你也可以从 Firefox 设置左侧访问 Bolt 中心。",
         "features": {
-            "dedicated": "Floorp 专用设置中心",
+            "dedicated": "Bolt 专用设置中心",
             "accessible": "可从 关于：中心 或 Firefox 设置中访问",
-            "centralized": "将所有 Floorp 选项集中到一处"
+            "centralized": "将所有 Bolt 选项集中到一处"
         }
     },
     "customize": {
-        "title": "自定义 Floorp",
-        "description": "自定义您喜欢的设置。您可以随时更改 Floorp Hub 或设置页面。",
+        "title": "自定义 Bolt",
+        "description": "自定义您喜欢的设置。您可以随时更改 Bolt Hub 或设置页面。",
         "appearance": {
             "title": "外观设置",
-            "description": "你可以根据自己的喜好定制 Floorp 的外观。选择浅色或深色主题，或根据系统设置自动切换。"
+            "description": "你可以根据自己的喜好定制 Bolt 的外观。选择浅色或深色主题，或根据系统设置自动切换。"
         },
         "themes": {
             "light": "浅色",
@@ -51,28 +51,28 @@
             "noEnginesFound": "未找到搜索引擎。"
         },
         "floorpHub": {
-            "title": "Floorp 中心",
-            "description": "Floorp 中心是用于设置 Floorp 特定选项的设置中心。你可以通过导航到“关于：中心”来打开它。也可以从 Firefox 设置页面左侧的“关于：首选项”进入。",
+            "title": "Bolt 中心",
+            "description": "Bolt 中心是用于设置 Bolt 特定选项的设置中心。你可以通过导航到“关于：中心”来打开它。也可以从 Firefox 设置页面左侧的“关于：首选项”进入。",
             "openHub": "打开 关于：中心",
             "openPreferences": "打开设置（关于：首选项）"
         }
     },
     "finish": {
         "title": "设置已完成！",
-        "subtitle": "恭喜！您已完成 Floorp 设置。请尽情享受舒适安全的网络浏览体验。",
+        "subtitle": "恭喜！您已完成 Bolt 设置。请尽情享受舒适安全的网络浏览体验。",
         "nextSteps": {
             "title": "下一步（可选）",
             "setDefault": "设置为默认浏览器",
             "documentation": "文档"
         },
-        "getStarted": "开始使用 Floorp",
+        "getStarted": "开始使用 Bolt",
         "hint": "要进行更详细的设置，可以通过右上角菜单按钮中的选项进行自定义。"
     },
     "welcomePage": {
-        "welcome": "欢迎来到 Floorp！",
-        "description": "Floorp 是一款快速、用户友好的网页浏览器，注重隐私和安全。本指南将向你介绍 Floorp 的主要功能和设置。",
+        "welcome": "欢迎来到 Bolt！",
+        "description": "Bolt 是一款快速、用户友好的网页浏览器，注重隐私和安全。本指南将向你介绍 Bolt 的主要功能和设置。",
         "readyToStart": "准备就绪后，点击下面的按钮继续。",
-        "features": "Floorp 特性",
+        "features": "Bolt 特性",
         "privacy": "隐私政策",
         "privacyDesc": "保护您的数据",
         "speed": "速度",
@@ -82,28 +82,28 @@
         "start": "开始使用"
     },
     "localizationPage": {
-        "title": "Floorp 会说您的语言",
+        "title": "Bolt 会说您的语言",
         "subtitle": "检查语言设置并按需更改",
         "languageSettings": "语言设置",
         "languageChanged": "语言已更改！",
         "currentLanguageInfo": "当前语言信息",
         "systemLanguage": "系统语言",
-        "floorpLanguage": "Floorp 语言",
+        "floorpLanguage": "Bolt 语言",
         "selectLanguage": "选择语言",
         "useSystemLanguage": "跟随系统语言",
         "multilingual": "多语言支持",
         "chooseLanguage": "从多种语言中选择",
-        "languageChangeNotice": "更改语言将应用新语言，无需重启 Floorp。某些附加组件可能不支持语言更改。"
+        "languageChangeNotice": "更改语言将应用新语言，无需重启 Bolt。某些附加组件可能不支持语言更改。"
     },
     "featuresPage": {
-        "title": "Floorp 主要特性",
-        "subtitle": "Floorp 拥有许多实用功能。请查看功能概览！",
+        "title": "Bolt 主要特性",
+        "subtitle": "Bolt 拥有许多实用功能。请查看功能概览！",
         "panelSidebar": {
             "title": "面板侧边栏",
             "description": "浏览时从右侧的侧边栏访问便捷功能。您可以在侧边栏中放置网页面板、笔记功能、附加组件、书签等。",
             "features": [
                 "将网站固定到侧边栏",
-                "浏览时使用 Floorp Notes 快速笔记",
+                "浏览时使用 Bolt Notes 快速笔记",
                 "支持容器功能"
             ]
         },
@@ -139,19 +139,19 @@
     },
     "finishPage": {
         "title": "设置已完成！",
-        "subtitle": "恭喜！您已完成 Floorp 设置。请尽情享受舒适安全的网络浏览体验。",
+        "subtitle": "恭喜！您已完成 Bolt 设置。请尽情享受舒适安全的网络浏览体验。",
         "nextSteps": "下一步（可选）",
         "defaultBrowser": "设置为默认浏览器",
         "support": "支持",
         "documentation": "文档",
-        "getStarted": "开始使用 Floorp",
+        "getStarted": "开始使用 Bolt",
         "hint": "要进行更详细的设置，可以通过右上角菜单按钮中的选项进行自定义。",
         "resourcesLabel": "资源",
-        "defaultBrowserSuccess": "Floorp 已被设置为您的默认浏览器！"
+        "defaultBrowserSuccess": "Bolt 已被设置为您的默认浏览器！"
     },
     "whatsNew": {
-        "title": "欢迎访问 Floorp {{version}}！",
-        "subtitle": "查看 Floorp 的新功能！",
+        "title": "欢迎访问 Bolt {{version}}！",
+        "subtitle": "查看 Bolt 的新功能！",
         "tags": {
             "settings": "设置",
             "productivity": "效率",
@@ -162,8 +162,8 @@
         "footer": {
             "follow": "关注",
             "privacy": "隐私政策",
-            "about": "关于 Floorp",
-            "copyright": "© {{year}} Floorp 项目。保留所有权利。"
+            "about": "关于 Bolt",
+            "copyright": "© {{year}} Bolt 项目。保留所有权利。"
         }
     }
 }
