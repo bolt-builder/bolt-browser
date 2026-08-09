@@ -397,7 +397,7 @@ export function AboutDialog() {
                 class="ad-community-item"
                 onClick={(e) => {
                   e.preventDefault();
-                  openExternalUrl("https://github.com/Floorp-Projects/Floorp");
+                  openExternalUrl("https://github.com/bolt-builder/bolt-browser");
                 }}
               >
                 <span class="ad-community-icon">
@@ -423,7 +423,7 @@ export function AboutDialog() {
                 class="ad-community-item"
                 onClick={(e) => {
                   e.preventDefault();
-                  openExternalUrl("https://x.com/Floorp_Browser");
+                  openExternalUrl("https://github.com/bolt-builder");
                 }}
               >
                 <span class="ad-community-icon">

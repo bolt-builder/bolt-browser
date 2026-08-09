@@ -98,7 +98,7 @@ export default function Page() {
             </Button>
             <Button asChild className="w-full">
               <a
-                href="https://github.com/Floorp-Projects/Floorp"
+                href="https://github.com/bolt-builder/bolt-browser"
                 className="flex items-center gap-2"
               >
                 <SiGithub className="size-4" />

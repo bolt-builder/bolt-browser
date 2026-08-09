@@ -534,7 +534,7 @@ export default function WhatsNewPage() {
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/Floorp-Projects/Floorp"
+                  href="https://github.com/bolt-builder/bolt-browser"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg hover:bg-gray-700 transition-colors"
