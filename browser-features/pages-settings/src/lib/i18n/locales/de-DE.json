@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Neuer Tab",
-                "disableFloorpStart": "{{productName}} Start deaktivieren"
+                "disableBoltStart": "{{productName}} Start deaktivieren"
             },
             "multirowTab": {
                 "title": "Mehrzeilige Tableiste",
@@ -303,9 +303,9 @@
         "license": "Lizenz",
         "noraneko": {
             "logoAlt": "Browser Logo",
-            "description": "Noraneko is a browser as testhead of Floorp 12. Floorp is based on Firefox & Noraneko.",
+            "description": "Noraneko is a browser as testhead of Bolt 12. Bolt is based on Firefox & Noraneko.",
             "communityCredit": "Made by Noraneko Community with ❤",
-            "repositoryLabel": "GitHub Repository: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub Repository: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -468,7 +468,7 @@
         "errorSettingContainer": "Fehler beim Festlegen des Containers"
     },
     "floorpOS": {
-        "title": "Floorp OS",
+        "title": "Bolt OS",
         "description": "Backend-Module und -Dienste von {{productName}} OS verwalten",
         "loading": "Wird geladen…",
         "statusCard": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Nach unten scrollen",
             "floorp-toggle-command-palette": "Befehlspalette ein-/ausblenden",
             "floorp-open-settings": "Einstellungen öffnen",
-            "floorp-open-hub": "Floorp-Hub öffnen",
+            "floorp-open-hub": "Bolt-Hub öffnen",
             "floorp-toggle-share-mode": "Freigabemodus umschalten",
             "floorp-copy-page-url-as-markdown": "Seiten-URL als Markdown kopieren",
             "floorp-split-view-open-left": "Geteilte Ansicht links",
