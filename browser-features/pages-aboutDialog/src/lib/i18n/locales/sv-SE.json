@@ -1,6 +1,6 @@
 {
   "aboutDialog": {
-    "ariaLabel": "Om Floorp",
+    "ariaLabel": "Om Bolt",
     "version": "Version",
     "channel": {
       "nightly": "Nightly",
@@ -35,12 +35,12 @@
     },
     "links": {
       "releaseNotes": "Versionsinformation",
-      "help": "Floorp hjälp",
+      "help": "Bolt hjälp",
       "feedback": "Skicka in feedback",
       "licensing": "Licens",
       "terms": "Användarvillkor",
       "privacy": "Integritetspolicy"
     },
-    "trademark": "Namnet Floorp är ett varumärke i Japan."
+    "trademark": "Namnet Bolt är ett varumärke i Japan."
   }
 }
