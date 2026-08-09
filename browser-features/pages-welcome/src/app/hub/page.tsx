@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Navigation from "../../components/Navigation.tsx";
 import { Settings } from "lucide-react";
-import gearImage from "./Floorp_Icon_Gear_Gradient.png";
+import gearImage from "./Bolt_Icon.png";
 
 export default function HubIntroPage() {
   const { t } = useTranslation();

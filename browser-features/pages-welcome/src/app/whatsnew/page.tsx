@@ -4,7 +4,7 @@ import panelSidebarSvg from "../features/assets/panelsidebar.svg";
 import workspacesSvg from "../features/assets/workspaces.svg";
 import pwaSvg from "../features/assets/pwa.svg";
 import mouseGestureSvg from "../features/assets/mousegesture.svg";
-import gearImage from "../hub/Floorp_Icon_Gear_Gradient.png";
+import gearImage from "../hub/Bolt_Icon.png";
 import headerCover from "./header-cover.webp";
 import {
   ArrowRight,
