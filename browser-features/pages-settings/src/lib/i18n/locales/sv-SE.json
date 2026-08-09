@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "Ny flik",
-                "disableFloorpStart": "Inaktivera {{productName}} Start"
+                "disableBoltStart": "Inaktivera {{productName}} Start"
             },
             "multirowTab": {
                 "title": "Flik med flera rader",
@@ -303,9 +303,9 @@
         "license": "Licens",
         "noraneko": {
             "logoAlt": "Webbläsarens logotyp",
-            "description": "Noraneko är en webbläsare som används som testmiljö för Floorp 12. Floorp bygger på Firefox och Noraneko.",
+            "description": "Noraneko är en webbläsare som används som testmiljö för Bolt 12. Bolt bygger på Firefox och Noraneko.",
             "communityCredit": "Skapad av Noraneko gemenskapen med ❤",
-            "repositoryLabel": "GitHub-arkiv: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub-arkiv: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "Scrolla ner",
             "floorp-toggle-command-palette": "Växla kommandopalett",
             "floorp-open-settings": "Öppna inställningar",
-            "floorp-open-hub": "Öppna Floorp Hub",
+            "floorp-open-hub": "Öppna Bolt Hub",
             "floorp-toggle-share-mode": "Växla dela läge",
             "floorp-copy-page-url-as-markdown": "Kopiera sidans URL som Markdown",
             "floorp-split-view-open-left": "Delad vy vänster",
