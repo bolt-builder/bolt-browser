@@ -227,7 +227,7 @@
             },
             "newtab": {
                 "title": "新しいタブ",
-                "disableFloorpStart": "{{productName}} Start を無効にする"
+                "disableBoltStart": "{{productName}} Start を無効にする"
             },
             "multirowTab": {
                 "title": "多段タブ",
@@ -303,9 +303,9 @@
         "license": "ライセンス",
         "noraneko": {
             "logoAlt": "ブラウザーのロゴ",
-            "description": "Noraneko は Floorp 12 のテストヘッドブラウザーです。Floorp は Firefox と Noraneko をベースにしています。",
+            "description": "Noraneko は Bolt 12 のテストヘッドブラウザーです。Bolt は Firefox と Noraneko をベースにしています。",
             "communityCredit": "Noraneko コミュニティより ❤ を込めて制作",
-            "repositoryLabel": "GitHub リポジトリ: Floorp-Projects/Floorp"
+            "repositoryLabel": "GitHub リポジトリ: Floorp-Projects/Bolt"
         }
     },
     "updates": {
@@ -630,7 +630,7 @@
             "gecko-scroll-line-down": "下にスクロール",
             "floorp-toggle-command-palette": "コマンドパレットの表示を切り替える",
             "floorp-open-settings": "設定を開く",
-            "floorp-open-hub": "Floorp Hub を開く",
+            "floorp-open-hub": "Bolt Hub を開く",
             "floorp-toggle-share-mode": "共有モードの表示を切り替える",
             "floorp-copy-page-url-as-markdown": "ページの URL を Markdown 形式でコピー",
             "floorp-split-view-open-left": "分割ビューで左側に開く",
