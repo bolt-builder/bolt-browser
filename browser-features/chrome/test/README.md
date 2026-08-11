@@ -7,7 +7,7 @@ colocated test runner in `bridge/loader-features/loader/test/index.ts`.
 
 ## Test Styles
 
-- `runAllTests` modules: Floorp's original colocated format. A test file exports
+- `runAllTests` modules: Bolt's original colocated format. A test file exports
   `runAllTests()` and usually imports helpers from
   `browser-features/chrome/test/utils/test_harness.ts`.
 - Mozilla-style task modules: compatibility format for small Firefox
