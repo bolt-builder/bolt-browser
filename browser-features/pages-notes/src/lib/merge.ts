@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MPL-2.0
 
 /**
- * Deterministic three-way merge for Floorp Notes (cross-client contract).
+ * Deterministic three-way merge for Bolt Notes (cross-client contract).
  *
  * Mirrors the iOS implementation (floorp-ios firefox-ios/Floorp/FloorpNotesSync.swift)
  * so winners, conflict copies, and ordering are identical on both clients.
@@ -440,7 +440,7 @@ export function mergeNotesThreeWay(
     .map((id) => mergedByID.get(id)!);
 
   console.info(
-    `[Floorp Notes] Three-way merge result: ${merged.length} notes, hadConflicts=${hadConflicts}`,
+    `[Bolt Notes] Three-way merge result: ${merged.length} notes, hadConflicts=${hadConflicts}`,
   );
   return {
     merged,
