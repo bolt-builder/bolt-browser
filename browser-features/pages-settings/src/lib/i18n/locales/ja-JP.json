@@ -305,7 +305,7 @@
             "logoAlt": "ブラウザーのロゴ",
             "description": "Noraneko は Bolt 12 のテストヘッドブラウザーです。Bolt は Firefox と Noraneko をベースにしています。",
             "communityCredit": "Noraneko コミュニティより ❤ を込めて制作",
-            "repositoryLabel": "GitHub リポジトリ: Floorp-Projects/Bolt"
+            "repositoryLabel": "GitHub リポジトリ: bolt-builder/bolt-browser"
         }
     },
     "updates": {
