@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /**
- * OSAutomotor-manager - A service for initializing Floorp OS Backend additional modules
+ * OSAutomotor-manager - A service for initializing Bolt OS Backend additional modules
  *
  * This module will check the OS modules installed and install missing modules.
  * It downloads the Sapphillon Controller binary from GitHub releases and manages its lifecycle.
@@ -93,19 +93,19 @@ class OSAutomotorManager {
    */
   private async initialize(): Promise<void> {
     try {
-      console.log("[Floorp OS] OSAutomotor initialize starting...");
+      console.log("[Bolt OS] OSAutomotor initialize starting...");
       await this.recoverFromUncleanShutdown();
       this.setupShutdownObserver();
 
-      // Check if Floorp OS is enabled
+      // Check if Bolt OS is enabled
       const isEnabled = Services.prefs.getBoolPref(
         FLOORP_OS_ENABLED_PREF,
         false,
       );
-      console.log(`[Floorp OS] floorp.os.enabled = ${isEnabled}`);
+      console.log(`[Bolt OS] floorp.os.enabled = ${isEnabled}`);
 
       if (isEnabled) {
-        console.log("[Floorp OS] Starting Floorp OS...");
+        console.log("[Bolt OS] Starting Bolt OS...");
         await this.ensureBinaryInstalled();
         await this.startFloorpOS();
         // Ensure and start frontend web server
@@ -113,15 +113,15 @@ class OSAutomotorManager {
           await this.ensureFrontendInstalled();
           await this.startFrontend();
         } catch (e) {
-          console.error("[Floorp OS] Failed to initialize frontend:", e);
+          console.error("[Bolt OS] Failed to initialize frontend:", e);
         }
-        console.log("[Floorp OS] Floorp OS initialization complete.");
+        console.log("[Bolt OS] Bolt OS initialization complete.");
       } else {
-        console.log("[Floorp OS] Floorp OS is disabled, skipping startup.");
+        console.log("[Bolt OS] Bolt OS is disabled, skipping startup.");
       }
       this._initialized = true;
     } catch (error) {
-      console.error("[Floorp OS] Initialization failed:", error);
+      console.error("[Bolt OS] Initialization failed:", error);
       // Mark as initialized even on failure to prevent repeated attempts
       this._initialized = true;
       throw error;
@@ -138,13 +138,13 @@ class OSAutomotorManager {
 
     this._shutdownObserver = () => {
       console.log(
-        "[Floorp OS] Browser shutdown detected, stopping processes...",
+        "[Bolt OS] Browser shutdown detected, stopping processes...",
       );
       // Use synchronous-style cleanup - stopFloorpOS is async but we fire-and-forget
       // because quit-application-granted doesn't wait for async operations
       this.stopFloorpOS().catch((error) => {
         console.error(
-          "[Floorp OS] Error stopping processes on shutdown:",
+          "[Bolt OS] Error stopping processes on shutdown:",
           error,
         );
       });
@@ -154,7 +154,7 @@ class OSAutomotorManager {
       this._shutdownObserver,
       "quit-application-granted",
     );
-    console.log("[Floorp OS] Shutdown observer registered.");
+    console.log("[Bolt OS] Shutdown observer registered.");
   }
 
   /**
@@ -254,7 +254,7 @@ class OSAutomotorManager {
     const platformInfo = this.getPlatformInfo();
 
     if (!platformInfo.supported) {
-      console.error("[Floorp OS] Current platform is not supported");
+      console.error("[Bolt OS] Current platform is not supported");
       throw new Error("Platform not supported");
     }
 
@@ -272,8 +272,8 @@ class OSAutomotorManager {
       const response = await fetch(downloadUrl);
       if (!response.ok) {
         const errorMsg = `Failed to download: HTTP ${response.status} ${response.statusText}`;
-        console.error(`[Floorp OS] ${errorMsg}`);
-        console.error(`[Floorp OS] Download URL: ${downloadUrl}`);
+        console.error(`[Bolt OS] ${errorMsg}`);
+        console.error(`[Bolt OS] Download URL: ${downloadUrl}`);
         throw new Error(errorMsg);
       }
 
@@ -295,13 +295,13 @@ class OSAutomotorManager {
       Services.prefs.setStringPref(FLOORP_OS_BINARY_PATH_PREF, binaryPath);
       Services.prefs.setStringPref(FLOORP_OS_VERSION_PREF, CURRENT_VERSION);
     } catch (error) {
-      console.error("[Floorp OS] Failed to download binary:", error);
+      console.error("[Bolt OS] Failed to download binary:", error);
       // On failure during setup, reset installation to initial state
       try {
         await this.resetInstallation();
       } catch (e) {
         console.error(
-          "[Floorp OS] Failed to reset after binary download error:",
+          "[Bolt OS] Failed to reset after binary download error:",
           e,
         );
       }
@@ -317,7 +317,7 @@ class OSAutomotorManager {
 
     if (!platformInfo.supported || !platformInfo.frontendBinaryName) {
       console.error(
-        "[Floorp OS] Current platform does not support frontend or no frontend name",
+        "[Bolt OS] Current platform does not support frontend or no frontend name",
       );
       throw new Error("Frontend not supported");
     }
@@ -334,8 +334,8 @@ class OSAutomotorManager {
       const response = await fetch(downloadUrl);
       if (!response.ok) {
         const errorMsg = `Failed to download frontend: HTTP ${response.status} ${response.statusText}`;
-        console.error(`[Floorp OS] ${errorMsg}`);
-        console.error(`[Floorp OS] Download URL: ${downloadUrl}`);
+        console.error(`[Bolt OS] ${errorMsg}`);
+        console.error(`[Bolt OS] Download URL: ${downloadUrl}`);
         throw new Error(errorMsg);
       }
 
@@ -359,13 +359,13 @@ class OSAutomotorManager {
         CURRENT_FRONTEND_VERSION,
       );
     } catch (error) {
-      console.error("[Floorp OS] Failed to download frontend:", error);
+      console.error("[Bolt OS] Failed to download frontend:", error);
       // On failure during setup, reset installation to initial state
       try {
         await this.resetInstallation();
       } catch (e) {
         console.error(
-          "[Floorp OS] Failed to reset after frontend download error:",
+          "[Bolt OS] Failed to reset after frontend download error:",
           e,
         );
       }
@@ -398,7 +398,7 @@ class OSAutomotorManager {
   }
 
   /**
-   * Start the Floorp OS binary
+   * Start the Bolt OS binary
    */
   private async startFloorpOS(): Promise<void> {
     if (this._binaryProcess) {
@@ -410,7 +410,7 @@ class OSAutomotorManager {
 
     if (!binaryExists) {
       const error = new Error("Binary not found");
-      console.error("[Floorp OS] Binary not found at:", binaryPath);
+      console.error("[Bolt OS] Binary not found at:", binaryPath);
       throw error;
     }
 
@@ -442,7 +442,7 @@ class OSAutomotorManager {
         corePid: this.getProcessPid(process),
       });
     } catch (error) {
-      console.error("[Floorp OS] Failed to start binary:", error);
+      console.error("[Bolt OS] Failed to start binary:", error);
       throw error;
     }
   }
@@ -459,7 +459,7 @@ class OSAutomotorManager {
     const frontendExists = await IOUtils.exists(frontendPath);
 
     if (!frontendExists) {
-      console.error("[Floorp OS] Frontend binary not found at:", frontendPath);
+      console.error("[Bolt OS] Frontend binary not found at:", frontendPath);
       throw new Error("Frontend binary not found");
     }
 
@@ -479,16 +479,16 @@ class OSAutomotorManager {
         frontendPid: this.getProcessPid(process),
       });
     } catch (error) {
-      console.error("[Floorp OS] Failed to start frontend:", error);
+      console.error("[Bolt OS] Failed to start frontend:", error);
       throw error;
     }
   }
 
   /**
-   * Stop the Floorp OS binary
+   * Stop the Bolt OS binary
    */
   /**
-   * Stop the Floorp OS binary
+   * Stop the Bolt OS binary
    */
   public async stopFloorpOS(): Promise<void> {
     if (this._binaryProcess) {
@@ -501,7 +501,7 @@ class OSAutomotorManager {
   }
 
   /**
-   * Enable Floorp OS
+   * Enable Bolt OS
    */
   public async enableFloorpOS(): Promise<void> {
     if (!this.isPlatformSupported()) {
@@ -531,7 +531,7 @@ class OSAutomotorManager {
         await this.startFrontend();
       } catch (e) {
         // Non-fatal for enabling OS — log and continue; we still mark enabled only when core succeeded
-        console.error("[Floorp OS] Failed to start frontend during enable:", e);
+        console.error("[Bolt OS] Failed to start frontend during enable:", e);
       }
 
       // Only set enabled to true if everything succeeded
@@ -539,21 +539,21 @@ class OSAutomotorManager {
     } catch (error) {
       // Make sure enabled is set to false on error
       Services.prefs.setBoolPref(FLOORP_OS_ENABLED_PREF, false);
-      console.error("[Floorp OS] Failed to enable:", error);
+      console.error("[Bolt OS] Failed to enable:", error);
       try {
         await this.resetInstallation();
       } catch (e) {
-        console.error("[Floorp OS] Failed to reset after enable error:", e);
+        console.error("[Bolt OS] Failed to reset after enable error:", e);
       }
       throw error;
     }
   }
 
   /**
-   * Disable Floorp OS
+   * Disable Bolt OS
    */
   /**
-   * Disable Floorp OS
+   * Disable Bolt OS
    */
   public async disableFloorpOS(): Promise<void> {
     Services.prefs.setBoolPref(FLOORP_OS_ENABLED_PREF, false);
@@ -599,13 +599,13 @@ class OSAutomotorManager {
     try {
       await this.stopFrontend();
     } catch (e) {
-      console.error("[Floorp OS] Error stopping frontend during reset:", e);
+      console.error("[Bolt OS] Error stopping frontend during reset:", e);
     }
 
     try {
       await this.stopFloorpOS();
     } catch (e) {
-      console.error("[Floorp OS] Error stopping core binary during reset:", e);
+      console.error("[Bolt OS] Error stopping core binary during reset:", e);
     }
 
     // Remove files and directory under profile
@@ -619,7 +619,7 @@ class OSAutomotorManager {
       } catch (e) {
         // Continue even if specific file removal fails
         console.error(
-          "[Floorp OS] Failed to remove frontend file during reset:",
+          "[Bolt OS] Failed to remove frontend file during reset:",
           e,
         );
       }
@@ -630,7 +630,7 @@ class OSAutomotorManager {
         await IOUtils.remove(binaryPath, { ignoreAbsent: true });
       } catch (e) {
         console.error(
-          "[Floorp OS] Failed to remove core binary during reset:",
+          "[Bolt OS] Failed to remove core binary during reset:",
           e,
         );
       }
@@ -643,12 +643,12 @@ class OSAutomotorManager {
         });
       } catch (e) {
         console.error(
-          "[Floorp OS] Failed to remove floorp-os directory during reset:",
+          "[Bolt OS] Failed to remove floorp-os directory during reset:",
           e,
         );
       }
     } catch (e) {
-      console.error("[Floorp OS] Error during filesystem cleanup:", e);
+      console.error("[Bolt OS] Error during filesystem cleanup:", e);
     }
 
     // Remove token file
@@ -657,7 +657,7 @@ class OSAutomotorManager {
       const tokenFile = PathUtils.join(homeDir, ".floorp", "os-server-token");
       await IOUtils.remove(tokenFile, { ignoreAbsent: true });
     } catch (e) {
-      console.error("[Floorp OS] Failed to remove token file:", e);
+      console.error("[Bolt OS] Failed to remove token file:", e);
     }
 
     // Clear preferences
@@ -673,7 +673,7 @@ class OSAutomotorManager {
           Services.prefs.clearUserPref(FLOORP_OS_BINARY_PATH_PREF);
         }
       } catch (e) {
-        console.error("[Floorp OS] Failed to clear binary path pref:", e);
+        console.error("[Bolt OS] Failed to clear binary path pref:", e);
       }
 
       try {
@@ -681,7 +681,7 @@ class OSAutomotorManager {
           Services.prefs.clearUserPref(FLOORP_OS_VERSION_PREF);
         }
       } catch (e) {
-        console.error("[Floorp OS] Failed to clear binary version pref:", e);
+        console.error("[Bolt OS] Failed to clear binary version pref:", e);
       }
 
       try {
@@ -689,7 +689,7 @@ class OSAutomotorManager {
           Services.prefs.clearUserPref(FLOORP_FRONTEND_BINARY_PATH_PREF);
         }
       } catch (e) {
-        console.error("[Floorp OS] Failed to clear frontend path pref:", e);
+        console.error("[Bolt OS] Failed to clear frontend path pref:", e);
       }
 
       try {
@@ -697,7 +697,7 @@ class OSAutomotorManager {
           Services.prefs.clearUserPref(FLOORP_FRONTEND_VERSION_PREF);
         }
       } catch (e) {
-        console.error("[Floorp OS] Failed to clear frontend version pref:", e);
+        console.error("[Bolt OS] Failed to clear frontend version pref:", e);
       }
 
       try {
@@ -705,23 +705,23 @@ class OSAutomotorManager {
           Services.prefs.clearUserPref("floorp.os.server.token");
         }
       } catch (e) {
-        console.error("[Floorp OS] Failed to clear server token pref:", e);
+        console.error("[Bolt OS] Failed to clear server token pref:", e);
       }
     } catch (e) {
-      console.error("[Floorp OS] Error clearing prefs during reset:", e);
+      console.error("[Bolt OS] Error clearing prefs during reset:", e);
     }
     try {
       await this.clearRuntimeState();
     } catch (e) {
       console.error(
-        "[Floorp OS] Failed to clear runtime state during reset:",
+        "[Bolt OS] Failed to clear runtime state during reset:",
         e,
       );
     }
   }
 
   /**
-   * Check if Floorp OS is enabled
+   * Check if Bolt OS is enabled
    */
   public isEnabled(): boolean {
     return Services.prefs.getBoolPref(FLOORP_OS_ENABLED_PREF, false);
@@ -772,7 +772,7 @@ class OSAutomotorManager {
     void process.wait().then(
       (result: SubprocessResult) => {
         const exitCode = result.exitCode;
-        const message = `[Floorp OS][${label}] exited with code ${exitCode}`;
+        const message = `[Bolt OS][${label}] exited with code ${exitCode}`;
         if (exitCode === 0) {
           console.info(message);
         } else {
@@ -789,7 +789,7 @@ class OSAutomotorManager {
       },
       (error: unknown) => {
         console.error(
-          `[Floorp OS] Failed waiting for ${label} process:`,
+          `[Bolt OS] Failed waiting for ${label} process:`,
           error,
         );
       },
@@ -814,13 +814,13 @@ class OSAutomotorManager {
           if (output.length === 0) {
             continue;
           }
-          console.log(`[Floorp OS][${label}] ${output}`);
+          console.log(`[Bolt OS][${label}] ${output}`);
         }
       } catch (error: unknown) {
-        console.error(`[Floorp OS] Failed reading ${label}:`, error);
+        console.error(`[Bolt OS] Failed reading ${label}:`, error);
       }
     })().catch((error: unknown) => {
-      console.error(`[Floorp OS] Unexpected error capturing ${label}:`, error);
+      console.error(`[Bolt OS] Unexpected error capturing ${label}:`, error);
     });
   }
 
@@ -832,9 +832,9 @@ class OSAutomotorManager {
     try {
       await process.kill();
       await process.wait();
-      console.info(`[Floorp OS] ${label} stopped successfully.`);
+      console.info(`[Bolt OS] ${label} stopped successfully.`);
     } catch (error) {
-      console.error(`[Floorp OS] Failed to stop ${label}:`, error);
+      console.error(`[Bolt OS] Failed to stop ${label}:`, error);
     }
   }
 
@@ -882,7 +882,7 @@ class OSAutomotorManager {
         return;
       }
     } catch (error) {
-      console.error("[Floorp OS] Failed to read current process ID:", error);
+      console.error("[Bolt OS] Failed to read current process ID:", error);
     }
 
     // Safe Check: Verify process name before killing
@@ -895,7 +895,7 @@ class OSAutomotorManager {
 
       if (!expectedName) {
         console.warn(
-          `[Floorp OS] No expected binary name for ${kind}, skipping safe kill.`,
+          `[Bolt OS] No expected binary name for ${kind}, skipping safe kill.`,
         );
         return;
       }
@@ -903,13 +903,13 @@ class OSAutomotorManager {
       const isProcessMatch = await this.verifyProcessName(pid, expectedName);
       if (!isProcessMatch) {
         console.warn(
-          `[Floorp OS] Process ${pid} does not match expected name ${expectedName}. Skipping kill to prevent data loss.`,
+          `[Bolt OS] Process ${pid} does not match expected name ${expectedName}. Skipping kill to prevent data loss.`,
         );
         return;
       }
     } catch (error) {
       console.error(
-        `[Floorp OS] Error verifying process ${pid} for ${kind}:`,
+        `[Bolt OS] Error verifying process ${pid} for ${kind}:`,
         error,
       );
       return;
@@ -932,11 +932,11 @@ class OSAutomotorManager {
       });
       await process.wait();
       console.info(
-        `[Floorp OS] Ensured ${kind} process (pid=${pid}) is terminated`,
+        `[Bolt OS] Ensured ${kind} process (pid=${pid}) is terminated`,
       );
     } catch (error) {
       console.error(
-        `[Floorp OS] Failed to terminate ${kind} process by pid ${pid}:`,
+        `[Bolt OS] Failed to terminate ${kind} process by pid ${pid}:`,
         error,
       );
     }
@@ -1001,7 +1001,7 @@ class OSAutomotorManager {
         );
       }
     } catch (e) {
-      console.error(`[Floorp OS] Failed to verify process name for ${pid}:`, e);
+      console.error(`[Bolt OS] Failed to verify process name for ${pid}:`, e);
       return false;
     }
   }
@@ -1033,7 +1033,7 @@ class OSAutomotorManager {
       this._runtimeState = state;
       return state;
     } catch (error) {
-      console.error("[Floorp OS] Failed to read runtime state:", error);
+      console.error("[Bolt OS] Failed to read runtime state:", error);
       return null;
     }
   }
@@ -1045,7 +1045,7 @@ class OSAutomotorManager {
         await IOUtils.makeDirectory(floorpOSDir);
       }
     } catch (error) {
-      console.error("[Floorp OS] Failed to ensure floorp-os directory:", error);
+      console.error("[Bolt OS] Failed to ensure floorp-os directory:", error);
       return;
     }
     const statePath = this.getRuntimeStatePath();
@@ -1054,7 +1054,7 @@ class OSAutomotorManager {
     try {
       await IOUtils.write(statePath, content, { mode: "overwrite" });
     } catch (error) {
-      console.error("[Floorp OS] Failed to write runtime state:", error);
+      console.error("[Bolt OS] Failed to write runtime state:", error);
     }
   }
 
@@ -1086,7 +1086,7 @@ class OSAutomotorManager {
       await IOUtils.remove(statePath, { ignoreAbsent: true });
       this._runtimeState = null;
     } catch (error) {
-      console.error("[Floorp OS] Failed to clear runtime state file:", error);
+      console.error("[Bolt OS] Failed to clear runtime state file:", error);
     }
   }
 }
