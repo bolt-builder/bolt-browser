@@ -225,7 +225,7 @@ async function createDefaultUserChromeFiles(): Promise<void> {
       `
 /*************************************************************************************************************************************************************************************************************************************************************
 
-"userChrome.css" is a custom CSS file that can be used to specify CSS style rules for Floorp's interface (NOT internal site) using "chrome" privileges.
+"userChrome.css" is a custom CSS file that can be used to specify CSS style rules for Bolt's interface (NOT internal site) using "chrome" privileges.
 For instance, if you want to hide the tab bar, you can use the following CSS rule:
 
 **************************************
@@ -254,7 +254,7 @@ Quote: https://userChrome.org | https://github.com/topics/userchrome
       `
 /*************************************************************************************************************************************************************************************************************************************************************
 
-"userContent.css" is a custom CSS file that can be used to specify CSS style rules for Floorp's internal site using "chrome" privileges.
+"userContent.css" is a custom CSS file that can be used to specify CSS style rules for Bolt's internal site using "chrome" privileges.
 For instance, if you want to apply CSS at "about:newtab" and "about:home", you can use the following CSS rule:
 
 ***********************************************************************
