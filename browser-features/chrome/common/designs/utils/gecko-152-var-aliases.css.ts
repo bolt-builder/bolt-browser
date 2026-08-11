@@ -15,7 +15,7 @@
  * the definitions and the internal references in mozilla-central moved to the
  * new names.
  *
- * Floorp's own chrome components (statusbar, panel-sidebar, workspaces, PWA,
+ * Bolt's own chrome components (statusbar, panel-sidebar, workspaces, PWA,
  * split-view, downloadbar, fluerial, command-palette, ui-custom options, ...)
  * still reference the pre-152 names in dozens of places — and the LWT runtime
  * sets `--panel-sidebar-background-color` via `var(--toolbar-bgcolor)` at
@@ -60,7 +60,7 @@
  * ## Injection point
  *
  * Applied to ALL designs via `browser-design-element.tsx`, not just the
- * Lepton family — because Floorp's own components (not only Lepton) read
+ * Lepton family — because Bolt's own components (not only Lepton) read
  * these names. See Issue #2489.
  */
 
