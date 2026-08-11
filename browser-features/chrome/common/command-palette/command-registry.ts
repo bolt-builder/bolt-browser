@@ -185,7 +185,7 @@ const ACTION_KEYWORDS: Record<string, string[]> = {
   "floorp-toggle-zen-mode": ["zen", "focus", "distraction free"],
   "floorp-toggle-command-palette": ["command palette", "palette", "command"],
   "floorp-open-settings": ["settings", "preferences", "options"],
-  "floorp-open-hub": ["hub", "floorp hub", "settings", "preferences"],
+  "floorp-open-hub": ["hub", "bolt hub", "settings", "preferences"],
   "floorp-show-pip": ["pip", "picture in picture", "mini player"],
   "floorp-toggle-share-mode": [
     "share",
