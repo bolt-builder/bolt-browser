@@ -364,7 +364,7 @@ class OffscreenPolyfillImpl implements OffscreenAPI {
    */
   private log(...args: unknown[]): void {
     if (this.debugMode) {
-      console.log("[Floorp Offscreen Polyfill]", ...args);
+      console.log("[Bolt Offscreen Polyfill]", ...args);
     }
   }
 }
@@ -388,7 +388,7 @@ export function installOffscreenPolyfill(options?: {
 }): boolean {
   // Check if we're in a browser extension context
   if (typeof chrome === "undefined") {
-    console.warn("[Floorp Offscreen Polyfill] Not in Chrome extension context");
+    console.warn("[Bolt Offscreen Polyfill] Not in Chrome extension context");
     return false;
   }
 
@@ -396,7 +396,7 @@ export function installOffscreenPolyfill(options?: {
   if (chrome.offscreen && !options?.force) {
     if (options?.debug) {
       console.log(
-        "[Floorp Offscreen Polyfill] Native Offscreen API detected, skipping polyfill",
+        "[Bolt Offscreen Polyfill] Native Offscreen API detected, skipping polyfill",
       );
     }
     return false;
@@ -418,7 +418,7 @@ export function installOffscreenPolyfill(options?: {
   }
 
   if (options?.debug) {
-    console.log("[Floorp Offscreen Polyfill] Successfully installed");
+    console.log("[Bolt Offscreen Polyfill] Successfully installed");
   }
 
   return true;
