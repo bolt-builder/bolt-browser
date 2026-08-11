@@ -2,7 +2,7 @@
 
 # Firefox Test Import Workflow
 
-Use this workflow when selecting upstream Firefox tests for Floorp's chrome
+Use this workflow when selecting upstream Firefox tests for Bolt's chrome
 colocated runner. The goal is to turn Firefox tests into real Floorp runtime
 coverage without committing a large raw upstream test dump or silently depending
 on unsupported mochitest behavior.
