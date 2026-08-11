@@ -305,7 +305,7 @@
             "logoAlt": "Webbläsarens logotyp",
             "description": "Noraneko är en webbläsare som används som testmiljö för Bolt 12. Bolt bygger på Firefox och Noraneko.",
             "communityCredit": "Skapad av Noraneko gemenskapen med ❤",
-            "repositoryLabel": "GitHub-arkiv: Floorp-Projects/Bolt"
+            "repositoryLabel": "GitHub-arkiv: bolt-builder/bolt-browser"
         }
     },
     "updates": {
