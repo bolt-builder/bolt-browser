@@ -116,11 +116,11 @@ export async function loadSyncState(): Promise<SyncState> {
       return parsed as SyncState;
     }
     console.warn(
-      "[Floorp Notes] Sync state pref has unexpected shape, resetting to empty.",
+      "[Bolt Notes] Sync state pref has unexpected shape, resetting to empty.",
     );
     return emptySyncState();
   } catch (e) {
-    console.warn("[Floorp Notes] Failed to parse sync state, resetting:", e);
+    console.warn("[Bolt Notes] Failed to parse sync state, resetting:", e);
     return emptySyncState();
   }
 }
@@ -130,10 +130,10 @@ export async function saveSyncState(state: SyncState): Promise<void> {
   try {
     await rpc.setStringPref(SYNC_STATE_PREF, JSON.stringify(state));
     console.debug(
-      `[Floorp Notes] Saved sync state with ${Object.keys(state.lastSyncedSnapshots).length} snapshots`,
+      `[Bolt Notes] Saved sync state with ${Object.keys(state.lastSyncedSnapshots).length} snapshots`,
     );
   } catch (e) {
-    console.error("[Floorp Notes] Failed to save sync state:", e);
+    console.error("[Bolt Notes] Failed to save sync state:", e);
   }
 }
 
