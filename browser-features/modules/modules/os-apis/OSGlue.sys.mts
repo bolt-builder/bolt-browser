@@ -18,7 +18,7 @@ class OSGlue {
 
     this.initializeModules();
     this._initialized = true;
-    console.log("[Floorp OS] Browser Side APIs initialized.");
+    console.log("[Bolt OS] Browser Side APIs initialized.");
   }
 
   private readonly modules = [
@@ -39,7 +39,7 @@ class OSGlue {
     const resourceURI = `resource://noraneko/modules/os-apis/${
       result[1]
     }.sys.mjs`;
-    console.info(`[Floorp OS] Loading module: ${resourceURI}`);
+    console.info(`[Bolt OS] Loading module: ${resourceURI}`);
     return resourceURI;
   }
 
@@ -50,10 +50,10 @@ class OSGlue {
         ChromeUtils.importESModule(module);
         loaded++;
       } catch (e) {
-        console.error(`[Floorp OS] Failed to load module: ${module}`, e);
+        console.error(`[Bolt OS] Failed to load module: ${module}`, e);
       }
     }
-    console.info(`[Floorp OS] Loaded ${loaded}/${this.modules.length} OS API modules.`);
+    console.info(`[Bolt OS] Loaded ${loaded}/${this.modules.length} OS API modules.`);
   }
 }
 
