@@ -24,7 +24,7 @@ function installFloorpIPProtectionUIEarly(): boolean {
     return FloorpIPProtectionUI.installEarly();
   } catch (error) {
     console.error(
-      "[FloorpIPProtectionUI] Failed to install the early runtime adapter:",
+      "[BoltIPProtectionUI] Failed to install the early runtime adapter:",
       error,
     );
     return false;

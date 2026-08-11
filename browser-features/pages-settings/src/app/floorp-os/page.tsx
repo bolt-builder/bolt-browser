@@ -90,7 +90,7 @@ export default function FloorpOS() {
         setMessage("");
       }
     } catch (err) {
-      console.error("Error enabling Floorp OS:", err);
+      console.error("Error enabling Bolt OS:", err);
       setError(t("floorpOS.errors.enableAction", { reason: String(err) }));
       setMessage("");
     } finally {
@@ -113,7 +113,7 @@ export default function FloorpOS() {
         setMessage("");
       }
     } catch (err) {
-      console.error("Error disabling Floorp OS:", err);
+      console.error("Error disabling Bolt OS:", err);
       setError(t("floorpOS.errors.disableAction", { reason: String(err) }));
       setMessage("");
     } finally {
@@ -239,7 +239,7 @@ export default function FloorpOS() {
                         }
                         await navigator.clipboard.writeText(status.serverToken);
                       } catch (e) {
-                        console.error("[Floorp OS]", "Failed to copy token:", e);
+                        console.error("[Bolt OS]", "Failed to copy token:", e);
                       }
                     }}
                   >

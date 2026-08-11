@@ -10,7 +10,7 @@ export const overrides = [
     const gBrowser = globalThis.gBrowser;
     if (!gBrowser || typeof gBrowser.createBrowser !== "function") {
       console.warn(
-        "[FloorpPrivateContainer] gBrowser.createBrowser not available for override",
+        "[BoltPrivateContainer] gBrowser.createBrowser not available for override",
       );
       return;
     }
@@ -35,7 +35,7 @@ export const overrides = [
         }
       } catch (e) {
         console.error(
-          "[FloorpPrivateContainer] Error in createBrowser override:",
+          "[BoltPrivateContainer] Error in createBrowser override:",
           e,
         );
       }

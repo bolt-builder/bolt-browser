@@ -36,7 +36,7 @@ const SCRAPER_ACTOR_SETS: Set<XULBrowserElement> = new Set();
 
 function _perfLog(label: string, ms: number) {
   if (!Services.prefs.getBoolPref("floorp.os.perf.log", false)) return;
-  console.debug(`[Floorp OS-Perf] IPC ${label} ${ms}ms`);
+  console.debug(`[Bolt OS-Perf] IPC ${label} ${ms}ms`);
 }
 const FRAME = new HiddenFrame();
 

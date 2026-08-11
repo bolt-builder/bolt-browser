@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /**
- * NRPluginStoreChild - Content process actor for Floorp OS Plugin Store integration
+ * NRPluginStoreChild - Content process actor for Bolt OS Plugin Store integration
  *
  * This actor runs in the content process and exposes the Floorp Plugin Store API
  * to web pages via the `window.floorpPluginStore` object.

@@ -43,7 +43,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         const hidden = await rpc.getBoolPref(
           "floorp.os.hidden",
         );
-        // Show Floorp OS section when floorp.os.hidden is false
+        // Show Bolt OS section when floorp.os.hidden is false
         if (mounted) setIsFloorpOSVisible(!hidden);
       } catch (e) {
         console.error(
@@ -85,7 +85,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       icon: Option,
     },
     { title: t("pages.webApps"), url: "/features/webapps", icon: Grip },
-    // Floorp OS entry is conditional based on pref floorp.os.hidden
+    // Bolt OS entry is conditional based on pref floorp.os.hidden
     ...(isFloorpOSVisible
       ? [
         {

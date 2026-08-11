@@ -201,7 +201,7 @@ export class DocumentIdPolyfill implements DocumentIdAPI {
 
   private log(...args: unknown[]): void {
     if (this.debugMode) {
-      console.log("[Floorp DocumentId Polyfill]", ...args);
+      console.log("[Bolt DocumentId Polyfill]", ...args);
     }
   }
 
@@ -327,7 +327,7 @@ export function installDocumentIdPolyfill(
   options?: DocumentIdPolyfillOptions & { force?: boolean },
 ): boolean {
   if (typeof chrome === "undefined") {
-    console.warn("[Floorp DocumentId Polyfill] Not in extension context");
+    console.warn("[Bolt DocumentId Polyfill] Not in extension context");
     return false;
   }
 
@@ -355,7 +355,7 @@ export function installDocumentIdPolyfill(
   }
 
   if (options?.debug) {
-    console.log("[Floorp DocumentId Polyfill] Successfully installed");
+    console.log("[Bolt DocumentId Polyfill] Successfully installed");
   }
 
   return true;

@@ -5,7 +5,7 @@
 
 /**
  * `splitViewPanels` can stay populated for a short time after split-view
- * deactivates. Treat panel ids as "live split UI" only while Floorp's
+ * deactivates. Treat panel ids as "live split UI" only while Bolt's
  * split-view root attribute is still present.
  */
 export function hasLiveSplitPanelsState(

@@ -9,7 +9,7 @@ import styleBrowser from "./browser.css?inline";
 import { config } from "./configs.ts";
 import { getCSSFromConfig } from "./utils/css.ts";
 import { TAB_COLOR_LIKE_TOOLBAR_CSS } from "./utils/tab-color-like-toolbar.css.ts";
-// Gecko 152 renamed many CSS variables; Floorp's own components (statusbar,
+// Gecko 152 renamed many CSS variables; Bolt's own components (statusbar,
 // panel-sidebar, workspaces, ...) still reference the pre-152 names. These
 // aliases are injected for every design so the legacy names keep resolving.
 import { GECKO_152_VAR_ALIASES_CSS } from "./utils/gecko-152-var-aliases.css.ts";

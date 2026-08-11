@@ -2,7 +2,7 @@
 // @colocated-env browser
 
 /**
- * Validates the Floorp Notes Sync prerequisites contract
+ * Validates the Bolt Notes Sync prerequisites contract
  * (docs/development/floorp-notes-sync/). The validator rejects missing roles,
  * guessed/placeholder staging endpoint IDs, wrong runtime SHA, wrong fixture
  * digest, missing required cases, and unapproved trust anchors. It emits an

@@ -203,7 +203,7 @@ assert(!(await polyfill.hasDocument()));
 
 Test with real extensions:
 1. Find Chrome extensions using the API
-2. Convert using Floorp's CRX converter
+2. Convert using Bolt's CRX converter
 3. Install and test functionality
 4. Verify API compatibility
 

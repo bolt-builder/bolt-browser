@@ -142,7 +142,7 @@ export function BackgroundProvider(
         setType("floorp");
         setSelectedFloorp(imageName);
       } catch (e) {
-        console.error("Failed to save selected Floorp image:", e);
+        console.error("Failed to save selected Bolt image:", e);
         throw e;
       }
     },

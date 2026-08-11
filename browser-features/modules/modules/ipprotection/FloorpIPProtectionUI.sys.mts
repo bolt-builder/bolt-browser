@@ -319,7 +319,7 @@ function schedulePanelRetry(
     if (state.panelRetryAttempts === MAX_PANEL_RETRY_FRAMES) {
       state.panelRetryAttempts++;
       console.error(
-        "[FloorpIPProtectionUI] Panel did not become ready within the retry window.",
+        "[BoltIPProtectionUI] Panel did not become ready within the retry window.",
       );
     }
     return;
@@ -645,7 +645,7 @@ export const FloorpIPProtectionUI = {
       }
       earlyInstallResult = false;
       console.error(
-        "[FloorpIPProtectionUI] Failed to install fail-closed UI adapter:",
+        "[BoltIPProtectionUI] Failed to install fail-closed UI adapter:",
         error,
       );
     }

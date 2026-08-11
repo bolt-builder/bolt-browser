@@ -152,7 +152,7 @@ browser[type="content"] > html {
   display: none;
 }
 
-/* Floorp OS Automated Tab Indicator */
+/* Bolt OS Automated Tab Indicator */
 .tabbrowser-tab[data-floorp-os-automated="true"] {
   position: relative;
   background: rgba(59, 130, 246, 0.1) !important;

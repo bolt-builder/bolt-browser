@@ -23,7 +23,7 @@ export class FloorpPrivateContainer {
     const tabContainer = globalThis.gBrowser?.tabContainer;
     if (!tabContainer) {
       console.error(
-        "[FloorpPrivateContainer] Tab container is unavailable; skip listener registration.",
+        "[BoltPrivateContainer] Tab container is unavailable; skip listener registration.",
       );
       return;
     }
@@ -43,7 +43,7 @@ export class FloorpPrivateContainer {
     const sessionInitialized = globalThis.SessionStore?.promiseInitialized;
     sessionInitialized?.catch((error: Error) => {
       console.error(
-        "[FloorpPrivateContainer] SessionStore initialization failure detected",
+        "[BoltPrivateContainer] SessionStore initialization failure detected",
         error,
       );
     });
@@ -176,13 +176,13 @@ export class FloorpPrivateContainer {
       .getPrivateContainerUserContextId();
     if (!privateContainerUserContextID) {
       console.error(
-        "[FloorpPrivateContainer] Failed to resolve private container userContextId",
+        "[BoltPrivateContainer] Failed to resolve private container userContextId",
       );
       return;
     }
 
     console.info(
-      "[FloorpPrivateContainer] Opening URL in private container tab",
+      "[BoltPrivateContainer] Opening URL in private container tab",
       {
         url: String(url),
       },
@@ -201,7 +201,7 @@ export class FloorpPrivateContainer {
 
     if (!newTab?.linkedBrowser) {
       console.error(
-        "[FloorpPrivateContainer] Failed to create browser element for private container tab",
+        "[BoltPrivateContainer] Failed to create browser element for private container tab",
       );
       return;
     }
@@ -235,7 +235,7 @@ export class FloorpPrivateContainer {
       });
     } catch (error) {
       console.error(
-        "[FloorpPrivateContainer] Failed to load URL in private container tab",
+        "[BoltPrivateContainer] Failed to load URL in private container tab",
         error,
       );
     }
@@ -270,7 +270,7 @@ export class FloorpPrivateContainer {
           ) as nsIPrincipal;
         } catch (error) {
           console.error(
-            "[FloorpPrivateContainer] Failed to deserialize tab principal",
+            "[BoltPrivateContainer] Failed to deserialize tab principal",
             error,
           );
           continue;
@@ -335,7 +335,7 @@ export class FloorpPrivateContainer {
           );
         } catch (e) {
           console.error(
-            "[FloorpPrivateContainer] Failed to apply history disabling to reopened tab:",
+            "[BoltPrivateContainer] Failed to apply history disabling to reopened tab:",
             e,
           );
         }

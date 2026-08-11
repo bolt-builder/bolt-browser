@@ -85,7 +85,7 @@ export namespace gFlexOrder {
     floorpSidebarPositionPref: boolean,
   ) {
     if (fxSidebarPositionPref && floorpSidebarPositionPref) {
-      // Fx's sidebar -> browser -> Floorp's sidebar
+      // Fx's sidebar -> browser -> Bolt's sidebar
       setOrders({
         fxSidebar: 0,
         fxSidebarSplitter: 1,
@@ -105,7 +105,7 @@ export namespace gFlexOrder {
         browserBox: 5,
       });
     } else if (!fxSidebarPositionPref && floorpSidebarPositionPref) {
-      // browser -> Vertical tab bar -> Fx's sidebar -> Floorp's sidebar
+      // browser -> Vertical tab bar -> Fx's sidebar -> Bolt's sidebar
       setOrders({
         browserBox: 0,
         verticaltabbarSplitter: 1,
@@ -117,7 +117,7 @@ export namespace gFlexOrder {
         floorpSidebarSelectBox: 7,
       });
     } else {
-      // Floorp's sidebar -> browser -> Vertical tab bar -> Fx's sidebar
+      // Bolt's sidebar -> browser -> Vertical tab bar -> Fx's sidebar
       setOrders({
         floorpSidebarSelectBox: 0,
         floorpSidebar: 1,

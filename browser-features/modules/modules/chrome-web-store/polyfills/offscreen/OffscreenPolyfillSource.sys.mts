@@ -123,14 +123,14 @@ export const OFFSCREEN_POLYFILL_SOURCE = `
 
     log(...args) {
       if (this.debugMode) {
-        console.log("[Floorp Offscreen Polyfill]", ...args);
+        console.log("[Bolt Offscreen Polyfill]", ...args);
       }
     }
   }
 
   function installOffscreenPolyfill(options) {
     if (typeof chrome === "undefined") {
-      console.warn("[Floorp Offscreen Polyfill] Not in Chrome extension context");
+      console.warn("[Bolt Offscreen Polyfill] Not in Chrome extension context");
       return false;
     }
 
@@ -151,7 +151,7 @@ export const OFFSCREEN_POLYFILL_SOURCE = `
     }
 
     if (options?.debug) {
-      console.log("[Floorp Offscreen Polyfill] Successfully installed");
+      console.log("[Bolt Offscreen Polyfill] Successfully installed");
     }
 
     return true;

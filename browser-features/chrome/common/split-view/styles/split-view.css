@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* Hide Firefox's native single splitter when Floorp's advanced split view is active */
+/* Hide Firefox's native single splitter when Bolt's advanced split view is active */
 #tabbrowser-tabpanels[data-floorp-split] > .split-view-splitter {
   display: none !important;
 }
@@ -23,7 +23,7 @@
   position: relative;
   /*
    * Upstream only applies `width: unset` on `.split-view-panel-active`,
-   * but in Floorp's N-pane split view, panels may not all receive that
+   * but in Bolt's N-pane split view, panels may not all receive that
    * class immediately (especially the non-selected panel during initial
    * split creation). Without `width: unset`, the panel retains its
    * default/inherited width and ignores flex sizing, causing overlaps.
@@ -601,7 +601,7 @@
 
 /* ===== N-pane split view button icon fallback =====
  * Upstream CSS (urlbar-searchbar.css) only defines icons for
- * data-active-index "0" and "1" (2-pane split). When Floorp's
+ * data-active-index "0" and "1" (2-pane split). When Bolt's
  * N-pane split view selects a tab at index 2 or 3, no icon rule
  * matches and the button appears blank. Provide a fallback using
  * the existing split view SVG icons.
@@ -741,7 +741,7 @@
   height: unset !important;
 }
 
-/* When split tabs exist, remove Floorp's custom tab min-width override so that
+/* When split tabs exist, remove Bolt's custom tab min-width override so that
  * Firefox's native tab sizing can shrink tabs to fit in the strip.
  * Without this, large tabMinWidth values (e.g. 200px) cause tabs to overlap.
  * The splitview-multibar attribute persists while any split tab remains (even
@@ -753,7 +753,7 @@
   min-width: unset !important;
 }
 
-/* When split view is active, remove Floorp's custom tab min-width override
+/* When split view is active, remove Bolt's custom tab min-width override
  * so that Firefox's native tab sizing can shrink tabs to fit in the strip.
  * Without this, large tabMinWidth values (e.g. 200px) cause tabs to overlap.
  * The splitview-multibar attribute is set only while split view is active

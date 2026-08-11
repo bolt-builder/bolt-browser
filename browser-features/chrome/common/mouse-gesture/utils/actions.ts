@@ -458,7 +458,7 @@ export const actions: GestureActionRegistration[] = [
   {
     name: "gecko-toggle-sidebar",
     fn: (_win) => {
-      // Toggle Floorp's Panel Sidebar, not Firefox's built-in SidebarController.
+      // Toggle Bolt's Panel Sidebar, not Firefox's built-in SidebarController.
       // SidebarController.toggle() opens Firefox's native sidebar (History, etc.)
       // which is not what Floorp users expect for "Toggle Sidebar".
       const prefName = "floorp.panelSidebar.enabled";

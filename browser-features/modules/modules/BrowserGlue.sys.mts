@@ -371,7 +371,7 @@ const JS_WINDOW_ACTORS: {
       },
     },
     matches: [
-      // Floorp OS Plugin Store domains
+      // Bolt OS Plugin Store domains
       "https://plugins.floorp.app/*",
       "https://store.floorp.app/*",
       // Development domains - port is not supported in matches, use wildcard
