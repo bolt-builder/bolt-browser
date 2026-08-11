@@ -140,12 +140,12 @@ export class NRWebScraperChild extends JSWindowActorChild {
     if (result && typeof (result as Promise<unknown>).then === "function") {
       return (result as Promise<unknown>).then((v) => {
         console.debug(
-          `[Floorp OS-Perf] DOM ${message.name} ${Date.now() - _t0}ms`,
+          `[Bolt OS-Perf] DOM ${message.name} ${Date.now() - _t0}ms`,
         );
         return v;
       });
     }
-    console.debug(`[Floorp OS-Perf] DOM ${message.name} ${Date.now() - _t0}ms`);
+    console.debug(`[Bolt OS-Perf] DOM ${message.name} ${Date.now() - _t0}ms`);
     return result;
   }
 
