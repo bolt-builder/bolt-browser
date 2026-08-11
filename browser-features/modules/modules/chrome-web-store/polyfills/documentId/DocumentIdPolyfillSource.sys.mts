@@ -96,7 +96,7 @@ export const DOCUMENT_ID_POLYFILL_SOURCE = `
 
     log(...args) {
       if (this.debugMode) {
-        console.log("[Floorp DocumentId Polyfill]", ...args);
+        console.log("[Bolt DocumentId Polyfill]", ...args);
       }
     }
 
@@ -182,7 +182,7 @@ export const DOCUMENT_ID_POLYFILL_SOURCE = `
 
   function installDocumentIdPolyfill(options) {
     if (typeof chrome === "undefined") {
-      console.warn("[Floorp DocumentId Polyfill] Not in extension context");
+      console.warn("[Bolt DocumentId Polyfill] Not in extension context");
       return false;
     }
 
@@ -217,7 +217,7 @@ export const DOCUMENT_ID_POLYFILL_SOURCE = `
     }
 
     if (options?.debug) {
-      console.log("[Floorp DocumentId Polyfill] Successfully installed");
+      console.log("[Bolt DocumentId Polyfill] Successfully installed");
     }
 
     return true;
