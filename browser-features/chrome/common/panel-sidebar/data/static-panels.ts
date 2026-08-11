@@ -85,7 +85,7 @@ const BASE_STATIC_PANEL_DATA: StaticPanelData = {
 function getConditionalPanels(): StaticPanelData {
   const conditionalPanels: StaticPanelData = {};
 
-  // Floorp OS が有効な場合にパネルを追加
+  // Bolt OS が有効な場合にパネルを追加
   try {
     const floorpOSEnabled = Services.prefs.getBoolPref(
       "floorp.os.enabled",
