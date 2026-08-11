@@ -154,12 +154,26 @@ export function updateAppConstants(original: string): string {
 }
 
 /**
- * Rewrites application.ini so the [App] identity is Bolt.
+ * Rewrites application.ini so the [App] identity is Bolt. Name= and
+ * Profile= lines are only rewritten inside the [App] section; matching
+ * keys in other sections are left untouched.
  */
 export function updateApplicationIni(original: string): string {
+  let inApp = false;
   return original
-    .replace(/^Name=.*$/m, "Name=Bolt")
-    .replace(/^Profile=.*$/m, "Profile=Bolt");
+    .split("\n")
+    .map((line) => {
+      const section = line.match(/^\[(.*)\]\s*$/);
+      if (section) {
+        inApp = section[1] === "App";
+        return line;
+      }
+      if (!inApp) return line;
+      if (/^Name=/.test(line)) return "Name=Bolt";
+      if (/^Profile=/.test(line)) return "Profile=Bolt";
+      return line;
+    })
+    .join("\n");
 }
 
 function rebrandMacBundle(): void {
