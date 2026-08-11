@@ -1582,7 +1582,7 @@ jobs:
 
           # mach package drops dist/bin/distribution, so re-add the bundled
           # extensions to the Linux tarball. Windows is reseeded during
-          # installer repacking; macOS seeding is a known follow-up.
+          # installer repacking.
           if [[ "$CANON_PLATFORM" == Linux-* ]] && [ -d "$EXT_SRC" ]; then
             TARBALL=$(ls "$DIST"/floorp*.tar.xz | head -n1)
             WORK="${RUNNER_TEMP}/bolt-tar"
@@ -1592,6 +1592,25 @@ jobs:
             cp -r "$EXT_SRC" "$ROOT/"
             tar -C "$WORK" -cJf "$TARBALL" "$(basename "$ROOT")"
             echo "[seed] Reworked tarball: $TARBALL"
+          fi
+
+          # macOS: unpack the DMG, seed the app bundle, and rebuild the DMG
+          # with the same in-tree tooling the signing flow uses. DMG_TOOL,
+          # HFS_TOOL, and MKFSHFS come from mozconfig, so mach python picks
+          # them up on the Linux cross runner.
+          if [[ "$CANON_PLATFORM" == macOS-* ]] && [ -d "$EXT_SRC" ]; then
+            DMG=$(ls "$DIST"/floorp-*dmg | head -n1)
+            WORK="${RUNNER_TEMP}/bolt-dmg"
+            rm -rf "$WORK" && mkdir -p "$WORK"
+            ./mach python -m mozbuild.action.unpack_dmg "$DMG" "$WORK"
+            APP=$(ls -d "$WORK"/*.app | head -n1)
+            cp -r "$EXT_SRC" "$APP/Contents/Resources/"
+            rm -f "$DMG"
+            ./mach python -m mozbuild.action.make_dmg \
+              --dsstore "$GITHUB_WORKSPACE/noraneko/.github/workflows/assets/mac/official/DS_Store" \
+              --background "$GITHUB_WORKSPACE/noraneko/static/gecko/branding/floorp-official/background.png" \
+              --volume-name "Bolt" "$WORK" "$DMG"
+            echo "[seed] Reworked DMG: $DMG"
           fi
 
       - name: Prepare installer workspace
