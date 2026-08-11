@@ -111,7 +111,7 @@ export function Settings({
     try {
       await setSelectedFloorp(imageName);
     } catch (error) {
-      console.error("Failed to select Floorp image:", error);
+      console.error("Failed to select Bolt image:", error);
     } finally {
       setIsSubmitting(false);
     }
