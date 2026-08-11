@@ -29,7 +29,7 @@ export function shouldEnableFloorpIPProtection(
     );
   } catch (error) {
     console.error(
-      "[FloorpIPProtectionGate] Failed to check floorp_ip_protection Flasco:",
+      "[BoltIPProtectionGate] Failed to check floorp_ip_protection Flasco:",
       error,
     );
     return false;
@@ -66,7 +66,7 @@ export const FloorpIPProtectionGate = {
     );
     if (!runtimeReady) {
       console.error(
-        "[FloorpIPProtectionGate] Runtime adapter was not ready; disabling IP Protection.",
+        "[BoltIPProtectionGate] Runtime adapter was not ready; disabling IP Protection.",
       );
     }
     applyFloorpIPProtectionPref(Services.prefs, enabled);
