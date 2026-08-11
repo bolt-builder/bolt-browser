@@ -335,7 +335,7 @@ export class WorkspacesTabManager {
         }
 
         // exitOnLastTabClose is true. Only the exact replacement for this
-        // transaction is disposable; Floorp Start, user newtabs, and stale
+        // transaction is disposable; Bolt Start, user newtabs, and stale
         // blank tabs all keep the window alive (#2509).
         if (remainingUserTabs.length === 0) {
           if (replacementTab) {
