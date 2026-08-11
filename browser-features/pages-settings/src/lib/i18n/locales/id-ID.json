@@ -305,7 +305,7 @@
             "logoAlt": "Logo Peramban",
             "description": "Noraneko adalah peramban sebagai tempat pengujian Bolt 12. Bolt dikembangkan berdasarkan Firefox dan Noraneko.",
             "communityCredit": "Dibuat oleh komunitas Noraneko dengan ❤",
-            "repositoryLabel": "Repositori GitHub: Floorp-Projects/Bolt"
+            "repositoryLabel": "Repositori GitHub: bolt-builder/bolt-browser"
         }
     },
     "updates": {
