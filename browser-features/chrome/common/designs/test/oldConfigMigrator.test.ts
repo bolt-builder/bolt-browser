@@ -117,8 +117,8 @@ function testTabbarStyleHorizontal(): void {
   withIntPref("floorp.tabbar.style", 0, () => {
     assertEquals(
       getOldTabbarStyleConfig(),
-      "horizontal",
-      "style=0 should return horizontal",
+      "vertical",
+      "style=0 should return vertical (Bolt default)",
     );
   });
 }
@@ -231,8 +231,8 @@ function testTabbarStyleInvalidValueReturnsHorizontal(): void {
   withIntPref("floorp.tabbar.style", 99, () => {
     assertEquals(
       getOldTabbarStyleConfig(),
-      "horizontal",
-      "invalid style value should default to horizontal",
+      "vertical",
+      "invalid style value should default to vertical",
     );
   });
 }
@@ -261,7 +261,7 @@ export function runAllTests(): void {
     { name: "interface 3+1 → photon", fn: testInterfaceCase3Photon },
     { name: "interface 3+3 → protonfix", fn: testInterfaceCase3Protonfix },
     { name: "interface 8 → fluerial", fn: testInterfaceCase8Fluerial },
-    { name: "tabbar style 0 → horizontal", fn: testTabbarStyleHorizontal },
+    { name: "tabbar style 0 → vertical", fn: testTabbarStyleHorizontal },
     { name: "tabbar style 1 → multirow", fn: testTabbarStyleMultirow },
     { name: "tabbar style 2 → vertical", fn: testTabbarStyleVertical },
     { name: "tabbar position 0 → default", fn: testTabbarPositionDefault },
@@ -285,7 +285,7 @@ export function runAllTests(): void {
       fn: testInterfaceCase3InvalidLeptonReturnsLepton,
     },
     {
-      name: "tabbar style invalid → horizontal",
+      name: "tabbar style invalid → vertical",
       fn: testTabbarStyleInvalidValueReturnsHorizontal,
     },
     {
