@@ -87,7 +87,7 @@ export const LUCIDE_ICON_PATHS: Record<string, string> = {
  * Fallback translation strings (English)
  */
 export const FALLBACK_TRANSLATIONS: Record<string, string> = {
-  panelTitle: "Floorp OS is operating",
+  panelTitle: "Bolt OS is operating",
   panelDefaultMessage: "{{action}} in progress...",
   panelProgressSummary: "Affects {{count}} element(s)",
   formSummary: "Filling form: {{count}} field(s)",
