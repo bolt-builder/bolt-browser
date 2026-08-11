@@ -325,7 +325,7 @@ class ExternalBrowserManager {
     console.info("[ExternalBrowser] Detecting installed browsers...");
     const browsers: ExternalBrowser[] = [];
 
-    // Get Floorp's own path to exclude it
+    // Get Bolt's own path to exclude it
     const floorpPath = Services.dirsvc.get("XREExeF", Ci.nsIFile).path;
 
     for (const config of BROWSER_CONFIGS) {
