@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /**
- * NRPluginStoreParent - Parent process actor for Floorp OS Plugin Store integration
+ * NRPluginStoreParent - Parent process actor for Bolt OS Plugin Store integration
  *
  * This actor handles plugin installation from the web store by redirecting
  * to the Sapphillon Frontend with plugin metadata as query parameters.
