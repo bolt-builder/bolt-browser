@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /**
- * HTTP utility functions for the Floorp OS Local HTTP Server
+ * HTTP utility functions for the Bolt OS Local HTTP Server
  */
 
 import type { HeadersMap, HttpRequest } from "./types.ts";
@@ -14,15 +14,15 @@ const TEXT_ENCODER = new TextEncoder();
 // -- Logging utilities --------------------------------------------------------
 
 export function log(...args: unknown[]) {
-  console.log("[Floorp OS-Server]", ...args);
+  console.log("[Bolt OS-Server]", ...args);
 }
 
 export function warn(...args: unknown[]) {
-  console.warn("[Floorp OS-Server]", ...args);
+  console.warn("[Bolt OS-Server]", ...args);
 }
 
 export function err(...args: unknown[]) {
-  console.error("[Floorp OS-Server]", ...args);
+  console.error("[Bolt OS-Server]", ...args);
 }
 
 /**
@@ -33,7 +33,7 @@ export function err(...args: unknown[]) {
  */
 export function logPerf(label: string, ms: number) {
   if (!Services.prefs.getBoolPref("floorp.os.perf.log", false)) return;
-  console.debug(`[Floorp OS-Perf] ${label} ${ms}ms`);
+  console.debug(`[Bolt OS-Perf] ${label} ${ms}ms`);
 }
 
 // -- HTTP parsing -------------------------------------------------------------
