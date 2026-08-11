@@ -2,7 +2,7 @@
 // @colocated-env browser
 
 /**
- * Runs the approved cross-client Floorp Notes merge fixture
+ * Runs the approved cross-client Bolt Notes merge fixture
  * (sync-fixtures/floorp-notes/floorp-notes-merge-v1.json, digest
  * 2597e5311c7c4ea4bb9d6a806ffa183aae3b3bd7380893b664b02ac829d665fd) through
  * the Desktop three-way merge so iOS and Desktop derive identical winners,
