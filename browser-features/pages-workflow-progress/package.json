@@ -1,7 +1,7 @@
 {
     "name": "workflow-progress",
     "version": "1.0.0",
-    "description": "Workflow progress PIP window for Floorp OS",
+    "description": "Workflow progress PIP window for Bolt OS",
     "main": "index.js",
     "scripts": {
         "dev": "vite --port 5192",
