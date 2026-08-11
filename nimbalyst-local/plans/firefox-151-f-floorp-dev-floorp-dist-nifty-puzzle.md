@@ -29,7 +29,7 @@ The function currently uses `MozXULElement.parseXULToFragment()` to create a `<r
 **New approach:**
 - Create element via `doc.createElement("moz-page-nav-button")` (HTML custom element)
 - Set `id="category-nora-link"`, `iconsrc` attribute with the existing base64 SVG
-- Set text content to `"Floorp Hub"` (the button uses a default `<slot>` for label text)
+- Set text content to `"Bolt hub"` (the button uses a default `<slot>` for label text)
 - Override the `activate()` method on the instance to call `openFloorpHub()` instead of dispatching `change-view` (which would try to route to a non-existent pane)
 - Remove `parseXULToFragment` call and the old fragment insertion
 
@@ -66,8 +66,8 @@ Same issue as #2. Replace `.sticky-container` with `.pane-container` → before 
 1. Build the project (`pnpm build` or equivalent for the startup bridge)
 2. Launch Floorp and navigate to `about:preferences`
 3. Verify:
-   - "Floorp Hub" category button appears in the left navigation sidebar, positioned before the (hidden) Sync category
-   - Clicking "Floorp Hub" opens `about:hub` in a new tab
+   - "Bolt hub" category button appears in the left navigation sidebar, positioned before the (hidden) Sync category
+   - Clicking "Bolt hub" opens `about:hub` in a new tab
    - Yellow warning banner ("Floorp-specific settings...") appears between the search bar and the preferences content
    - Blue "Floorp Start" warning banner appears below the yellow banner
    - No console errors related to missing `.sticky-container` or failed element creation

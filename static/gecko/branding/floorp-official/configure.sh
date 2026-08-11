@@ -2,13 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# Bolt override for the Floorp official branding. Gecko's configure only
-# accepts MOZ_APP_DISPLAYNAME changes from a branding configure.sh; every
-# other variable must keep its original value or configure aborts with
-# "can not be set by confvars". Binary names, packaging globs, and deb
-# templates rely on the unchanged values anyway.
+# Bolt override for the Floorp official branding. MOZ_APP_NAME and
+# MOZ_APP_REMOTINGNAME stay "floorp" so binary names, packaging globs,
+# and deb templates keep working; only user-visible names change.
 MOZ_APP_DISPLAYNAME="Bolt"
-MOZ_MACBUNDLE_ID=Floorp
-MOZ_APP_NAME="floorp"
-MOZ_APP_VENDOR="Ablaze"
-MOZ_APP_REMOTINGNAME="floorp"
+MOZ_MACBUNDLE_ID=Bolt
+MOZ_APP_NAME="Bolt"
+MOZ_APP_VENDOR="Bolt Builder"
+MOZ_APP_REMOTINGNAME="Bolt"

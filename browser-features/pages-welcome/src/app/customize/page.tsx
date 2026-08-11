@@ -326,7 +326,7 @@ export default function CustomizePage() {
           </div>
         </div>
       </div>
-      {/* Floorp Hub introduction card */}
+      {/* Bolt hub introduction card */}
       <div className="card bg-base-200 shadow-xl">
         <div className="card-body">
           <div className="flex items-center mb-4 gap-2">
