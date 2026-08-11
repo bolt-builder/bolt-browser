@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /**
- * Floorp OS Local HTTP Server (localhost only)
+ * Bolt OS Local HTTP Server (localhost only)
  *
  * Purpose
  * - Expose a minimal subset of os-apis to other local applications via HTTP/JSON.
