@@ -955,7 +955,7 @@ getActionIconEmoji(action: string): string {
 
     const label = doc.createElement("div");
     label.className = "nr-webscraper-control-overlay__label";
-    label.textContent = "Floorp が操作中...";
+    label.textContent = "Bolt が操作中...";
 
     (doc.body ?? doc.documentElement)?.appendChild(overlay);
     (doc.body ?? doc.documentElement)?.appendChild(label);

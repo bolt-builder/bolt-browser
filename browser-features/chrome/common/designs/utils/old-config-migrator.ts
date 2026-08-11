@@ -28,7 +28,8 @@ export const getOldTabbarStyleConfig = () => {
     case 2:
       return "vertical";
     default:
-      return "horizontal";
+      // Bolt ships vertical tabs by default.
+      return "vertical";
   }
 };
 

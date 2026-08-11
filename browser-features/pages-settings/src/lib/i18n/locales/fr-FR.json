@@ -305,7 +305,7 @@
             "logoAlt": "Logo du navigateur",
             "description": "Noraneko est un navigateur servant de tête de test pour Bolt 12. Bolt repose sur Firefox et Noraneko.",
             "communityCredit": "Réalisé par la communauté Noraneko avec ❤",
-            "repositoryLabel": "Dépôt GitHub : Floorp-Projects/Bolt"
+            "repositoryLabel": "Dépôt GitHub : bolt-builder/bolt-browser"
         }
     },
     "updates": {

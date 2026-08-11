@@ -280,8 +280,8 @@ function testDefaultConfigTabbarDefaults(): void {
   const config = createDefaultOldObjectConfigs();
   assertEquals(
     config.tabbar.tabbarStyle,
-    "horizontal",
-    "default tabbar style should be horizontal",
+    "vertical",
+    "default tabbar style should be vertical",
   );
   assertEquals(
     config.tabbar.tabbarPosition,

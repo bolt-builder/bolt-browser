@@ -305,7 +305,7 @@
             "logoAlt": "Logotipo do navegador",
             "description": "O Noraneko é um navegador utilizado como ambiente de teste do Bolt 12. O Bolt é baseado no Firefox e no Noraneko.",
             "communityCredit": "Feito pela Comunidade Noraneko com ❤️",
-            "repositoryLabel": "Repositório GitHub: Floorp-Projects/Bolt"
+            "repositoryLabel": "Repositório GitHub: bolt-builder/bolt-browser"
         }
     },
     "updates": {

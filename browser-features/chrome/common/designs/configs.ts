@@ -202,7 +202,7 @@ export function createDefaultOldObjectConfigs(): TFloorpDesignConfigs {
         appliedUserJs: "",
       },
       tabbar: {
-        tabbarStyle: "horizontal",
+        tabbarStyle: "vertical",
         tabbarPosition: "default",
         multiRowTabBar: {
           maxRowEnabled: false,
