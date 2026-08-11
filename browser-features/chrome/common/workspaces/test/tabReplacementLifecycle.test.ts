@@ -308,7 +308,7 @@ function testOnlyCurrentReplacementIsExcluded(): void {
   );
   assert(
     remaining.includes(floorpStart),
-    "Floorp Start must remain a user tab",
+    "Bolt Start must remain a user tab",
   );
   assert(remaining.includes(userNewtab), "user-created newtab must remain");
   assert(
@@ -330,7 +330,7 @@ function testMissingSignalPreservesEveryTab(): void {
   );
 
   assertEquals(remaining.length, 2, "missing signal must preserve all tabs");
-  assert(remaining.includes(floorpStart), "Floorp Start is preserved");
+  assert(remaining.includes(floorpStart), "Bolt Start is preserved");
   assert(remaining.includes(userNewtab), "user newtab is preserved");
 }
 
