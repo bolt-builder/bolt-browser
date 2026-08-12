@@ -18,7 +18,9 @@ export const getOldInterfaceConfig = () => {
       return "fluerial";
   }
 
-  return "proton";
+  // Match upstream Floorp: old profiles without an explicit interface pref
+  // (or with an unknown value) were using the Lepton design.
+  return "lepton";
 };
 
 export const getOldTabbarStyleConfig = () => {

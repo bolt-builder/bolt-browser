@@ -114,6 +114,68 @@ function rebrandImages(): number {
   return count;
 }
 
+/**
+ * Rewrites a macOS Info.plist so the bundle presents itself as Bolt:
+ * CFBundleName and CFBundleDisplayName are set to Bolt (the display name is
+ * inserted after CFBundleName when the plist lacks it), and CFBundleIconName
+ * is stripped. macOS prefers the CFBundleIconName entry in the compiled
+ * Assets.car (which still holds the Floorp icon) over CFBundleIconFile, so
+ * removing it lets the replaced firefox.icns be what the Dock actually shows.
+ */
+export function updateMacInfoPlist(original: string): string {
+  let updated = original
+    .replace(
+      /(<key>CFBundleName<\/key>\s*<string>)[^<]*(<\/string>)/,
+      "$1Bolt$2",
+    )
+    .replace(
+      /(<key>CFBundleDisplayName<\/key>\s*<string>)[^<]*(<\/string>)/,
+      "$1Bolt$2",
+    )
+    .replace(/\s*<key>CFBundleIconName<\/key>\s*<string>[^<]*<\/string>/, "");
+  if (!updated.includes("<key>CFBundleDisplayName</key>")) {
+    updated = updated.replace(
+      /(<key>CFBundleName<\/key>\s*<string>[^<]*<\/string>)/,
+      "$1\n  <key>CFBundleDisplayName</key>\n  <string>Bolt</string>",
+    );
+  }
+  return updated;
+}
+
+/**
+ * Rewrites the runtime AppConstants module source so the app identifies as
+ * Bolt (basename, display name, and macOS bundle name).
+ */
+export function updateAppConstants(original: string): string {
+  return original
+    .replace(/(MOZ_APP_BASENAME:\s*")[^"]*(")/, "$1Bolt$2")
+    .replace(/(MOZ_APP_DISPLAYNAME_DO_NOT_USE:\s*")[^"]*(")/, "$1Bolt$2")
+    .replace(/(MOZ_MACBUNDLE_NAME:\s*")[^"]*(")/, "$1Bolt.app$2");
+}
+
+/**
+ * Rewrites application.ini so the [App] identity is Bolt. Name= and
+ * Profile= lines are only rewritten inside the [App] section; matching
+ * keys in other sections are left untouched.
+ */
+export function updateApplicationIni(original: string): string {
+  let inApp = false;
+  return original
+    .split("\n")
+    .map((line) => {
+      const section = line.match(/^\[(.*)\]\s*$/);
+      if (section) {
+        inApp = section[1] === "App";
+        return line;
+      }
+      if (!inApp) return line;
+      if (/^Name=/.test(line)) return "Name=Bolt";
+      if (/^Profile=/.test(line)) return "Profile=Bolt";
+      return line;
+    })
+    .join("\n");
+}
+
 function rebrandMacBundle(): void {
   // The target on macOS is <app>/Contents/Resources
   const contents = path.resolve(TARGET_DIR, "..");
@@ -122,19 +184,7 @@ function rebrandMacBundle(): void {
   const plist = path.join(contents, "Info.plist");
   if (exists(plist)) {
     const original = Deno.readTextFileSync(plist);
-    const updated = original
-      .replace(
-        /(<key>CFBundleName<\/key>\s*<string>)[^<]*(<\/string>)/,
-        "$1Bolt$2",
-      )
-      .replace(
-        /(<key>CFBundleDisplayName<\/key>\s*<string>)[^<]*(<\/string>)/,
-        "$1Bolt$2",
-      )
-      // macOS prefers the CFBundleIconName entry in the compiled Assets.car
-      // (which still holds the Floorp icon) over CFBundleIconFile. Strip it
-      // so the replaced firefox.icns is what the Dock actually shows.
-      .replace(/\s*<key>CFBundleIconName<\/key>\s*<string>[^<]*<\/string>/, "");
+    const updated = updateMacInfoPlist(original);
     if (updated !== original) {
       Deno.writeTextFileSync(plist, updated);
       logger.info("Info.plist bundle name set to Bolt (icon catalog unpinned).");
